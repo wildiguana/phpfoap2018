@@ -10,10 +10,10 @@
 <p>calculadora 1</p>
 
 <form method="post">
-        numero 1:<input type="text" name="num1">
-        numero 2:<input type="text" name="num2">
+        numero 1:<input type="number" name="num1">
+        numero 2:<input type="number" name="num2">
 
-            <input type="submit" name="sumar" value="sumar">
+            <input type="submit" name="submit" value="sumar">
     </form>
 
 <?php
@@ -24,6 +24,9 @@ function suma ($x, $y){
     $z=suma($x, $y);
     print $z;
 
+    if (isset ($_REQUEST["submit"]))
+
+      echo suma ($_REQUEST [""])
 
   ?>
   </body>
