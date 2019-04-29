@@ -31,3 +31,7 @@ table, th, td {
 	background-color: red;
 	display: inline;
 }
+input[type=text]{
+	border:2px solid blue;
+	border-radius:5px;
+}
