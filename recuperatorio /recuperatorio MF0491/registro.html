@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon" />
+    <title>Recuperación MF0491</title>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script type="text/javascript" src="js/codigo.js"></script>
+</head>
+
+<body>
+
+    <noscript>
+            <p>Para visualizar correctamente esta página, deberá habilitar el uso de JavaScript.</p>
+    </noscript>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" name="registro">Registro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Volver a: Página principal<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deportes.html">Deportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería de imágenes</a>
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </nav>  
+</head>
+
+<body>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-20 text-left">
+        <div class="container_form">
+            <br>
+            <br>
+                <h3><a name="registro"class="mt-5"></a><u>Registro</u></h3>
+                <form action="" method="post" id="form" onsubmit="return validarFormulario()">
+                    <fieldset>
+                        <div class="legend">
+                            <legend>Información personal</legend>
+                        </div>
+                        <label>Nombre*</label><br>
+                        <input type="text" id="nombre" name="nombre" autofocus value="" required>
+                        <br>
+                        <label>Apellido*</label><br>
+                        <input type="text" id="apellido" name="apellido" value="" required>
+                        <br>
+                        <label>Dirección</label><br>
+                        <input type="text" name="direccion" value="">
+                        <br>
+                        <label>Teléfono*</label><br>
+                        <input type="text" id="telefono" name="telefono" value="" required>
+                        <br>
+                        <label>Fecha de nacimiento*</label><br>
+                        <input type="date" id="fnacimiento" name="fnacimiento" value="" required>
+                        <br>
+                        <br>
+                        <label>Sexo*</label><span id="error"></span><br>
+                        <input type="radio" name="sexo" value="1" id="Hombre">Hombre
+                        <input type="radio" name="sexo" value="2" id="Mujer">Mujer
+                        
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <div class="legend">
+                            <legend>Información laboral</legend>
+                        </div>
+                        <label>Profesión*</label><br>
+                        <select id="selector" name="profesion">
+                        <option value="1">Selecciona tu área de aplicación</option>
+                        <option value="2">Administrativa/o de centro deportivo</option>
+                        <option value="3">Director/a de centro deportivo</option>
+                        <option value="4">Enfermera/o de centro deportivo</option>
+                        <option value="5">Entrenador/a personal</option>
+                        <option value="6">Mantenimiento en centro deportivo</option>
+                        <option value="7">Recepcionista de centro deportivo</option>
+                        <option value="8">Socorrista en centro deportivo</option>  
+                    </select>
+                        <br>
+                        <label>Dirección</label><br>
+                        <input type="text" id="direccionlaboral" name="direccionlaboral" value="">
+                        <br>
+                        <label>Teléfono</label><br>
+                        <input type="text" id="telefonolaboral" name="telefonolaboral" value="">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <div class="legend">
+                            <legend>Datos de acceso</legend>
+                        </div>
+                        <label>correo electrónico*</label><br>
+                        <input type="text" name="email" value="" required id="email">
+                        <br>
+                        <label>contraseña*</label><br>
+                        <input type="password" name="pswd" value="" required id="pswd" onkeypress="return admite(event,'num_car'">
+                        <br>    
+            </div>
+            <br>
+            <div class="pie">
+                <h2><u>Protección de datos de carácter personal</u></h2>
+                <p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, sobre protección de datos de carácter personal, le informamos que sus datos personales recogidos por medio de los formularios de este web serán tratados
+                    de forma confidencial y quedarán incorporados a los archivos de la Universidad Politécnica de Cataluña para llevar a cabo una gestión correcta y responder a las consultas o sugerencias que propone en los formularios. De la misma
+                    manera,le informamos que puede ejercer los derechos de acceso, rectificación, cancelación y oposición ante el Servicio de Comunicación y Promoción, calle Jordi Girona, 31, Barcelona 08034, o a la dirección electrónica: info@cdsarti.org</p>
+                <br>
+                <input type="checkbox" id="check" checked="checked" name="check"value="dataprot">Si, acepto las condiciones expuestas.
+            </div>
+            <br>
+            <br>
+            <input type="submit" id="boton" value="Registrar" onclick="this.disabled=true; this.value=’Enviando...’; this.form.submit()" />
+            <br>
+            <br>
+            <a href="#">Volver al inicio</a>
+            <br>
+            <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

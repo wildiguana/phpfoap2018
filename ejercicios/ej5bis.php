@@ -56,13 +56,7 @@ $h=multi($f,$g);
 
 echo "la multiplicación es:".$h;
 
-function dividir ($x,$y);
-        $dividir($x,$y){
 
-            $dividir=$x/$y;
-            return $dividir;
-        }
-print $h;
 ?>
 </body>
 </html>
