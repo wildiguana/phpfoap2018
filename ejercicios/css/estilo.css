@@ -1,0 +1,21 @@
+h1 {
+	color: green;
+}
+p {
+	text-decoration: underline;
+}
+table, th, td {
+	border:1px solid black;
+}
+.solucion {
+	font-size: 14px;
+	color: red;
+}
+.correcto{
+	background-color: green;
+	display: inline;
+}
+.error{
+	background-color: red;
+	display: inline;
+}
