@@ -26,7 +26,7 @@
           <li class="nav-item active">
           <li class="nav-item">
               <a class="nav-link" href=""target="_blank"><button type="button" 
-                class="btn btn-default btn-warning">Cerrar sesión</a>
+                class="btn btn-default btn-warning">Volver a inicio</a>
           </button></a>
           </li>
 
@@ -43,6 +43,40 @@
       <h1 class="mt-5">Gestión de noticias</h1>
         <h4 class="mt-5"><u>RELLENE EL FORMULARIO</u></h4>
 </div>
+
+<form method="post" action="<php echo htmlspecialchars($_SERVER"["PHP_SELF"]);?">
+            <fieldset>
+                <div id="lateral">Nombre*
+                <input type="text" name="nombre" size="10">
+            <br></div>
+            <br>
+                <div class="lateral">Apellidos
+                <input type="text" name="apellidos" size="20">
+                </div>
+            <br>
+            <div class="lateral">Fecha de nacimiento
+                <input type="number" name="fnac">
+                </div>
+            <br>
+            <div class="lateral">Email*
+                <input type="text" name="email" size="30">
+                </div>
+                <br>
+                <div class="lateral">Contraseña*
+                <input type="password" name="password">
+                <div class="lateral">Repita la contraseña
+                <input type="password" name="password1">
+                </div>
+                <br>
+                <label>Comentarios</label>
+                <textarea name="comentarios" maxlength="50"></textarea>
+                <br>
+                <input type="submit"name="registro"value="Registrarse" class="btn btn-outline-dark">
+            </fieldset>
+ 
+</form>
+
+
        <!-- <ul class="list-unstyled">
         
           <form method="post">
