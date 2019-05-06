@@ -36,13 +36,14 @@
     </div>
   </nav>
 
-  <!-- Page Content 
+  <!-- Page Content -->
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h4 class="mt-5"><u>INTRODUZCA SUS DATOS</u></h4>
+      <h1 class="mt-5">Gestión de noticias</h1>
+        <h4 class="mt-5"><u>RELLENE EL FORMULARIO</u></h4>
 </div>
-        <ul class="list-unstyled">
+       <!-- <ul class="list-unstyled">
         
           <form method="post">
 

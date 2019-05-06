@@ -17,7 +17,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><h2><u>Ejercicio 12: Gestión de noticias</u></h2></a>
+      <a class="navbar-brand" href="#"><h2><u>Ejercicio 12: Inicio</u></h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,6 +37,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
+      <h1 class="mt-5">Gestión de noticias</h1>
         <h4 class="mt-5"><u>INTRODUZCA SUS DATOS</u></h4>
 </div>
         <ul class="list-unstyled">
