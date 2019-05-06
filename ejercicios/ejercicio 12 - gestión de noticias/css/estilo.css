@@ -22,12 +22,17 @@ table, th, td {
 	font-size: 14px;
 	color: red;
 }
-.lateral {
-    width: 200px;
-    border: 1px solid black;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-}
+label {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+
+  .btn-outline-dark {
+    display: block;
+    margin: 1em 0;
+  }
+
+    
+  
+
 

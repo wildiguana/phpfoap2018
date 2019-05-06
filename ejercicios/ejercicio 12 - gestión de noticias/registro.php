@@ -29,8 +29,6 @@
                 class="btn btn-default btn-warning">Volver a inicio</a>
           </button></a>
           </li>
-
-
         </ul>
       </div>
     </div>
@@ -44,69 +42,63 @@
         <h4 class="mt-5"><u>RELLENE EL FORMULARIO</u></h4>
 </div>
 
-<form method="post" action="<php echo htmlspecialchars($_SERVER"["PHP_SELF"]);?">
-            <fieldset>
-                <div id="lateral">Nombre*
-                <input type="text" name="nombre" size="10">
-            <br></div>
+<form method="post" action="<php echo htmlspecialchars($_SERVER"["PHP_SELF"])">
+            
+<fieldset> 
+                
+              <label>Nombre*</label>
+                <input type="text" name="nombre" id="nombre">
+              <label>Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos"> 
             <br>
-                <div class="lateral">Apellidos
-                <input type="text" name="apellidos" size="20">
-                </div>
+              <label>Fecha de nacimiento</label>
+                <input type="number" name="nacimiento"id="nacimiento">   
             <br>
-            <div class="lateral">Fecha de nacimiento
-                <input type="number" name="fnac">
-                </div>
-            <br>
-            <div class="lateral">Email*
+              <label>Email*</label>
                 <input type="text" name="email" size="30">
-                </div>
-                <br>
-                <div class="lateral">Contraseña*
+              <label>Contraseña*</label>
                 <input type="password" name="password">
-                <div class="lateral">Repita la contraseña
+              <label>Repita la contraseña</label>
                 <input type="password" name="password1">
-                </div>
-                <br>
-                <label>Comentarios</label>
+              <br>
+              <label>Comentarios</label>
                 <textarea name="comentarios" maxlength="50"></textarea>
-                <br>
-                <input type="submit"name="registro"value="Registrarse" class="btn btn-outline-dark">
+              <br>
+                <input type="submit"name="registro"value="Registrarse" 
+                class="btn btn-outline-dark" onclick="this.disabled=true;
+                this.value=’En proceso...’; this.form.submit()" >
             </fieldset>
  
 </form>
+<?php
+    $nombre=$apellidos=$email=$password=$password1=$cometarios="";
+    $nombreErr=$apellidosErr=$emailErr=$passwordErr=$password1Err=$comentariosErr="";
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+    if (empty($_POST["nombre"])){
+      $nombreErr="Campo obligatorio";
+    }else{
+      $nombre=test_input($_POST["nombre"]);
+    }
 
-
-       <!-- <ul class="list-unstyled">
-        
-          <form method="post">
-
-          <div class="form-group">
-  <label for="usr"><h4>Usuario:</h4></label>
-  <input type="text" class="form-control" id="">
-</div>
-<div class="form-group">
-  <label for="pwd"><h4>Contraseña:</h4></label>
-  <input type="password" class="form-control" id="">
-  <br>
-  <input type="submit" class="btn btn-outline-success" name="submit" value="Enviar">
-</div>
-        <li><h4>No está registrado?</h4></li>
-        <button type="button" class="btn btn-outline-dark">Regístrese aquí</button>
-
-        </ul>
-      </div>-->
+      $nombre=test_input($_POST["nombre"]);
+      $apellido=test_input($_POST["apellido"]);
+      $nacimiento=test_input($_POST["nacimento"]);
+      $email=test_input($_POST["email"]);
+      $password=test_input($_POST["password"]);
+      $password1=test_input($_POST["password1"]);
+      $comentarios=test_input($_POST["comentarios"]);
+    }
     
-  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="jquery/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
+       
+
+ 
+  
        
           
         
-<?php
+
 
 
 ?>
