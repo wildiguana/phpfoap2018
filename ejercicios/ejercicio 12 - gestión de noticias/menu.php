@@ -63,16 +63,12 @@ if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">
-       Bienvenido <?=$_SESSION["nom"]?>
-
-a Gestión de Noticias</h1>
-        <p class="lead">Tu portal</p>
+       Bienvenido <?=$_SESSION["nom"]?>, a Gestión de Noticias</h1>
+        <p class="lead">Tu portal de información</p>
         <ul class="list-unstyled">
           <li>Inicio</li>
           
        
-        <button type="button" class="btn btn-outline-dark">Enviar</button>
-
         </ul>
       </div>
     </div>

@@ -1,13 +1,16 @@
 <?php
 session_start();
 $error="";
-if(isset($_SESSION["login"])){
+if(isset($_SESSION["login"]) && $_SESSION["login"]==true){
+  if($_REQUEST["password"]==md5("1234")){
     header('Location:menu.php');           
 }
+}
 if(isset($_COOKIE["password"])){
-    if($_COOKIE["password"]==1234){
+    if($_COOKIE["pwrdcookie"]==md5("1234")){
         $_SESSION["login"]=true;
         $_SESSION["nom"]=$_COOKIE["usuario"];
+        $_SESSION["passwordOk"]=$_COOKIE^["pwrdcookie"];
         header('Location:menu.php');  
     }else{
         $error="Datos erróneos";
@@ -18,6 +21,7 @@ if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
             $_SESSION["nom"]=$_REQUEST["usuario"];
+            $_SESSION["passwordOk"]=md5("1234");
             if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                 setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
                 setcookie("nomusuari",$_REQUEST["usuario"],time()+365*24*60*60);
@@ -25,8 +29,8 @@ if(isset($_REQUEST["submit"])){
             header('Location: menu.php');           
         }else{
             $error="Usuario o contraseña incorrecta.";
-            /*se mantiene en la página
-            header('Location: indice.php');*/
+            //se mantiene en la página
+            header('Location: indice.php');
           }
 
 }

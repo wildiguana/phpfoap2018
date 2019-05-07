@@ -42,7 +42,7 @@
         <h4 class="mt-5"><u>RELLENE EL FORMULARIO</u></h4>
 </div>
 
-<form method="post" action="<php echo htmlspecialchars($_SERVER"["PHP_SELF"])">
+<form  method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"])?>">
             
 <fieldset> 
                 
@@ -51,8 +51,8 @@
               <label>Apellidos</label>
                 <input type="text" name="apellidos" id="apellidos"> 
             <br>
-              <label>Fecha de nacimiento</label>
-                <input type="number" name="nacimiento"id="nacimiento">   
+              <label>Edad</label>
+                <input type="number" name="edad"id="edad">   
             <br>
               <label>Email*</label>
                 <input type="text" name="email" size="30">
@@ -71,36 +71,46 @@
  
 </form>
 <?php
-    $nombre=$apellidos=$email=$password=$password1=$cometarios="";
-    $nombreErr=$apellidosErr=$emailErr=$passwordErr=$password1Err=$comentariosErr="";
-    if($_SERVER["REQUEST_METHOD"]=="POST"){
-    if (empty($_POST["nombre"])){
-      $nombreErr="Campo obligatorio";
-    }else{
-      $nombre=test_input($_POST["nombre"]);
-    }
-
-      $nombre=test_input($_POST["nombre"]);
-      $apellido=test_input($_POST["apellido"]);
-      $nacimiento=test_input($_POST["nacimento"]);
-      $email=test_input($_POST["email"]);
-      $password=test_input($_POST["password"]);
-      $password1=test_input($_POST["password1"]);
-      $comentarios=test_input($_POST["comentarios"]);
-    }
+        $nombre = $apellidos = $edad = $email = $comentarios = "";
+        $nombreErr = $edadErr = $emailErr="";
+        if (isset($_REQUEST['submit'])){
+            if (empty($_REQUEST["nombre"])) {
+                $nombreErr = "Campo obligatorio.";
+            }else{
+                $nombre = test_input($_REQUEST["nombre"]);
+            }
+            if (!empty($_REQUEST["apellidos"])) {
+                $apellidos = test_input($_REQUEST["apellidos"]);
+            }
+            if (!empty($_REQUEST["edad"])){           
+              if (is_numeric($_REQUEST["edad"])){
+                  $edad = test_input($_REQUEST["edad"]);
+                  if ($edad<=18){
+                      $edadErr = "Debe ser igual o mayor a 18 años.";
+                  }
+              }else{
+                  $edadErr = "La edad tiene que ser un número.";
+              }
+          }
+            if (empty($_REQUEST["email"])) {
+                $emailErr = "Campo obligatorio.";
+            }else{
+                $email = test_input($_REQUEST["email"]);
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $emailErr = "Formato de email inválido.";
+                }
+            }
+                if (!empty($_REQUEST["comentarios"])) {
+                $comentarios = test_input($_REQUEST["comentarios"]);
+            }
+        }
+        function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+    ?>
     
-
-
-       
-
- 
-  
-       
-          
-        
-
-
-
-?>
 </body>
 </html>
