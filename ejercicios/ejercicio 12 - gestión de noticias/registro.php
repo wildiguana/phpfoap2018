@@ -25,7 +25,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
           <li class="nav-item">
-              <a class="nav-link" href=""target="_blank"><button type="button" 
+              <a class="nav-link" href="indice.php"target="_blank"><button type="button" 
                 class="btn btn-default btn-warning">Volver a inicio</a>
           </button></a>
           </li>

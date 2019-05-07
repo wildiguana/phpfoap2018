@@ -1,3 +1,20 @@
+<?php
+session_start();
+if(isset($_REQUEST["logout"])){
+    session_destroy(); 
+    setcookie("password",0,1);
+    setcookie("usuario",0,1);
+    header('Location:indice.php');           
+}
+if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
+?>
+
+<?php
+}else{
+    header('Location:indice.php');           
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +50,7 @@
             <a class="nav-link" href="#"><button type="button" class="btn btn-default btn-danger">Borrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><button type="button" class="btn btn-default btn-warning">Cerrar sesión</a>
+          <a href="indice.php?logout"><button type="button" class="btn btn-default btn-warning">Cerrar sesión</a>
         </button></a>
           </li>
         </ul>
@@ -45,8 +62,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Gestión de noticias</h1>
-        <p class="lead">Página</p>
+        <h1 class="mt-5">
+       Bienvenido <?=$_SESSION["nom"]?>
+
+a Gestión de Noticias</h1>
+        <p class="lead">Tu portal</p>
         <ul class="list-unstyled">
           <li>Inicio</li>
           
@@ -62,12 +82,5 @@
   <script src="jquery/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-       
-          
-        
-<?php
-
-
-?>
 </body>
 </html>

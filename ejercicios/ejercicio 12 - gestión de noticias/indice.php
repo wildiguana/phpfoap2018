@@ -1,3 +1,38 @@
+<?php
+session_start();
+$error="";
+if(isset($_SESSION["login"])){
+    header('Location:menu.php');           
+}
+if(isset($_COOKIE["password"])){
+    if($_COOKIE["password"]==1234){
+        $_SESSION["login"]=true;
+        $_SESSION["nom"]=$_COOKIE["usuario"];
+        header('Location:menu.php');  
+    }else{
+        $error="Datos erróneos";
+    }
+         
+}
+if(isset($_REQUEST["submit"])){
+        if($_REQUEST["password"]=="1234"){
+            $_SESSION["login"]=true;
+            $_SESSION["nom"]=$_REQUEST["usuario"];
+            if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
+                setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
+                setcookie("nomusuari",$_REQUEST["usuario"],time()+365*24*60*60);
+            }
+            header('Location: menu.php');           
+        }else{
+            $error="Usuario o contraseña incorrecta.";
+            /*se mantiene en la página
+            header('Location: indice.php');*/
+          }
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,22 +75,26 @@
       <h1 class="mt-5">Gestión de noticias</h1>
         <h4 class="mt-5"><u>INTRODUZCA SUS DATOS</u></h4>
 </div>
+
+<?php=$error?>
         <ul class="list-unstyled">
         
           <form method="post">
 
           <div class="form-group">
   <label for="usr"><h4>Usuario:</h4></label>
-  <input type="text" class="form-control" id="">
+  <input type="text" name="usuario" id="">
 </div>
 <div class="form-group">
   <label for="pwd"><h4>Contraseña:</h4></label>
-  <input type="password" class="form-control" id="">
+  <input type="password" name="password" id="">
   <br>
-  <input type="submit" class="btn btn-outline-success" name="submit" value="Enviar">
+  Recordar: <input type="checkbox" name="recordar" value="1"><br>
+  <br>
+  <input type="submit" class="btn btn-outline-success" name="submit" value="Registrar">
 </div>
         <li><h4>No está registrado?</h4></li>
-        <a class="nav-link" href="#registro.html" target="_blank"><button type="button" 
+        <a class="nav-link" href="registro.php" ><button type="button" 
         class="btn btn-outline-dark">Regístrese aquí</button></a>
 
         </ul>
@@ -70,9 +109,6 @@
        
           
         
-<?php
 
-
-?>
 </body>
 </html>
