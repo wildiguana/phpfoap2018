@@ -74,7 +74,7 @@ if(isset($_REQUEST["submit"])){
         <h4 class="mt-5"><u>INTRODUZCA SUS DATOS</u></h4>
 </div>
 
-<?php=$error?>
+
         <ul class="list-unstyled">
         
           <form method="post">
