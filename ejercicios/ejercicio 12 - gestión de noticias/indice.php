@@ -71,7 +71,7 @@ if(isset($_REQUEST["submit"])){
     <div class="row">
       <div class="col-lg-12 text-center">
       <h1 class="mt-5">Gestión de noticias</h1>
-        <h4 class="mt-5"><u>INTRODUZCA SUS DATOS</u></h4>
+        <h4 class="mt-5"><u>Acceso usuarios registrados</u></h4>
 </div>
 
 
