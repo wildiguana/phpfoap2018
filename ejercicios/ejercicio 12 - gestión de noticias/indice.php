@@ -1,40 +1,34 @@
 <?php
 session_start();
 $error="";
-if(isset($_SESSION["login"]) && $_SESSION["login"]==true){
-  if($_REQUEST["password"]==md5("1234")){
-    header('Location:menu.php');           
-}
+if(isset($_SESSION["login"])){
+    header('Location:indice.php');           
 }
 if(isset($_COOKIE["password"])){
-    if($_COOKIE["pwrdcookie"]==md5("1234")){
+    if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
-        $_SESSION["nom"]=$_COOKIE["usuario"];
-        $_SESSION["passwordOk"]=$_COOKIE^["pwrdcookie"];
-        header('Location:menu.php');  
+        $_SESSION["usu"]=$_COOKIE["datosusuario"];
+        header('Location:ejemplo_privado.php');  
     }else{
-        $error="Datos erróneos";
+        $error="credenciales incorrectas";
     }
          
 }
 if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
-            $_SESSION["nom"]=$_REQUEST["usuario"];
-            $_SESSION["passwordOk"]=md5("1234");
+            $_SESSION["usu"]=$_REQUEST["usuario"];
             if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                 setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
-                setcookie("nomusuari",$_REQUEST["usuario"],time()+365*24*60*60);
+                setcookie("datousuario",$_REQUEST["usuario"],time()+365*24*60*60);
             }
-            header('Location: menu.php');           
+            header('Location:ejemplo_privado.php');           
         }else{
             $error="Usuario o contraseña incorrecta.";
-            //se mantiene en la página
-            header('Location: indice.php');
-          }
-
+        }
 }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -77,10 +71,10 @@ if(isset($_REQUEST["submit"])){
     <div class="row">
       <div class="col-lg-12 text-center">
       <h1 class="mt-5">Gestión de noticias</h1>
-        <h4 class="mt-5"><u>INTRODUZCA SUS DATOS</u></h4>
+        <h4 class="mt-5"><u>Acceso usuarios registrados</u></h4>
 </div>
 
-<?php=$error?>
+
         <ul class="list-unstyled">
         
           <form method="post">
