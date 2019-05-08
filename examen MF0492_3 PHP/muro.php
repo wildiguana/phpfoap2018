@@ -8,19 +8,30 @@
   <meta name="description" content="examen mf0492_3">
   <meta name="author" content="jose o.">
 
-  <title>Examen MF0492_3 - PHP</title>
+  <title>Examen MF0492_3 - PHP - muro</title>
 
-  <!-- Bootstrap core CSS -->
+   <!-- Archivo principal CSS para Bootstrap -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Hoja de estilo para personalizar la plantilla -->
   <link href="css/blog-home.css" rel="stylesheet">
 
+  <!--script contador likes-->
+  <script type="text/javascript">
+var i = 0;
+ 
+function contador()
+{
+i = i + 1;
+var btn = document.getElementById("boton");
+btn.value = "Dale un like!!! (" + i + ")";
+}
+</script>
 </head>
 
 <body>
 
-  <!-- Navigation -->
+  <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="">OwnNetWorK</a>
@@ -33,31 +44,29 @@
             <a class="nav-link">Tu propia red
               <span class="sr-only">(current)</span>
             </a>
-          <!--</li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link">Bienvenido <?=$_SESSION["nom"]?></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+          <a href="indice.php?logout"><button type="button" 
+          class="btn btn-default btn-warning">Cerrar sesión</a>
+        </button></a>
           </li>
-        </ul>-->
+        </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Page Content -->
+    <!-- Cuerpo de la página privada/muro -->
   <div class="container">
 
     <div class="row">
 
         
-      <!-- Blog Entries Column -->
+      <!-- Entradas publicadas -->
       <div class="col-md-8">
 
-        <h1 class="my-4">OwnNetWorK -
+        <!--<h1 class="my-4">OwnNetWorK -
           <small>Usuario registrado</small>
         </h1>
 
@@ -82,9 +91,35 @@
           <a class="nav-link" href="registro.php" ><button type="button" 
           class="btn btn-outline-dark">Crear usuario</button></a>
   
-          </ul>
+          </ul>-->
 
-        <!-- Blog Post
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="imgs/hashtag-finder.gif" alt="buscador de hashtags">
+          <div class="card-body">
+            <h2 class="card-title">Postcron: Buscador de hashtags</h2>
+            <p class="card-text">#gardening #plants #flower #jardin #mygarden 
+                #plant #succulent #succulents #instagarden #garten #gardens 
+                #flowerstagram #flowersofinstagram #instaflower #cactus... te suena?
+                Postcron el buscador de hashtags que necesitas para tus posts. 
+                Encuentra rápidamente #hashtags relacionados a partir de un 
+                término o palabra clave para aplicarlos en tus posts de 
+                Instagram, Facebook y Twitter!<br>
+                Con esta herramienta podrás aplicar #hashtags relacionados de 
+                manera simple y lograrás que tus posts ganen alcance e 
+                interacción.</p>
+                <a>Te ha gustado el artículo? &rarr;</a>
+                    <input type="button" id="boton"class="btn btn-primary" 
+                    value="Dale un like!!!" onclick="javascript: contador()" />
+              </div>
+          <div class="card-footer text-muted">
+            Comentado el 30 de febrero de 2016 por
+            <a href="https://postcron.com/es/blog/landings/buscador-de-hashtags/">
+            HashTagsKilah</a>
+          </div>
+        </div>
+
+        <!-- Blog Post -->
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
@@ -98,7 +133,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 
+        <!-- Blog Post -->
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
@@ -112,38 +147,25 @@
           </div>
         </div>
 
-        <!-- Blog Post 
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posted on January 1, 2017 by
-            <a href="#">Start Bootstrap</a>
-          </div>
-        </div>
-
-        <!-- Pagination 
+       
+       <!-- Extras -->
+        <!-- Búsqueda antiguos/nuevos -->
         <ul class="pagination justify-content-center mb-4">
           <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
+            <a class="page-link" href="#">&larr; Anteriores</a>
           </li>
           <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
+            <a class="page-link" href="#">Recientes &rarr;</a>
           </li>
-        </ul>-->
+        </ul>
 
       </div>
 
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+       <div class="col-md-4">
 
-        <!-- Search Widget -->
+        <!-- Buscar contactos agendados -->
         <div class="card my-4">
-          <h5 class="card-header">Ver quien está en la red</h5>
+          <h5 class="card-header">Buscar contactos</h5>
           <div class="card-body">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Buscar...">
@@ -154,7 +176,7 @@
           </div>
         </div>
 
-        <!-- Categories Widget-->
+        <!-- Trending topics-->
         <div class="card my-4">
           <h5 class="card-header">Hot topics</h5>
           <div class="card-body">
@@ -198,11 +220,9 @@
 
     </div>
     <!-- /.row -->
-
   </div>
-  <!--<container -->
-
-  <!-- Footer -->
+  
+  <!-- Footer - pie de página con aviso legal -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">AVISO LEGAL:
@@ -213,10 +233,9 @@
         cancelación y oposición en: YOURSELF, S.L., C/NS/NC Nº 5, 08000 – JAEN. 
         Your Website 2019</p>
     </div>
-    <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
+  <!-- Archivos principales Javascript y Bootstrap -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
