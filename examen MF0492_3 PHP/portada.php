@@ -2,13 +2,13 @@
 session_start();
 $error="";
 if(isset($_SESSION["login"])){
-    header('Location:indice.php');           
+    header('Location:portada.php');           
 }
 if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
-        $_SESSION["usu"]=$_COOKIE["datosusuario"];
-        header('Location:ejemplo_privado.php');  
+        $_SESSION["nom"]=$_COOKIE["nomusuari"];
+        header('Location:portada.php');  
     }else{
         $error="credenciales incorrectas";
     }
@@ -17,19 +17,17 @@ if(isset($_COOKIE["password"])){
 if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
-            $_SESSION["usu"]=$_REQUEST["usuario"];
+            $_SESSION["nom"]=$_REQUEST["username"];
             if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                 setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
-                setcookie("datousuario",$_REQUEST["usuario"],time()+365*24*60*60);
+                setcookie("nomusuari",$_REQUEST["username"],time()+365*24*60*60);
             }
-            header('Location:ejemplo_privado.php');           
+            header('Location:muro.php');           
         }else{
             $error="Usuario o contraseña incorrecta.";
         }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -37,7 +35,7 @@ if(isset($_REQUEST["submit"])){
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="examen mf0492_3">
+  <meta name="portada" content="portada">
   <meta name="author" content="jose o.">
 
   <title>Examen MF0492_3 - PHP - portada</title>
@@ -52,10 +50,13 @@ if(isset($_REQUEST["submit"])){
 
 <body>
 
+
+
+
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="">OwnNetWorK</a>
+      <a class="navbar-brand" href="">OwnNetWorK</a><img class="img-fluid rounded" src="imgs/own_logo_cabecera.jpg" alt="logo">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,7 +77,7 @@ if(isset($_REQUEST["submit"])){
       <!-- Formulario de login -->
       <div class="col-md-8">
         <h1 class="my-4">OwnNetWorK -
-          <small>Usuario registrado</small>
+          <small>Acceso usuarios</small>
         </h1>
          <ul class="list-unstyled">
             <form method="post">
@@ -94,10 +95,10 @@ if(isset($_REQUEST["submit"])){
                     <input type="submit" class="btn btn-outline-success" 
                     name="submit" value="Acceso">
               </div>
-                <li><h4>No tienes usuario?</h4></li>
+                <li><h4>No estás registrado?</h4></li>
                    <a class="nav-link" href="registro.php" >
                        <button type="button" class="btn btn-outline-dark">
-                           Crear usuario</button></a>
+                           Únete hoy</button></a>
             </ul>
         </div>
 
@@ -125,7 +126,7 @@ if(isset($_REQUEST["submit"])){
               <div class="col-lg-6">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="https://twitter.com/trendinaliaes">twitter</a>
+                    <a href="https://twitter.es/">twitter</a>
                   </li>
                   <li>
                     <a href="https://www.hashtags.org/">hashtags</a>
@@ -142,6 +143,9 @@ if(isset($_REQUEST["submit"])){
                   </li>
                   <li>
                     <a href="https://www.peoplebrowsr.com/">people browser</a>
+                  </li>
+                  <li>
+                    <a href="https://www.trendinalia.com/twitter-trending-topics/spain/spain-190508.html">trendinalia</a>
                   </li>
                 </ul>
               </div>
@@ -168,4 +172,5 @@ if(isset($_REQUEST["submit"])){
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
