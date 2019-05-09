@@ -22,7 +22,7 @@ if(isset($_REQUEST["submit"])){
                setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
                setcookie("galleta",$_REQUEST["usuario"],time()+365*24*60*60);
             }
-            header('Location:portada.php');           
+           /* header('Location:portada.php'); */          
         }else{
             $error="Datos de acceso incorrectos.";
         }
