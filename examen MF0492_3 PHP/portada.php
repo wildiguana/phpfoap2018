@@ -112,7 +112,7 @@ if(isset($_REQUEST["submit"])){
           <h5 class="card-header">Ver quien está en la red</h5>
           <div class="card-body">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar..." disabled>
+              <input type="text" class="form-control" placeholder="Buscar...(deshabilitado)" disabled>
               <span class="input-group-btn">
                 <button class="btn btn-secondary" type="button">Ir!</button>
               </span>
