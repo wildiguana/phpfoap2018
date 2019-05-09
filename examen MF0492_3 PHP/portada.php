@@ -7,7 +7,7 @@ if(isset($_SESSION["login"])){
 if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
-        $_SESSION["nom"]=$_COOKIE["nomusuari"];
+        $_SESSION["nom"]=$_COOKIE["galleta"];
         header('Location:portada.php');  
     }else{
         $error="credenciales incorrectas";
@@ -17,12 +17,12 @@ if(isset($_COOKIE["password"])){
 if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
-            $_SESSION["nom"]=$_REQUEST["username"];
+            $_SESSION["nom"]=$_REQUEST["usuario"];
             if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
-                setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
-                setcookie("nomusuari",$_REQUEST["username"],time()+365*24*60*60);
+               /* setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
+                setcookie("galleta",$_REQUEST["usuario"],time()+365*24*60*60);*/
             }
-            header('Location:muro.php');           
+            header('Location:ejemplo_privado.php');           
         }else{
             $error="Usuario o contraseña incorrecta.";
         }
@@ -52,7 +52,6 @@ if(isset($_REQUEST["submit"])){
 
 
 
-
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -69,6 +68,9 @@ if(isset($_REQUEST["submit"])){
         </div>
     </div>
   </nav>
+
+  <?=$error?>
+
 
   <!-- Cuerpo de la página pública -->
   <div class="container">

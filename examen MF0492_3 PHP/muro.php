@@ -31,6 +31,16 @@ btn.value = "Dale un like!!! (" + i + ")";
 
 <body>
 
+    <?php session_start();{
+
+if (isset($_SESSION['nom'])) {
+
+  include ("portada.php");
+}
+    }
+        
+      ?>
+
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -46,7 +56,7 @@ btn.value = "Dale un like!!! (" + i + ")";
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Bienvenido <?=$_SESSION["nom"]?></a>
+            <a class="nav-link"><?php echo "Bienvenido ".$_SESSION["nom"];?></a>
           </li>
           <a href="indice.php?logout"><button type="button" 
           class="btn btn-default btn-warning">Cerrar sesión</a>
