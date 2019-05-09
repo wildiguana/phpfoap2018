@@ -22,7 +22,7 @@ if(isset($_REQUEST["submit"])){
                setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
                setcookie("galleta",$_REQUEST["usuario"],time()+365*24*60*60);
             }
-            header('Location:ejemplo_privado.php');           
+            header('Location:muro.php');           
         }else{
             $error="Usuario o contraseña incorrecta.";
         }
