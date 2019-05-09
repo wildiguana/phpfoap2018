@@ -24,7 +24,7 @@ if(isset($_REQUEST["submit"])){
             }
             header('Location:portada.php');           
         }else{
-            $error="Usuario o contraseña incorrecta.";
+            $error="Datos de acceso incorrectos.";
         }
 }
 ?>
