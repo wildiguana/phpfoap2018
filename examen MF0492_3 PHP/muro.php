@@ -15,6 +15,7 @@
 
   <!-- Hoja de estilo para personalizar la plantilla -->
   <link href="css/blog-home.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css">
 
   <!--script contador likes-->
   <script type="text/javascript">

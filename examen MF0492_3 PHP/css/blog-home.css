@@ -3,6 +3,8 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
  */
+
 body {
-  padding-top: 56px;
+    padding-top: 56px;
+    background-color: rgb(66, 99, 247);
 }
