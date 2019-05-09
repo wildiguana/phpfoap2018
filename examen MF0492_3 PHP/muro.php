@@ -14,8 +14,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Hoja de estilo para personalizar la plantilla -->
-  <link href="css/blog-home.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css">
+  <link href="css/blog-home.css" rel="stylesheet" type="text/css">
 
   <!--script contador likes-->
   <script type="text/javascript">
@@ -268,7 +267,7 @@ En Estados Unidos y otros países, ha habido numerosos casos de victimas que suf
           <h5 class="card-header">Buscar contactos</h5>
           <div class="card-body">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar...">
+              <input type="text" class="form-control" placeholder="Buscar..." disabled>
               <span class="input-group-btn">
                 <button class="btn btn-secondary" type="button">Ir!</button>
               </span>
