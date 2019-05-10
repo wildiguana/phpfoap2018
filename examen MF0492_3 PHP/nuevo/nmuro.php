@@ -11,7 +11,7 @@ if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
 ?>
 Bienvenido......<?=$_SESSION["nom"]?>
 
-<a href="nmuro.php?logout">[logout]</a>
+<a href="nportada.php?logout">[logout]</a>
 <?php
 }else{
     header('Location:nmuro.php');           
