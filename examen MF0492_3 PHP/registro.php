@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-
+<link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="registro" content="registro">
@@ -31,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link">Tu propia red
+            <a class="nav-link"href="portada.php">Tu propia red
               <span class="sr-only">(current)</span>
             </a>
         </div>
@@ -117,6 +116,9 @@
                     $password = test_input($_REQUEST["password"]);
             }
         }
+
+              
+
         function test_input($data) {
             $data = trim($data);
             $data = stripslashes($data);

@@ -1,10 +1,10 @@
 <?php
-  session_start();
-    $error="";
+  session_start();?>
+   <?php $error="";
       if(isset($_SESSION["login"])){
-        header('Location:muro.php');           
+        header('Location:portada.php');           
       }
-      if(isset($_COOKIE["password"])){
+      /*if(isset($_COOKIE["password"])){
           if($_COOKIE["password"]==1234){
             $_SESSION["login"]=true;
             $_SESSION["nom"]=$_COOKIE["password"];
@@ -12,15 +12,15 @@
           }else{
             $error="credenciales incorrectas";
             }
-        }
+        }*/
 if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
             $_SESSION["nom"]=$_REQUEST["usuario"];
-            if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
+            /*if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
                setcookie("password",$_REQUEST["usuario"],time()+365*24*60*60);
-            }
+            }*/
            header('Location:muro.php');        
         }else{
             $error="Datos de acceso incorrectos.";
@@ -32,6 +32,7 @@ if(isset($_REQUEST["submit"])){
 
 <head>
 
+<link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="portada" content="portada">

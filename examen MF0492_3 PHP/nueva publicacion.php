@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php
 if(isset($_REQUEST["submit"])){ 
     print_r($_FILES);
@@ -54,7 +55,7 @@ if(isset($_REQUEST["submit"])){
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Hola <?=$_SESSION["nom"]?></a>
+          <a class="nav-link"><?php echo "Bienvenido ".$_SESSION["nom"];?></a>
           </li>
           <input type="submit" name="submit" value="Envía tus comentarios"
           class="btn btn-outline-success">

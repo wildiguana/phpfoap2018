@@ -1,8 +1,6 @@
 <?php session_start();?>
+
 <!DOCTYPE html>
-
-
-
 <head>
 
 <link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
@@ -34,18 +32,8 @@ btn.value = "Dale un like!!! (" + i + ")";
 
 <body>
 
-
-<?php/*
-if (isset($_SESSION['nom'])) {
-
-  include ("portada.php");
-}
-    
-  */      
-?>
-
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+ <!-- Barra de navegación -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="">OwnNetWorK</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +49,7 @@ if (isset($_SESSION['nom'])) {
           <li class="nav-item">
             <a class="nav-link"><?php echo "Bienvenido ".$_SESSION["nom"];?></a>
           </li>
-          <a href="indice.php?logout"><button type="button" 
+          <a href="nportada.php?logout"><button type="button" 
           class="btn btn-default btn-warning">Cerrar sesión</a>
         </button></a>
           </li>
@@ -106,34 +94,9 @@ if(isset($_REQUEST["submit"])){
 
 ?>
 
-        <!-- Blog Post
-        <div class="card mb-4">
-          <img class="card-img-top" src="imgs/hashtag_finder.gif" alt="buscador de hashtags">
-          <div class="card-body">
-            <h2 class="card-title">Postcron: Buscador de hashtags</h2>
-            <p class="card-text">#gardening #plants #flower #jardin #mygarden 
-                #plant #succulent #succulents #instagarden #garten #gardens 
-                #flowerstagram #flowersofinstagram #instaflower #cactus... te suena?
-                Postcron el buscador de hashtags que necesitas para tus posts. 
-                Encuentra rápidamente #hashtags relacionados a partir de un 
-                término o palabra clave para aplicarlos en tus posts de 
-                Instagram, Facebook y Twitter!<br>
-                Con esta herramienta podrás aplicar #hashtags relacionados de 
-                manera simple y lograrás que tus posts ganen alcance e 
-                interacción.</p>
-                <a>Te ha gustado el artículo? &rarr;</a>
-                    <input type="button" id="boton"class="btn btn-primary" 
-                    value="Dale un like!!!" onclick="javascript: contador()" />
-              </div>
-          <div class="card-footer text-muted">
-            Comentado el 30 de febrero de 2016 por
-            <a href="https://postcron.com/es/blog/landings/buscador-de-hashtags/">
-            HashTagsKilah</a>
-          </div>
-        </div>-->
 
          <!-- Page Content -->
-  <div class="container">
+         <div class="container">
 
 <div class="row">
 
@@ -375,3 +338,7 @@ En Estados Unidos y otros países, ha habido numerosos casos de victimas que suf
 </body>
 
 </html>
+
+<?php
+}
+?>
