@@ -1,8 +1,8 @@
 <?php
 session_start();
-$error="";
+/*$error="";
 if(isset($_SESSION["login"])){
-    header('Location:portada.php');           
+    header('Location:inicio.php');           
 }
 /*if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
@@ -21,8 +21,8 @@ if(isset($_REQUEST["submit"])){
             /*if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                setcookie("galleta",$_REQUEST["password"],time()+365*24*60*60);
                setcookie("galleta",$_REQUEST["usuario"],time()+365*24*60*60);
-            }
-           header('Location:muro.php'); */         
+            }*/
+           header('Location:muro.php');        
         }else{
             $error="Datos de acceso incorrectos.";
         }
