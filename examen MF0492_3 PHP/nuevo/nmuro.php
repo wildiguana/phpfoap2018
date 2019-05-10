@@ -1,6 +1,6 @@
 <?php session_start();
 
-session_start();
+
 if(isset($_REQUEST["logout"])){
     session_destroy(); 
     setcookie("password",0,1);
