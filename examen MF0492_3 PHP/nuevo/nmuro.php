@@ -66,6 +66,9 @@ btn.value = "Dale un like!!! (" + i + ")";
             </a>
           </li>
           <li class="nav-item">
+          <?php if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
+?>
+Bienvenido......<?=$_SESSION["nom"]?>
             <a class="nav-link"><?php echo "Bienvenido ".$_SESSION["nom"];?></a>
           </li>
           <a href="nportada.php?logout"><button type="button" 
