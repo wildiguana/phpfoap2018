@@ -95,8 +95,8 @@ Bienvenido......<?=$_SESSION["nom"]?>
 
 
 
-       <?php
-       /*
+       
+       <!--
 if(isset($_REQUEST["submit"])){ 
     print_r($_FILES);
     echo "<br>^<br>";
@@ -115,7 +115,7 @@ if(isset($_REQUEST["submit"])){
     }
 }else{
 */
-       ?>
+       
 
 
          <!-- Page Content -->
@@ -361,4 +361,5 @@ En Estados Unidos y otros países, ha habido numerosos casos de victimas que suf
 </body>
 
 </html>
-
+}
+}
