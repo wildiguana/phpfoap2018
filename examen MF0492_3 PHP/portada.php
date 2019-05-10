@@ -1,6 +1,6 @@
 <?php
 session_start();
-/rror="";
+$error="";
 /*if(isset($_SESSION["login"])){
     header('Location:inicio.php');           
 }
