@@ -55,7 +55,7 @@ btn.value = "Dale un like!!! (" + i + ")";
           </li>
           <li class="nav-item">
           
-            <a class="nav-link"><?php echo "Bienvenido ".$_SESSION["nom"];?></a>
+            <a class="nav-link"></a>
           </li>
           <a href="nportada.php?logout"><button type="button" 
           class="btn btn-default btn-warning">Cerrar sesión</a>
