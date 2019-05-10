@@ -14,7 +14,7 @@ Bienvenido......<?=$_SESSION["nom"]?>
 <a href="nportada.php?logout">[logout]</a>
 <?php
 }else{
-    header('Location:nportada.php');           
+    header('Location:nmuro.php');           
 }
 ?>*/
 
