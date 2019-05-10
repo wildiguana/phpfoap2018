@@ -8,3 +8,7 @@ body {
     padding-top: 56px;
     background-color: rgb(66, 99, 247);
 }
+
+#form-control {
+    opacity: 0.2;
+}
