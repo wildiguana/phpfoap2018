@@ -1,7 +1,7 @@
 <?php
 session_start();
-/*$error="";
-if(isset($_SESSION["login"])){
+/rror="";
+/*if(isset($_SESSION["login"])){
     header('Location:inicio.php');           
 }
 /*if(isset($_COOKIE["password"])){
