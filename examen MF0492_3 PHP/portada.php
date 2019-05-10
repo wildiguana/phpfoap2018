@@ -2,13 +2,13 @@
 session_start();
 $error="";
 if(isset($_SESSION["login"])){
-    header('Location:muro.php');           
+    header('Location:portada.php');           
 }
 if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
         $_SESSION["nom"]=$_COOKIE["galleta"];
-        header('Location:ejemplo.php');  
+        header('Location:muro.php');  
     }else{
         $error="credenciales incorrectas";
     }
@@ -19,10 +19,10 @@ if(isset($_REQUEST["submit"])){
             $_SESSION["login"]=true;
             $_SESSION["nom"]=$_REQUEST["usuario"];
             if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
-               setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
+               setcookie("galleta",$_REQUEST["password"],time()+365*24*60*60);
                setcookie("galleta",$_REQUEST["usuario"],time()+365*24*60*60);
             }
-           /* header('Location:portada.php'); */          
+           header('Location:muro.php');          
         }else{
             $error="Datos de acceso incorrectos.";
         }
