@@ -1,7 +1,7 @@
 <?php session_start();
 
 
-if(isset($_REQUEST["logout"])){
+/*if(isset($_REQUEST["logout"])){
     session_destroy(); 
     setcookie("password",0,1);
     setcookie("nomusuari",0,1);
@@ -15,7 +15,7 @@ Bienvenido......<?=$_SESSION["nom"]?>
 <?php
 }else{
     header('Location:nportada.php');           
-}
+}*/
 ?>*/
 
 
