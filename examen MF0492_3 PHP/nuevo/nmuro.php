@@ -1,7 +1,5 @@
 <?php session_start();
-if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
-  ?>
-  Bienvenido......<?=$_SESSION["nom"]?>
+?>
  
 
 
@@ -312,20 +310,6 @@ En Estados Unidos y otros países, ha habido numerosos casos de victimas que suf
             </div>
           </div>
         </div>
-
-        <!-- Side Widget 
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- /.row -->
-  </div>
   
   <!-- Footer - pie de página con aviso legal -->
   <footer class="py-5 bg-dark">
@@ -346,4 +330,3 @@ En Estados Unidos y otros países, ha habido numerosos casos de victimas que suf
 
 </body>
 </html>
-<?}
