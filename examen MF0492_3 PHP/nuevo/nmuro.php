@@ -5,7 +5,7 @@ if(isset($_REQUEST["logout"])){
     session_destroy(); 
     setcookie("password",0,1);
     setcookie("nomusuari",0,1);
-    header('Location:nmuro.php');           
+    header('Location:nportada.php');           
 }
 if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
 ?>
