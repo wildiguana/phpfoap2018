@@ -73,7 +73,8 @@ btn.value = "Dale un like!!! (" + i + ")";
 
 
 
-        <?php
+       <?php
+       /*
 if(isset($_REQUEST["submit"])){ 
     print_r($_FILES);
     echo "<br>^<br>";
@@ -91,8 +92,8 @@ if(isset($_REQUEST["submit"])){
         echo "¡error!\n";
     }
 }else{
-
-?>
+*/
+       ?>
 
 
          <!-- Page Content -->
