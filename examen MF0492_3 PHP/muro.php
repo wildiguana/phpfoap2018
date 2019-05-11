@@ -200,9 +200,9 @@
 
           <!-- Comment with nested comments -->
           <div class="media mb-4">
-            <p><u><i>Marta</i></u></p>
+            <p><u><i>Marta___</i></u></p>
             <div class="media-body">
-              <h5 class="mt-0">   Revolución en Egipto</h5>
+              <h5 class="mt-0">Revolución en Egipto</h5>
                 <p>
                   <br>
                   En Egipto no hace mucho se desató una revolución que terminó por derrocar al gobierno. Ese fenómeno fue gracias 
