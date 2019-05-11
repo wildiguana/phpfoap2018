@@ -196,7 +196,7 @@
                 <div class="form-group">
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
-                <input type="submit" id="boton1"class="btn btn-primary" value="Enviar" onclick="javascript: contador1()" />
+                <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="javascript: contador1()" />
               </form>
             </div>
           </div>
