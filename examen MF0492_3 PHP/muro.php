@@ -49,6 +49,20 @@
                   var btn = document.getElementById("boton3");
                     btn.value = "Gracias! (" + i + ")";
                 }
+
+                //muestra contadores//
+               function muestra(){
+                 var visual = document.createElement ("li");
+                 var texto = document.createTextNode (btn.value);
+                 visual.appendChild(texto);
+
+                 var lista = document.getElementById ("lista");
+                 lista.appendChild(visual);
+
+                 var nuevoVisual ="<li>Contador</li>";
+                 lista.innerHTML = lista.innerHTML + nuevoVisual;
+
+               }
           </script>
       </head>
 
@@ -217,7 +231,7 @@
                 </p>
                   <img src="http://placehold.it/150x100" alt=""> 
                   <br>
-                    <input type="button" id="boton2"class="btn btn-primary" value="Click si te gustó" onclick="javascript: contador2()"/>
+                    <input type="button" id="boton2"class="btn btn-primary" value="Click si te gustó" onclick="contador2()"/>
             </div>
           </div>
           
@@ -236,7 +250,7 @@
                 </p>
                   <img src="http://placehold.it/150x100" alt=""> 
                   <br>
-                   <input type="button" id="boton3"class="btn btn-primary" value="Click si te gustó" onclick="javascript: contador3()"/>
+                   <input type="button" id="boton3"class="btn btn-primary" value="Click si te gustó" onclick="contador3()"/>
               
               <div class="media mt-4">
               <p><u><i>Lucas___</i></u></p>
@@ -338,18 +352,25 @@
                 </div>
               </div>
 
-              <!-- Side Widget 
+              <!-- Side Widget -->
               <div class="card my-4">
                 <h5 class="card-header">Side Widget</h5>
                 <div class="card-body">
-                  You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+                 <div id="contador">
+                  <ul id="lista">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetuer adipiscing elit</li>
+                    <li>Sed mattis enim vitae orci</li>
+                    <li>Phasellus libero</li>
+                    <li>Maecenas nisl arcu</li>
+                  </ul>
                 </div>
               </div>
 
             </div>
 
           </div>
-          /.row -->
+      
         </div>
         
         <!-- Footer - pie de página con aviso legal -->
