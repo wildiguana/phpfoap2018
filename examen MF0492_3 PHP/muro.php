@@ -188,14 +188,17 @@
           <div class="card my-4">
             <h5 class="card-header">Deja tu comentario:</h5>
             <div class="card-body">
-              <form>
+              <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Introduce el título">
                 </div>
                 <div>
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
-                <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="javascript: contador1()" />
+                <div>
+                  <input type="file" name="archivo">
+                </div>
+                <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()" />
               </form>
             </div>
           </div>
