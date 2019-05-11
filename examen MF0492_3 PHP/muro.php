@@ -170,7 +170,7 @@
                 </p>
 
               <footer class="blockquote-footer">Your Self
-                <cite title="Extraído de">About español</cite>
+                <cite title="Extraído de">About Español</cite>
                 </footer>
               </blockquote>
 
@@ -190,6 +190,9 @@
             <div class="card-body">
               <form>
                 <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Introduce el título">
+                </div>
+                <div>
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
                 <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="javascript: contador1()" />
