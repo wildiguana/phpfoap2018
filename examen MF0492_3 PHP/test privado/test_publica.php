@@ -8,7 +8,7 @@ if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
         $_SESSION["nom"]=$_COOKIE["nomusuari"];
-        header('Location:ejemplo_privado.php');  
+        header('Location:test_privado.php');  
     }else{
         $error="credenciales incorrectas";
     }
