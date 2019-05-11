@@ -158,20 +158,6 @@
                 </footer>
               </blockquote>
 
-          <p>Uso y abuso de las redes sociales<br>
-            Utilizar facebook a diario puede ser una arma de doble filo. Dicha red social, al igual que twitter, constituye un herramienta 
-            masiva y poderosa de comunicación. Y obviamente, la calidad de las comunicaciones, es decir, de lo que se transmite, depende 
-            enteramente de las personas. Una red social puede servir, en pocas palabras, para realizar acciones buenas y honrosas, o para 
-            realizar acciones malas que terminan causando daño. En Egipto no hace mucho se desató una revolución que terminó por derrocar 
-            al gobierno. Ese fenómeno fue gracias, en parte, a la expansión y publicidad de los ciudadanos de ese país a través de las 
-            redes sociales. Lo que suele ocurrir es que muchos jóvenes, inconscientes en la mayoría de las veces, realizan un uso abusivo 
-            o mal uso de estas herramientas digitales. Un caso sería en lo que respecta a la privacidad. Internet es un mundo abierto, 
-            público, y donde nunca se puede saber con certeza que tan seguros se encuentran allí  nuestros datos. Borja al respecto señala 
-            "el principal problema de las redes sociales es la privacidad. Hoy en dia lo que implica este término se está perdiendo con la 
-            inclusión de las redes sociales. Cuando subimos fotos o cuando suben fotos en las que salimos, cuando mostramos información 
-            sobre donde vivimos...
-            <p>
-
           <p>El uso negativo de las redes<br>
             Con el paso del tiempo, las redes sociales comenzaron a ser utilizados no solo de una manera correcta, sino que también se ha 
             prestado para causar daños a otras personas. Existen datos que grupos criminales estudian y espían las redes sociales, para 
@@ -205,8 +191,14 @@
           <div class="media mb-4">
             <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
             <div class="media-body">
-              <h5 class="mt-0">Anónimo</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              <h5 class="mt-0">Uso y abuso de las redes sociales</h5>
+                <p>
+                <br>
+                  Utilizar facebook a diario puede ser una arma de doble filo. Dicha red social, al igual que twitter, constituye una 
+                  herramienta masiva y poderosa de comunicación. Y obviamente, la calidad de las comunicaciones, es decir, de lo que 
+                  se transmite, depende enteramente de las personas. Una red social puede servir, en pocas palabras, para realizar 
+                  acciones buenas y honrosas, o para realizar acciones malas que terminan causando daño. 
+                  <p>
             </div>
           </div>
           
@@ -215,14 +207,27 @@
           <div class="media mb-4">
             <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
             <div class="media-body">
-              <h5 class="mt-0">Anónimo</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
+              <h5 class="mt-0">Revolución en Egipto</h5>
+                <p>
+                  <br>
+                  En Egipto no hace mucho se desató una revolución que terminó por derrocar al gobierno. Ese fenómeno fue gracias, 
+                  en parte, a la expansión y publicidad de los ciudadanos de ese país a través de las redes sociales. Lo que suele 
+                  ocurrir es que muchos jóvenes, inconscientes en la mayoría de las veces, realizan un uso abusivo o mal uso de 
+                  estas herramientas digitales. 
+                </p>
+              
               <div class="media mt-4">
                 <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                 <div class="media-body">
-                  <h5 class="mt-0">Anónimo</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">La privacidad</h5>
+                    <p>
+                      <br>
+                      Un caso sería en lo que respecta a la privacidad. Internet es un mundo abierto, público, y donde nunca se 
+                      puede saber con certeza que tan seguros se encuentran allí  nuestros datos. Borja al respecto señala "el 
+                      principal problema de las redes sociales es la privacidad. Hoy en dia lo que implica este término se está 
+                      perdiendo con la inclusión de las redes sociales. Cuando subimos fotos o cuando suben fotos en las que 
+                      salimos, cuando mostramos información sobre donde vivimos...
+                    </p>
                 </div>
               </div>
 
