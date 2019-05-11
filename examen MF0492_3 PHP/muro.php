@@ -32,7 +32,7 @@
               {
                 i = i + 1;
                   var btn = document.getElementById("boton1");
-                    btn.value = "Enviar (" + i + ")";
+                    btn.value = "Comentarios recibidos (" + i + ")";
                 }
                 //contador likes comentarios//
               var i = 0;
@@ -198,7 +198,7 @@
                 <div>
                   <input type="file" name="archivo">
                 </div>
-                <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()" />
+                <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()"/>
               </form>
             </div>
           </div>
