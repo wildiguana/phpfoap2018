@@ -25,6 +25,7 @@
                 i = i + 1;
                   var btn = document.getElementById("boton");
                     btn.value = "Dale un like!!! (" + i + ")";
+                    document.getElementById("contador").innerHTML = btn.value;
                 }
               //contador comentarios//
               var i = 0;
@@ -49,20 +50,6 @@
                   var btn = document.getElementById("boton3");
                     btn.value = "Gracias! (" + i + ")";
                 }
-
-                //muestra contadores//
-               function muestra(){
-                 var visual = document.createElement ("li");
-                 var texto = document.createTextNode [btn.value];
-                 visual.appendChild(texto);
-
-                 var lista = document.getElementById ("lista");
-                 lista.appendChild(visual);
-
-                 var nuevoVisual ="<li>Contador</li>";
-                 lista.innerHTML = lista.innerHTML + nuevoVisual;
-
-               }
           </script>
       </head>
 
@@ -358,11 +345,7 @@
                 <div class="card-body">
                  <div id="contador">
                   <ul id="lista">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetuer adipiscing elit</li>
-                    <li>Sed mattis enim vitae orci</li>
-                    <li>Phasellus libero</li>
-                    <li>Maecenas nisl arcu</li>
+                    
                   </ul>
                 </div>
               </div>
