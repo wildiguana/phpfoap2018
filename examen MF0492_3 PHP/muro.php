@@ -183,7 +183,7 @@
 
           <!-- Single Comment -->
           <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="img/chica.png" alt="laura">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Jorge">
             <div class="media-body">
               <h5 class="mt-0">Uso y abuso de las redes sociales</h5>
                 <p>
@@ -199,7 +199,7 @@
 
           <!-- Comment with nested comments -->
           <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Marta">
             <div class="media-body">
               <h5 class="mt-0">Revolución en Egipto</h5>
                 <p>
@@ -211,7 +211,7 @@
                 </p>
               
               <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Lucas">
                 <div class="media-body">
                   <h5 class="mt-0">La privacidad</h5>
                     <p>
@@ -226,7 +226,7 @@
               </div>
 
               <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Silvia">
                 <div class="media-body">
                   <h5 class="mt-0">Ciberacoso</h5>
                     <p>
