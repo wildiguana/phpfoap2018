@@ -13,6 +13,6 @@ Bienvenido......<?=$_SESSION["nom"]?>
 <a href="ejemplo_privado.php?logout">[logout]</a>
 <?php
 }else{
-    header('Location:ejemplo_login.php');           
+    header('Location:test_publica.php');           
 }
 ?>

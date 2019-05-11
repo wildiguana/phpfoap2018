@@ -18,11 +18,11 @@ if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
             $_SESSION["nom"]=$_REQUEST["username"];
-            if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
+            /*if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                 setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
                 setcookie("nomusuari",$_REQUEST["username"],time()+365*24*60*60);
             }
-            header('Location:test_privado.php');           
+            header('Location:test_privado.php');*/           
         }else{
             $error="Usuario o contraseña incorrecta.";
         }
