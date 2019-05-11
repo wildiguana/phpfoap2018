@@ -2,7 +2,7 @@
 session_start();
 $error="";
 if(isset($_SESSION["login"])){
-    header('Location:ejemplo_privado.php');           
+    header('Location:test_publica.php');           
 }
 if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){

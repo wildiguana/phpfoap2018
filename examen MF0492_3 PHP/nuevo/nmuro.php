@@ -320,7 +320,13 @@ En Estados Unidos y otros países, ha habido numerosos casos de victimas que suf
         formulario serán incluidos en un fichero bajo la responsabilidad de 
         YOURSELF, S.L.. Puede ejercer sus derechos de acceso, rectificación, 
         cancelación y oposición en: YOURSELF, S.L., C/NS/NC Nº 5, 08000 – JAEN. 
-        Your Website 2019</p>
+        Your Website 2019
+        Uso de cookies
+        Este sitio web utiliza cookies para que usted tenga la mejor experiencia 
+        de usuario. Si continúa navegando está dando su consentimiento para la 
+        aceptación de las mencionadas cookies y la aceptación de nuestra política 
+        de cookies, pinche el enlace para mayor información.
+      </p>
     </div>
   </footer>
 
