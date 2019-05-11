@@ -2,7 +2,7 @@
 session_start();
 $error="";
 if(isset($_SESSION["login"])){
-    header('Location:test_publica.php');           
+    header('Location:test_privado.php');           
 }
 /*if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
@@ -13,7 +13,7 @@ if(isset($_SESSION["login"])){
         $error="credenciales incorrectas";
     }*/
          
-}
+
 if(isset($_REQUEST["submit"])){
         if($_REQUEST["password"]=="1234"){
             $_SESSION["login"]=true;
