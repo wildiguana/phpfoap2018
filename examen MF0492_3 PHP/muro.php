@@ -40,7 +40,7 @@
               {
                 i = i + 1;
                   var btn = document.getElementById("boton2");
-                    btn.value = "Enviar (" + i + ")";
+                    btn.value = "Gracias! (" + i + ")";
                 }
           </script>
       </head>
@@ -204,9 +204,7 @@
                 </p>
                   <img src="http://placehold.it/150x100" alt=""> 
                   <br>
-                  <hr>
-                      <input type="button" id="boton2"class="btn btn-primary" value="Like si te gustó" onclick="javascript: contador2()"/>
-                  <hr>
+                    <input type="button" id="boton2"class="btn btn-primary" value="Click si te gustó" onclick="javascript: contador2()"/>
             </div>
           </div>
           
