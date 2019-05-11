@@ -53,7 +53,7 @@
                 //muestra contadores//
                function muestra(){
                  var visual = document.createElement ("li");
-                 var texto = document.createTextNode (btn.value);
+                 var texto = document.createTextNode [btn.value];
                  visual.appendChild(texto);
 
                  var lista = document.getElementById ("lista");
