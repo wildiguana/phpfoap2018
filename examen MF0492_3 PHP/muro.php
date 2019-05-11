@@ -200,7 +200,7 @@
 
           <!-- Comment with nested comments -->
           <div class="media mb-4">
-            <p>Marta</p>
+            <p>Marta</p><br>
             <div class="media-body">
               <h5 class="mt-0">Revolución en Egipto</h5>
                 <p>
@@ -208,7 +208,8 @@
                   En Egipto no hace mucho se desató una revolución que terminó por derrocar al gobierno. Ese fenómeno fue gracias 
                   en parte a la expansión y publicidad de los ciudadanos de ese país a través de las redes sociales. Lo que suele 
                   ocurrir es que muchos jóvenes, inconscientes en la mayoría de las veces, realizan un uso abusivo o mal uso de 
-                  estas herramientas digitales. 
+                  estas herramientas digitales.
+                  <img src="http://placehold.it/150x100" alt=""> 
                 </p>
               
               <div class="media mt-4">
