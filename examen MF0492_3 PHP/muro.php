@@ -1,8 +1,6 @@
 <?php session_start();?>
   <!DOCTYPE html>
 
-
-
     <head>
 
       <link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
@@ -32,23 +30,6 @@
       </head>
 
   <body>
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
