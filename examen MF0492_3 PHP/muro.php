@@ -183,7 +183,7 @@
 
           <!-- Single Comment -->
           <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <p><u><i>Mario___</i></u></p>
             <div class="media-body">
               <h5 class="mt-0">Uso y abuso de las redes sociales</h5>
                 <p>
@@ -192,8 +192,10 @@
                   herramienta masiva y poderosa de comunicación. Y obviamente, la calidad de las comunicaciones es decir, de lo que 
                   se transmite, depende enteramente de las personas. Una red social puede servir en pocas palabras, para realizar 
                   acciones buenas y honrosas, o para realizar acciones malas que terminan causando daño. 
-                  <img src="http://placehold.it/150x100" alt="">
-                  <p>
+                </p>
+                  <img src="http://placehold.it/150x100" alt=""> 
+                  <br>
+                  <br>
             </div>
           </div>
           
@@ -209,13 +211,13 @@
                   en parte a la expansión y publicidad de los ciudadanos de ese país a través de las redes sociales. Lo que suele 
                   ocurrir es que muchos jóvenes, inconscientes en la mayoría de las veces, realizan un uso abusivo o mal uso de 
                   estas herramientas digitales.
-                  <br>
-                  <br>
-                  <img src="http://placehold.it/150x100" alt=""> 
                 </p>
+                  <img src="http://placehold.it/150x100" alt=""> 
+                  <br>
+                  <br>
               
               <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Lucas">
+              <p><u><i>Lucas___</i></u></p>
                 <div class="media-body">
                   <h5 class="mt-0">La privacidad</h5>
                     <p>
@@ -226,11 +228,14 @@
                       perdiendo con la inclusión de las redes sociales. Cuando subimos fotos o cuando suben fotos en las que 
                       salimos, cuando mostramos información sobre donde vivimos..."
                     </p>
+                   <img src="http://placehold.it/150x100" alt=""> 
+                    <br>
+                    <br>
                 </div>
               </div>
 
               <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Silvia">
+              <p><u><i>Silvia___</i></u></p>
                 <div class="media-body">
                   <h5 class="mt-0">Ciberacoso</h5>
                     <p>
@@ -239,10 +244,12 @@
                       Es lo que ahora se denomina como ciberacoso. En Estados Unidos y otros países, ha habido numerosos casos de 
                       victimas que sufrieron un interminable acoso a traves de los medios digitales, causádoles un terrible daño 
                       psicológico a dichas personas incluso, impulsando al suicidio.
-                    </p>
+                      </p>
+                        <img src="http://placehold.it/150x100" alt=""> 
+                        <br>
+                        <br>
                 </div>
               </div>
-
             </div>
           </div>
 
