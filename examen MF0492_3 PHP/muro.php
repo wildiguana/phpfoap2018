@@ -183,7 +183,7 @@
 
           <!-- Single Comment -->
           <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="Jorge">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
             <div class="media-body">
               <h5 class="mt-0">Uso y abuso de las redes sociales</h5>
                 <p>
@@ -192,6 +192,7 @@
                   herramienta masiva y poderosa de comunicación. Y obviamente, la calidad de las comunicaciones es decir, de lo que 
                   se transmite, depende enteramente de las personas. Una red social puede servir en pocas palabras, para realizar 
                   acciones buenas y honrosas, o para realizar acciones malas que terminan causando daño. 
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/150x100" alt="">
                   <p>
             </div>
           </div>
