@@ -17,7 +17,7 @@
         <!-- Hoja de estilo para personalizar la plantilla -->
         <link href="css/blog-home.css" rel="stylesheet" type="text/css">
 
-        <!--script contador likes-->
+        <!--script contadores: likes-->
         <script type="text/javascript">
             var i = 0;
               function contador()
@@ -25,6 +25,14 @@
                 i = i + 1;
                   var btn = document.getElementById("boton");
                     btn.value = "Dale un like!!! (" + i + ")";
+                }
+              //contador comentarios//
+              var i = 0;
+              function contador1()
+              {
+                i = i + 1;
+                  var btn = document.getElementById("boton1");
+                    btn.value = "Enviar (" + i + ")";
                 }
           </script>
       </head>
@@ -188,7 +196,7 @@
                 <div class="form-group">
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <input type="submit" id="boton1"class="btn btn-primary" value="Enviar" onclick="javascript: contador1()" />
               </form>
             </div>
           </div>
