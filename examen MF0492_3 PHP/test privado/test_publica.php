@@ -2,7 +2,7 @@
 session_start();
 $error="";
 if(isset($_SESSION["login"])){
-    header('Location:test_privado.php');           
+    header('Location:test_publica.php');           
 }
 /*if(isset($_COOKIE["password"])){
     if($_COOKIE["password"]==1234){
@@ -21,8 +21,8 @@ if(isset($_REQUEST["submit"])){
             /*if(isset($_REQUEST["recordar"])&&$_REQUEST["recordar"]==1){
                 setcookie("password",$_REQUEST["password"],time()+365*24*60*60);
                 setcookie("nomusuari",$_REQUEST["username"],time()+365*24*60*60);
-            }
-            header('Location:test_privado.php');*/           
+            }*/
+            header('Location:test_privado.php');           
         }else{
             $error="Usuario o contraseña incorrecta.";
         }
