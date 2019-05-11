@@ -25,7 +25,7 @@
                 i = i + 1;
                   var btn = document.getElementById("boton");
                     btn.value = "Dale un like!!! (" + i + ")";
-                    document.getElementById("contador").innerHTML = "btn.value = Likes (" + i + ")";
+                    document.getElementById("contador").innerHTML = "Likes (" + i + ")";
                 }
               //contador comentarios//
               var i = 0;
