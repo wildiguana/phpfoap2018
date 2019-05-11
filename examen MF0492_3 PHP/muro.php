@@ -161,17 +161,11 @@
           <p>El uso negativo de las redes<br>
             Con el paso del tiempo, las redes sociales comenzaron a ser utilizados no solo de una manera correcta, sino que también se ha 
             prestado para causar daños a otras personas. Existen datos que grupos criminales estudian y espían las redes sociales, para 
-            por ejemplo, secuestrar a una persona. En lo que respecta a los jóvenes, se ha vuelto frecuente utilizar estos espacios como 
-            herramienta de acoso. Es lo que ahora se denomina como ciberacoso. En Estados Unidos y otros países, ha habido numerosos casos 
-            de victimas que sufrieron un interminable a traves de los medios digitales, causando un terrible daño psicológico a dichas 
-            personas, incluso, impulsando al suicidio.
+            por ejemplo, secuestrar a una persona.
             </p>
-
               <hr>
-
             <a>Te ha gustado el artículo? &rarr;</a>
               <input type="button" id="boton"class="btn btn-primary" value="Dale un like!!!" onclick="javascript: contador()" />
-
               <hr>
 
           <!-- Comentarios -->
@@ -234,8 +228,14 @@
               <div class="media mt-4">
                 <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                 <div class="media-body">
-                  <h5 class="mt-0">Anónimo</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Ciberacoso</h5>
+                    <p>
+                      <br>
+                      En lo que respecta a los jóvenes, se ha vuelto frecuente utilizar estos espacios como herramienta de acoso. 
+                      Es lo que ahora se denomina como ciberacoso. En Estados Unidos y otros países, ha habido numerosos casos de 
+                      victimas que sufrieron un interminable a traves de los medios digitales, causando un terrible daño psicológico 
+                      a dichas personas, incluso, impulsando al suicidio.
+                    </p>
                 </div>
               </div>
 
@@ -245,11 +245,11 @@
             <!-- Extras -->
               <!-- Búsqueda antiguos/nuevos -->
               <ul class="pagination justify-content-center mb-4">
-                <li class="page-item">
-                  <a class="page-link" href="#">&larr; Anteriores</a>
+                <li class="page-item disabled">
+                  <a class="page-link" href="#">&larr; Post anteriores</a>
                 </li>
                 <li class="page-item disabled">
-                  <a class="page-link" href="#">Recientes &rarr;</a>
+                  <a class="page-link" href="#">Post más recientes &rarr;</a>
                 </li>
               </ul>
 
