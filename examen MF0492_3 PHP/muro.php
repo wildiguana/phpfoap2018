@@ -5,11 +5,11 @@
 
       <link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="muro" content="muro">
-        <meta name="author" content="jose o.">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="muro" content="muro">
+              <meta name="author" content="jose o.">
 
-          <title>Examen MF0492_3 - PHP - muro</title>
+        <title>Examen MF0492_3 - PHP - muro</title>
 
         <!-- Archivo principal CSS para Bootstrap -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
