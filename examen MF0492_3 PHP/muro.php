@@ -133,13 +133,13 @@
           <!-- Autor -->
           <p class="lead">
             by
-              <a href="https://www.aboutespanol.com/orlando-caceres-ramirez-2879402">Orlando Cáceres Ramirez</a>
+              <a href="https://www.aboutespanol.com/orlando-caceres-ramirez-2879402">Your Self</a>
             </p>
 
           <hr>
 
           <!-- Fecha post -->
-          <p>Posteado el 27 de Mayo, 2018</p>
+          <p>Posteado el 2 de Mayo, 2019</p>
 
           <hr>
 
@@ -169,8 +169,8 @@
                   surgiendo y la manera en que ha cambiado para siempre la forma en que se relacionan las personas en todo el mundo.
                 </p>
 
-              <footer class="blockquote-footer">Orlando Cáceres Ramírez
-                <cite title="Source Title">About español</cite>
+              <footer class="blockquote-footer">Your Self
+                <cite title="Extraído de">About español</cite>
                 </footer>
               </blockquote>
 
