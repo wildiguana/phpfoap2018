@@ -34,6 +34,14 @@
                   var btn = document.getElementById("boton1");
                     btn.value = "Enviar (" + i + ")";
                 }
+                //contador likes comentarios//
+              var i = 0;
+              function contador2()
+              {
+                i = i + 1;
+                  var btn = document.getElementById("boton2");
+                    btn.value = "Enviar (" + i + ")";
+                }
           </script>
       </head>
 
@@ -134,7 +142,8 @@
           <hr>
 
           <!-- Contenido post -->
-          <p class="lead">El auge del internet y las redes sociales.<br>
+          <p class="lead"><h5>El auge del internet y las redes sociales.</h5> 
+            <br>
             Hace veinte años, probablemente nadie se imaginaba que la manera en que hoy dia se conecta el mundo. Más que nunca, 
             estamos globalizados. El mundo entero es un país, dividido pero conectado al mismo tiempo. Esta revolución, que puede 
             analizarse desde varios puntos de vista, tiene como principal actor, como es de esperar, al internet. Se ha constituido 
@@ -149,8 +158,8 @@
             </p>
 
               <blockquote class="blockquote">
-                <p class="mb-0">El siguiente texto es un ensayo personal acerca de las redes sociales. Se habla de cómo fue surgiendo y 
-                  la manera en que ha cambiado para siempre la forma en que se relacionan las personas en todo el mundo.
+                <p class="mb-0">El texto de toda esta página es un ensayo personal acerca de las redes sociales. Se habla de cómo fue 
+                  surgiendo y la manera en que ha cambiado para siempre la forma en que se relacionan las personas en todo el mundo.
                 </p>
 
               <footer class="blockquote-footer">Orlando Cáceres Ramírez
@@ -158,7 +167,7 @@
                 </footer>
               </blockquote>
 
-          <p>El uso negativo de las redes<br>
+          <p>El uso negativo de las redes.<br>
             Con el paso del tiempo, las redes sociales comenzaron a ser utilizados no solo de una manera correcta, sino que también se ha 
             prestado para causar daños a otras personas. Existen datos que grupos criminales estudian y espían las redes sociales, para 
             por ejemplo, secuestrar a una persona.
@@ -181,11 +190,11 @@
             </div>
           </div>
 
-          <!-- Single Comment -->
+          <!-- Commentarios -->
           <div class="media mb-4">
           <p><u><i>Mario___</i></u></p>
             <div class="media-body">
-              <h5 class="mt-0">Uso y abuso de las redes sociales</h5>
+              <h5 class="mt-0">Uso y abuso de las redes sociales.</h5>
                 <p>
                 <br>
                   Utilizar facebook a diario puede ser una arma de doble filo. Dicha red social, al igual que twitter, constituye una 
@@ -195,7 +204,9 @@
                 </p>
                   <img src="http://placehold.it/150x100" alt=""> 
                   <br>
-                  <br>
+                  <hr>
+                      <input type="button" id="boton2"class="btn btn-primary" value="Like si te gustó" onclick="javascript: contador2()"/>
+                  <hr>
             </div>
           </div>
           
@@ -204,7 +215,7 @@
           <div class="media mb-4">
             <p><u><i>Marta___</i></u></p>
             <div class="media-body">
-              <h5 class="mt-0">Revolución en Egipto</h5>
+              <h5 class="mt-0">Revolución en Egipto.</h5>
                 <p>
                   <br>
                   En Egipto no hace mucho se desató una revolución que terminó por derrocar al gobierno. Ese fenómeno fue gracias 
@@ -219,7 +230,7 @@
               <div class="media mt-4">
               <p><u><i>Lucas___</i></u></p>
                 <div class="media-body">
-                  <h5 class="mt-0">La privacidad</h5>
+                  <h5 class="mt-0">La privacidad.</h5>
                     <p>
                       <br>
                       Un caso sería en lo que respecta a la privacidad. Internet es un mundo abierto, público, y donde nunca se 
@@ -237,7 +248,7 @@
               <div class="media mt-4">
               <p><u><i>Silvia___</i></u></p>
                 <div class="media-body">
-                  <h5 class="mt-0">Ciberacoso</h5>
+                  <h5 class="mt-0">Ciberacoso.</h5>
                     <p>
                       <br>
                       En lo que respecta a los jóvenes, se ha vuelto frecuente utilizar estos espacios como herramienta de acoso. 
