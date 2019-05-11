@@ -42,6 +42,13 @@
                   var btn = document.getElementById("boton2");
                     btn.value = "Gracias! (" + i + ")";
                 }
+              var i = 0;
+              function contador3()
+              {
+                i = i + 1;
+                  var btn = document.getElementById("boton3");
+                    btn.value = "Gracias! (" + i + ")";
+                }
           </script>
       </head>
 
@@ -209,7 +216,7 @@
           </div>
           
 
-          <!-- Comment with nested comments -->
+          <!-- Comentarios con hilo -->
           <div class="media mb-4">
             <p><u><i>Marta___</i></u></p>
             <div class="media-body">
@@ -223,7 +230,7 @@
                 </p>
                   <img src="http://placehold.it/150x100" alt=""> 
                   <br>
-                  <br>
+                   <input type="button" id="boton3"class="btn btn-primary" value="Click si te gustó" onclick="javascript: contador3()"/>
               
               <div class="media mt-4">
               <p><u><i>Lucas___</i></u></p>
