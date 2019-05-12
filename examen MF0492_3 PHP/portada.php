@@ -126,16 +126,7 @@
               <!-- Footer - pie de página con aviso legal -->
               <footer class="py-5 bg-dark">
                 <div class="container">
-                  <?php
-                  echo
-                  "<p>AVISO LEGAL:<br>
-                    De acuerdo con lo que establece la Ley Orgánica de Protección de Datos 
-                    (LOPD) 15/1999, le informamos que los datos personales recogidos en este 
-                    formulario serán incluidos en un fichero bajo la responsabilidad de 
-                    YOURSELF, S.L.. Puede ejercer sus derechos de acceso, rectificación, 
-                    cancelación y oposición en: YOURSELF, S.L., Calle NS/NC Nº 007, 08000 – JAEN. 
-                    Your Website 2019</p>";
-                    ?>
+                <?php include 'footer.php';?>
                 </div>
                 </footer>
 
