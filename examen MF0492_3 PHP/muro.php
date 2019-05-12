@@ -1,4 +1,24 @@
 <?php session_start();?>
+
+<?php
+if(isset($_REQUEST["submit"])){ 
+    print_r($_FILES);
+    echo "<br>^<br>";
+    if(!is_uploaded_file($_FILES['fichero']['tmp_name'])){
+        echo "otro error";
+    }
+    $dir_subida = 'imgs/';
+    $fichero_subido = $dir_subida . time()."_".basename($_FILES['fichero']['name']);
+    if (move_uploaded_file($_FILES['fichero']['tmp_name'], $fichero_subido)) {
+        echo "El fichero es válido y se subió con éxito.\n";
+        echo "<a href=\"$fichero_subido\">imagen</a>";
+        echo "<img src=\"$fichero_subido\">";
+    } else {
+        echo "¡error!\n";
+    }
+}else{
+?>
+
   <!DOCTYPE html>
 
     <head>
@@ -85,7 +105,7 @@
 
           <!-- Comentarios -->
           <div class="card my-4">
-            <h5 class="card-header">Agregar una nueva publicación en tu muro</h5>
+            <h5 class="card-header">Añade una nueva publicación a tu muro</h5>
             <div class="card-body">
               <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
@@ -97,7 +117,7 @@
                   <div><label><h4>Busca la imágen que quieres subir</h4></label>
                   <input type="file" name="fichero">
                 </div>
-                <input type="button" id="boton0"class="btn btn-primary" value="Enviar"/>
+                <input type="submit" id="boton0"class="btn btn-primary" value="Enviar"/>
               </form>
             </div>
           </div>
