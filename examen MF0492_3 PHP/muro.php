@@ -95,7 +95,7 @@
                   <textarea class="form-control" rows="3" placeholder="Comentarios, máximo 500 caracteres"></textarea>
                 </div>
                 <div>
-                  <input type="file" name="archivo" value="Sube una imágen">
+                  <input type="file" name="imágen">
                 </div>
                 <input type="button" id="boton0"class="btn btn-primary" value="Enviar"/>
               </form>
