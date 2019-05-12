@@ -91,7 +91,7 @@ if(isset($_REQUEST["submit"])){
             <small><?php echo "Bienvenido ".$_SESSION["nom"];?></small>
             </h1>
             <a href="indice.php?logout"><button type="button" 
-                  class="btn btn-default btn-warning">Cerrar sesión</a>
+                  class="btn btn-primary btn-warning">Cerrar sesión</a>
                 </button></a>
 
           <!-- Contenido -->
