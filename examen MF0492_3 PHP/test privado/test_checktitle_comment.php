@@ -27,11 +27,11 @@
     ?>
             <form  method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"])?>">
                 <input type="text" name="titulo" value="<?=$titulo?>">
-                    <span class="error">* <?php=$tituloErr?></span>
+                    <span class="error">* <?=$tituloErr?></span>
                     <br><br>
                 <textarea name="comentarios" rows="5" cols="40" value="<?=$comentarios?>">
                     </textarea>
-                    <span class="error">* <?php=$comentariosErr?></span>
+                    <span class="error">* <?=$comentariosErr?></span>
                     <br><br>
                 <input type="submit" name="submit" value="aceptar">
             </form>
