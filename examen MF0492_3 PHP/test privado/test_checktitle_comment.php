@@ -9,7 +9,8 @@
             }
             if (empty($_REQUEST["comentarios"])) {
                 $comentariosErr = "Debes introducir un comentario, recuerda máximo 500 caracteres";
-                $comentariosErr = test_input($_REQUEST["comentarios"]);
+            }else{
+                $comentarios = test_input($_REQUEST["comentarios"]);
             }
         }
         function test_input($data) {
