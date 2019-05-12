@@ -6,7 +6,7 @@
                 $tituloErr = "Debes introducir un título.";
             }else{
                 $titulo = test_input($_REQUEST["titulo"]);
-                    $str ='titulo';
+                    $str ='$titulo';
                     echo strlen($str);
                 //if (!preg_match ($str = "titulo")=>10)) {
                    // $tituloErr = "mínimo 10 caracteres."; 
