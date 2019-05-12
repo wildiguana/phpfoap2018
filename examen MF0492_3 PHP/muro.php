@@ -340,7 +340,7 @@ if(isset($_REQUEST["submit"])){
                   </div>
               </div>
           </div>
-              </div>
+              
         </div>
         
         <!-- Footer - pie de página con aviso legal -->
