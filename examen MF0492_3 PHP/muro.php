@@ -85,19 +85,19 @@
 
           <!-- Comentarios -->
           <div class="card my-4">
-            <h5 class="card-header">Deja tu comentario:</h5>
+            <h5 class="card-header">Agregar una nueva publicación en tu muro</h5>
             <div class="card-body">
               <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Introduce el título">
+                  <input type="text" class="form-control" placeholder="Introduce el título, mínimo 10 caracteres">
                 </div>
                 <div>
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Comentarios, máximo 500 caracteres"></textarea>
                 </div>
                 <div>
-                  <input type="file" name="archivo">
+                  <input type="file" name="archivo" value="Sube una imágen">
                 </div>
-                <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()"/>
+                <input type="button" id="boton0"class="btn btn-primary" value="Enviar"/>
               </form>
             </div>
           </div>
