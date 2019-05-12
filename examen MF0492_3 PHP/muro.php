@@ -184,17 +184,26 @@ if(isset($_REQUEST["submit"])){
             <div class="card-body">
               <form>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Introduce el título">
+                  <input type="text" class="form-control" placeholder="Introduce el título" value="<?php echo $titulo;?>">
                 </div>
                 <div>
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Introduce tus comentarios" value="<?php echo $comentario;?>"></textarea>
                 </div>
                 <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()"/>
               </form>
+              <?php
+                echo "<h2>Has titulado tu comentario:</h2>";
+                echo $titulo;
+                echo "<br>";
+                echo "<h2>Este es tu comentario:</h2>";
+                echo "<br>";
+                echo $comentario;
+                echo "<br>";
+                ?>
             </div>
           </div>
 
-          <!-- Commentarios -->
+          <!-- Commentarios simulados -->
           <div class="media mb-4">
           <p><u><i>Mario___</i></u></p>
             <div class="media-body">
@@ -263,7 +272,7 @@ if(isset($_REQUEST["submit"])){
           </div>
 
             <!-- Extras -->
-              <!-- Búsqueda antiguos/nuevos -->
+              <!-- Búsqueda antiguos/nuevos -no activo- -->
               <ul class="pagination justify-content-center mb-4">
                 <li class="page-item disabled">
                   <a class="page-link" href="#">&larr; Post anteriores</a>
@@ -277,7 +286,7 @@ if(isset($_REQUEST["submit"])){
 
             <div class="col-md-4">
 
-              <!-- Buscar contactos agendados -->
+              <!-- Buscar contactos agendados -no activo- -->
               <div class="card my-4">
                 <h5 class="card-header">Buscar contactos</h5>
                 <div class="card-body">
