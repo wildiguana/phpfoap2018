@@ -331,14 +331,13 @@ if(isset($_REQUEST["submit"])){
               <div class="card my-4">
                 <h5 class="card-header">Opiniones</h5>
                 <div class="card-body">
-                 <div id="contador"></div>
-                   <p>Estamos opinando sobre estos temas:</p>
-                 <img src="imgs/cloud.png" alt="nube de palabras"> 
-                
-              </div>
-
-            </div>
-
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div id="contador"></div>
+                        <p>Estamos opinando sobre estos temas:</p>
+                          <img src="imgs/cloud.png" alt="nube de palabras">
+                    </div>
+                  </div>
           </div>
       
         </div>
