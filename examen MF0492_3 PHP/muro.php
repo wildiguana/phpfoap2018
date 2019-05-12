@@ -17,7 +17,7 @@
         <!-- Hoja de estilo para personalizar la plantilla -->
         <link href="css/blog-home.css" rel="stylesheet" type="text/css">
 
-        <!--script contadores: likes-->
+        <!-- script contadores: likes - comentarios -->
         <script type="text/javascript">
             var i = 0;
               function contador()
@@ -25,7 +25,6 @@
                 i = i + 1;
                   var btn = document.getElementById("boton");
                     btn.value = "Dale un like!!! (" + i + ")";
-                    document.getElementById("contador").innerHTML = "Likes (" + i + ")";
                 }
               //contador comentarios//
               var i = 0;
@@ -72,39 +71,9 @@
 
             <div class="row">
 
-        
-          <!--<Entradas publicadas
-          <div class="col-md-8">-->
-
           <h1 class="my-4">OwnNetWorK -
             <small>Conócenos</small>
             </h1>
-
-          <!-- Blog Post
-          <div class="card mb-4">
-            <img class="card-img-top" src="imgs/hashtag_finder.gif" alt="buscador de hashtags">
-            <div class="card-body">
-              <h2 class="card-title">Postcron: Buscador de hashtags</h2>
-              <p class="card-text">#gardening #plants #flower #jardin #mygarden 
-                  #plant #succulent #succulents #instagarden #garten #gardens 
-                  #flowerstagram #flowersofinstagram #instaflower #cactus... te suena?
-                  Postcron el buscador de hashtags que necesitas para tus posts. 
-                  Encuentra rápidamente #hashtags relacionados a partir de un 
-                  término o palabra clave para aplicarlos en tus posts de 
-                  Instagram, Facebook y Twitter!<br>
-                  Con esta herramienta podrás aplicar #hashtags relacionados de 
-                  manera simple y lograrás que tus posts ganen alcance e 
-                  interacción.</p>
-                  <a>Te ha gustado el artículo? &rarr;</a>
-                      <input type="button" id="boton"class="btn btn-primary" 
-                      value="Dale un like!!!" onclick="javascript: contador()" />
-                </div>
-            <div class="card-footer text-muted">
-              Comentado el 30 de febrero de 2016 por
-              <a href="https://postcron.com/es/blog/landings/buscador-de-hashtags/">
-              HashTagsKilah</a>
-            </div>
-          </div>-->
 
           <!-- Contenido -->
           <div class="container">
@@ -220,7 +189,7 @@
                   ocurrir es que muchos jóvenes, inconscientes en la mayoría de las veces, realizan un uso abusivo o mal uso de 
                   estas herramientas digitales.
                 </p>
-                  <img src="http://placehold.it/150x100" alt=""> 
+                  <img src="http://placehold.it/600x250" alt=""> 
                   <br>
               
               <div class="media mt-4">
@@ -323,10 +292,10 @@
 
               <!-- Contador comentarios -->
               <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Opiniones</h5>
                 <div class="card-body">
                  <div id="contador"></div>
-                   <p>Estamos opinando sobre estos temas</p>
+                   <p>Estamos opinando sobre estos temas:</p>
                  <img src="imgs/cloud.png" alt="nube de palabras"> 
                 
               </div>
