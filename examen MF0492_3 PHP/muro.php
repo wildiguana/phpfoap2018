@@ -184,22 +184,13 @@ if(isset($_REQUEST["submit"])){
             <div class="card-body">
               <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="form-group">
-                  Título: <input type="text" class="form-control" value="<?php echo $titulo;?>">
+                  Título: <input type="text" class="form-control">
                 </div>
                 <div>
-                  Comentarios: <textarea class="form-control" rows="3" value="<?php echo $comentario;?>"></textarea>
+                  Comentarios: <textarea class="form-control" rows="3"></textarea>
                 </div>
                 <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()"/>
               </form>
-              <?php
-                echo "<h2>Has titulado tu comentario:</h2>";
-                echo $titulo;
-                echo "<br>";
-                echo "<h2>Este es tu comentario:</h2>";
-                echo "<br>";
-                echo $comentario;
-                echo "<br>";
-                ?>
             </div>
           </div>
 
