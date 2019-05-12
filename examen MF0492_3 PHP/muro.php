@@ -33,7 +33,7 @@
               {
                 i = i + 1;
                   var btn = document.getElementById("boton1");
-                    btn.value = "Enviar "(" + i + ");
+                    btn.value = "Enviar ";
                     document.getElementById("contador").innerHTML = "Hemos recibido " + i + " comentarios";
                 }
           </script>
