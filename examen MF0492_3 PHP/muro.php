@@ -61,6 +61,9 @@ if(isset($_REQUEST["submit"])){
 
   <body>
 
+                <!-- Aviso javascript -->
+                <noscript>Esta página necesita tener activado JavaScript!</noscript>
+
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
@@ -113,7 +116,7 @@ if(isset($_REQUEST["submit"])){
                   <input type="text" class="form-control" placeholder="Introduce el título, mínimo 10 caracteres">
                 </div>
                 <div>
-                  <textarea class="form-control" rows="3" placeholder="Comentarios, máximo 500 caracteres"></textarea>
+                  <textarea class="form-control" rows="4" cols="50" maxlength="500" placeholder="Comentarios, máximo 500 caracteres"></textarea>
                 </div>
                   <div><label><h4>Busca la imágen que quieres subir</h4></label>
                   <input type="file" name="fichero">
@@ -346,13 +349,14 @@ if(isset($_REQUEST["submit"])){
         <!-- Footer - pie de página con aviso legal -->
         <footer class="py-5 bg-dark">
           <div class="container">
-            <p class="m-0 text-center text-white">AVISO LEGAL:
+            <?php include 'footer.php';?>
+            <!--<p class="m-0 text-center text-white">AVISO LEGAL:
               De acuerdo con lo que establece la Ley Orgánica de Protección de Datos 
               (LOPD) 15/1999, le informamos que los datos personales recogidos en este 
               formulario serán incluidos en un fichero bajo la responsabilidad de 
               YOURSELF, S.L.. Puede ejercer sus derechos de acceso, rectificación, 
               cancelación y oposición en: YOURSELF, S.L., C/NS/NC Nº 5, 08000 – JAEN. 
-              Your Website 2019</p>
+              Your Website 2019</p>-->
           </div>
         </footer>
 
