@@ -24,7 +24,7 @@
                 <input type="text" name="titulo" value="<?=$titulo?>">
                     <span class="error">* <?=$tituloErr?></span>
                     <br><br>
-                <textarea name="comentarios" rows="5" cols="40">
+                <textarea name="comentarios" rows="5" cols="40" value="<?=$comentarios?>">
                 </textarea>
                 <span class="error">* <?=$comentariosErr?></span>
                 <br><br>
