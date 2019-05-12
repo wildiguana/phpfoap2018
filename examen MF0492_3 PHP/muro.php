@@ -184,10 +184,10 @@ if(isset($_REQUEST["submit"])){
             <div class="card-body">
               <form>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Introduce el título" value="<?php echo $titulo;?>">
+                  <input type="text" class="form-control" placeholder="Introduce el título" value="<?php $titulo;?>">
                 </div>
                 <div>
-                  <textarea class="form-control" rows="3" placeholder="Introduce tus comentarios" value="<?php echo $comentario;?>"></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Introduce tus comentarios" value="<?php $comentario;?>"></textarea>
                 </div>
                 <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()"/>
               </form>
