@@ -1,7 +1,5 @@
 <?php session_start();?>
 
-          
-
 <?php
 if(isset($_REQUEST["submit"])){ 
     print_r($_FILES);
@@ -366,5 +364,6 @@ if(isset($_REQUEST["logout"])){
 </body>
 
 </html>
-
-
+<?php
+}
+?>
