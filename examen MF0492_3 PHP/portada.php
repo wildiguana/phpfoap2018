@@ -67,7 +67,7 @@
                         <li><h4>No estás registrado?</h4></li>
                           <a class="nav-link" href="registro.php" >
                               <button type="button" class="btn btn-outline-dark">
-                                  Únete hoy</button></a>
+                                  Únete ahora!</button></a>
                     </ul>
                 </div>
 
