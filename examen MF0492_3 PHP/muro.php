@@ -325,10 +325,10 @@
               <div class="card my-4">
                 <h5 class="card-header">Side Widget</h5>
                 <div class="card-body">
-                 <div id="contador">
+                 <div id="contador"></div>
                    <p>Estamos opinando sobre estos temas</p>
                  <img src="imgs/cloud.png" alt="nube de palabras"> 
-                </div>
+                
               </div>
 
             </div>
