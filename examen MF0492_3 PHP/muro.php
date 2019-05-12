@@ -67,7 +67,7 @@ if(isset($_REQUEST["submit"])){
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-              <a class="navbar-brand" href="">OwnNetWorK</a>
+              <a class="navbar-brand" href="">OwnNetWorK</a><img class="img-fluid rounded" src="imgs/own_logo_cabecera.jpg" alt="logo">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -77,12 +77,6 @@ if(isset($_REQUEST["submit"])){
                     <a class="nav-link">Tu propia red
                       <span class="sr-only">(current)</span>
                     </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"></a>
-                  </li>
-                  
-                  </li>
                 </ul>
               </div>
             </div>
