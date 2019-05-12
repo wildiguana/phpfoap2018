@@ -1,5 +1,35 @@
-<?php session_start();?>
+<?php session_start();
 
+  $error="";
+    if(isset($_SESSION["login"])){
+      header('location:muro.php');
+    }
+
+    if(isset($_COOKIE["password"])){
+      if($_COOKIE["password"]==1234){
+        $_SESSION["login"]=true;
+        $_SESSION["nom"]=$_COOKIE["nombre"];
+        header('location:muro.php');
+
+      }else{
+        $error="Datos de acceso inválidos";
+      }
+    }
+    if(isset($_REQUEST["submit"])){
+      if($_REQUEST["password"]=="1234"){
+        $_SESSION["login"]=true;
+        $_SESSION["nom"]=$_REQUEST["usuario"];
+        if(isset($_REQUEST["recordar"]) && $_REQUEST["recordar"]==1){
+          setcookie("password",$_REQUEST["password"],time()+30*24*60*60);
+          setcookie("nombre",$_REQUEST["usuario"],time()+30*24*60*60);
+        }
+        header('location:muro.php');
+      }else{
+        $error="Usuario o contraseña incorrectos.";
+      }
+    }
+
+?>
   <!DOCTYPE html>
  
     <head>
@@ -121,11 +151,8 @@
                   </div>
                 </div>
               </div>
-</div>
-            
-          
-        
-              
+        </div>
+                  
                <!-- Comentarios -->
                <div class="card my-4">
                 <h5 class="card-header">Estamos opinando sobre estos temas:</h5>
