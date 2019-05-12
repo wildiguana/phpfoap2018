@@ -111,6 +111,13 @@
             return $data;
         }
     ?>
+
+    <!-- Footer - pie de página con aviso legal -->
+    <footer class="py-5 bg-dark">
+          <div class="container">
+            <?php include 'footer.php';?>
+      </div>
+    </footer>
     
 </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+
     echo "<p class='m-0 text-center text-white'text-center>
     AVISO LEGAL:<br>
     De acuerdo con lo que establece la Ley Orgánica de Protección de Datos 
