@@ -34,7 +34,7 @@
                 i = i + 1;
                   var btn = document.getElementById("boton1");
                     btn.value = "Enviar ";
-                    document.getElementById("contador").innerHTML = "Hemos recibido " + i + " comentarios";
+                    document.getElementById("contador").innerHTML = "Hemos recibido " + i + " comentarios.";
                 }
           </script>
       </head>
@@ -144,11 +144,11 @@
             ya una herramienta indispensable para el desarrollo humano. Tenemos conexión o estamos “en línea”, prácticamente en todos 
             los momentos del dia. Una de las formas en que ha influencia este avance de la tecnología es la forma en que se conocen 
             las personas. Ya no es raro escuchar a varios jóvenes que al preguntarles cómo ha conocido a tal persona, respondan que 
-            ha sido gracias al uso de alguna red social. Es decir, las redes sociales, gracias a internet, ha roto muchas barreras y 
-            permitido que personas de distintas partes del planeta pueden interactuar. Como señala Borja Fernandez Canel en "Las Redes 
-            Sociales. Lo que hacen sus hijos en Internet “La facilidad de estar en contacto con personas de tu barrio, ciudad, o incluso 
-            de otros paises ha producido que las redess sociales sean actualmente el boom de Internet. y era de prever que sucederia, 
-            porque se palpaba una necesidad de reunir mensajeria, fotos, videos...”.
+            ha sido gracias al uso de alguna red social. Es decir, las redes sociales gracias a internet han roto muchas barreras y 
+            han permitido que personas de distintas partes del planeta pueden interactuar. Como señala Borja Fernandez Canel en "Las 
+            Redes Sociales. Lo que hacen sus hijos en Internet“, la facilidad de estar en contacto con personas de tu barrio, ciudad, 
+            o incluso de otros paises ha producido que las redess sociales sean actualmente el boom de Internet. y era de prever que 
+            sucederia, porque se palpaba una necesidad de reunir mensajeria, fotos, videos....
             </p>
 
               <blockquote class="blockquote">
@@ -202,7 +202,7 @@
                   se transmite, depende enteramente de las personas. Una red social puede servir en pocas palabras, para realizar 
                   acciones buenas y honrosas, o para realizar acciones malas que terminan causando daño. 
                 </p>
-                  <img src="http://placehold.it/250x600" alt=""> 
+                  <img src="http://placehold.it/600x250" alt=""> 
                   <br>
             </div>
           </div>
@@ -321,14 +321,13 @@
                 </div>
               </div>
 
-              <!-- Side Widget -->
+              <!-- Contador comentarios -->
               <div class="card my-4">
                 <h5 class="card-header">Side Widget</h5>
                 <div class="card-body">
                  <div id="contador">
-                  <ul id="lista">
-                    
-                  </ul>
+                   <p>Estamos opinando sobre estos temas</p>
+                 <img src="imgs/cloud.png" alt="nube de palabras"> 
                 </div>
               </div>
 
