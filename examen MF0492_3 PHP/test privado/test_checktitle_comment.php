@@ -25,7 +25,7 @@
             return $data;
         }
     ?>
-            <form  method="post" action="<?php=htmlspecialchars($_SERVER["PHP_SELF"])?>"> 
+            <form  method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"])?>">
                 <input type="text" name="titulo" value="<?=$titulo?>">
                     <span class="error">* <?php=$tituloErr?></span>
                     <br><br>
