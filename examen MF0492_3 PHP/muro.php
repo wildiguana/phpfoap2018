@@ -94,8 +94,8 @@
                 <div>
                   <textarea class="form-control" rows="3" placeholder="Comentarios, máximo 500 caracteres"></textarea>
                 </div>
-                <div>
-                  <input type="file" name="imágen">
+                  <div><label><h4>Busca la imágen que quieres subir</h4></label>
+                  <input type="file" name="fichero">
                 </div>
                 <input type="button" id="boton0"class="btn btn-primary" value="Enviar"/>
               </form>
@@ -163,15 +163,12 @@
           <div class="card my-4">
             <h5 class="card-header">Deja tu comentario:</h5>
             <div class="card-body">
-              <form action="" method="post" enctype="multipart/form-data">
+              <form>
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Introduce el título">
                 </div>
                 <div>
                   <textarea class="form-control" rows="3"></textarea>
-                </div>
-                <div>
-                  <input type="file" name="archivo">
                 </div>
                 <input type="button" id="boton1"class="btn btn-primary" value="Enviar" onclick="contador1()"/>
               </form>
