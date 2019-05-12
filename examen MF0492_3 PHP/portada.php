@@ -123,6 +123,17 @@
               </div>
         </div>
               
+               <!-- Comentarios -->
+               <div class="card my-4">
+                <h5 class="card-header">Opiniones</h5>
+                <div class="card-body">
+                  <div class="row">
+                        <p>Estamos opinando sobre estos temas:</p>
+                          <img src="imgs/cloud.png" alt="nube de palabras">
+                    </div>
+                  </div>
+              </div>
+
               <!-- Footer - pie de página con aviso legal -->
               <footer class="py-5 bg-dark">
                 <div class="container">

@@ -335,7 +335,6 @@ if(isset($_REQUEST["submit"])){
                 <h5 class="card-header">Opiniones</h5>
                 <div class="card-body">
                   <div class="row">
-                    
                       <div id="contador"></div>
                         <p>Estamos opinando sobre estos temas:</p>
                           <img src="imgs/cloud.png" alt="nube de palabras">
@@ -350,13 +349,6 @@ if(isset($_REQUEST["submit"])){
         <footer class="py-5 bg-dark">
           <div class="container">
             <?php include 'footer.php';?>
-            <!--<p class="m-0 text-center text-white">AVISO LEGAL:
-              De acuerdo con lo que establece la Ley Orgánica de Protección de Datos 
-              (LOPD) 15/1999, le informamos que los datos personales recogidos en este 
-              formulario serán incluidos en un fichero bajo la responsabilidad de 
-              YOURSELF, S.L.. Puede ejercer sus derechos de acceso, rectificación, 
-              cancelación y oposición en: YOURSELF, S.L., C/NS/NC Nº 5, 08000 – JAEN. 
-              Your Website 2019</p>-->
           </div>
         </footer>
 
