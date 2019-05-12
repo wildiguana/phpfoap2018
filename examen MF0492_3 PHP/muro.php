@@ -10,7 +10,7 @@ if(isset($_REQUEST["submit"])){
     $dir_subida = 'imgs/';
     $fichero_subido = $dir_subida . time()."_".basename($_FILES['fichero']['name']);
     if (move_uploaded_file($_FILES['fichero']['tmp_name'], $fichero_subido)) {
-        echo "El fichero es válido y se subió con éxito.\n";
+        echo "La imágen se ha subido correctamente.\n";
         echo "<a href=\"$fichero_subido\">imagen</a>";
         echo "<img src=\"$fichero_subido\">";
     } else {
@@ -117,7 +117,7 @@ if(isset($_REQUEST["submit"])){
                   <div><label><h4>Busca la imágen que quieres subir</h4></label>
                   <input type="file" name="fichero">
                 </div>
-                <input type="submit" id="boton0"class="btn btn-primary" value="Enviar"/>
+                <input type="submit" id="boton0"class="btn btn-primary" name="submit" value="Enviar"/>
               </form>
             </div>
           </div>
@@ -362,3 +362,6 @@ if(isset($_REQUEST["submit"])){
 </body>
 
 </html>
+<?php 
+}
+?>
