@@ -24,8 +24,8 @@
                     <span class="error">* <?=$tituloErr?></span>
                     <br><br>
                 <textarea name="comentarios" rows="5" cols="40">
-                <span class="error">* <?=$comentariosErr?></span>
                 </textarea>
+                <span class="error">* <?=$comentariosErr?></span>
                 <br><br>
                 <input type="submit" name="submit" value="aceptar">
             </form>
