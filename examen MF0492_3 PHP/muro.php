@@ -34,7 +34,7 @@
                 i = i + 1;
                   var btn = document.getElementById("boton1");
                     btn.value = "Comentarios recibidos (" + i + ")";
-                    document.getElementById("contador").innerHTML = " + i + ";
+                    document.getElementById("contador").innerHTML = "Hemos recibido " + i + " comentarios";
                 }
           </script>
       </head>
