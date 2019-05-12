@@ -338,8 +338,9 @@ if(isset($_REQUEST["submit"])){
                           <img src="imgs/cloud.png" alt="nube de palabras">
                     </div>
                   </div>
+              </div>
           </div>
-      
+              </div>
         </div>
         
         <!-- Footer - pie de página con aviso legal -->
