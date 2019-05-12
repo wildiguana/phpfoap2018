@@ -34,21 +34,7 @@
                 i = i + 1;
                   var btn = document.getElementById("boton1");
                     btn.value = "Comentarios recibidos (" + i + ")";
-                }
-                //contador likes comentarios//
-              var i = 0;
-              function contador2()
-              {
-                i = i + 1;
-                  var btn = document.getElementById("boton2");
-                    btn.value = "Gracias! (" + i + ")";
-                }
-              var i = 0;
-              function contador3()
-              {
-                i = i + 1;
-                  var btn = document.getElementById("boton3");
-                    btn.value = "Gracias! (" + i + ")";
+                    document.getElementById("contador").innerHTML = " + i + ";
                 }
           </script>
       </head>
@@ -216,9 +202,8 @@
                   se transmite, depende enteramente de las personas. Una red social puede servir en pocas palabras, para realizar 
                   acciones buenas y honrosas, o para realizar acciones malas que terminan causando daño. 
                 </p>
-                  <img src="http://placehold.it/150x100" alt=""> 
+                  <img src="http://placehold.it/250x300" alt=""> 
                   <br>
-                    <input type="button" id="boton2"class="btn btn-primary" value="Click si te gustó" onclick="contador2()"/>
             </div>
           </div>
           
@@ -237,7 +222,6 @@
                 </p>
                   <img src="http://placehold.it/150x100" alt=""> 
                   <br>
-                   <input type="button" id="boton3"class="btn btn-primary" value="Click si te gustó" onclick="contador3()"/>
               
               <div class="media mt-4">
               <p><u><i>Lucas___</i></u></p>
@@ -251,7 +235,6 @@
                       perdiendo con la inclusión de las redes sociales. Cuando subimos fotos o cuando suben fotos en las que 
                       salimos, cuando mostramos información sobre donde vivimos..."
                     </p>
-                   <img src="http://placehold.it/150x100" alt=""> 
                     <br>
                     <br>
                 </div>
@@ -268,7 +251,6 @@
                       victimas que sufrieron un interminable acoso a traves de los medios digitales, causádoles un terrible daño 
                       psicológico a dichas personas incluso, impulsando al suicidio.
                       </p>
-                        <img src="http://placehold.it/150x100" alt=""> 
                         <br>
                         <br>
                 </div>
