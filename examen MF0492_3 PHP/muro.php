@@ -33,7 +33,7 @@
               {
                 i = i + 1;
                   var btn = document.getElementById("boton1");
-                    btn.value = "Comentarios recibidos (" + i + ")";
+                    btn.value = "Enviar (" + i + ")";
                     document.getElementById("contador").innerHTML = "Hemos recibido " + i + " comentarios";
                 }
           </script>
@@ -202,7 +202,7 @@
                   se transmite, depende enteramente de las personas. Una red social puede servir en pocas palabras, para realizar 
                   acciones buenas y honrosas, o para realizar acciones malas que terminan causando daño. 
                 </p>
-                  <img src="http://placehold.it/250x300" alt=""> 
+                  <img src="http://placehold.it/250x600" alt=""> 
                   <br>
             </div>
           </div>
