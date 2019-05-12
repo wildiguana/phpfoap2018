@@ -182,7 +182,7 @@ if(isset($_REQUEST["submit"])){
           <div class="card my-4">
             <h5 class="card-header">Deja tu comentario:</h5>
             <div class="card-body">
-              <form>
+              <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="form-group">
                   Título: <input type="text" class="form-control" value="<?php $titulo;?>">
                 </div>
