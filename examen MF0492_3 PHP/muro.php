@@ -79,11 +79,9 @@ if(isset($_REQUEST["submit"])){
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"><?php echo "Bienvenido ".$_SESSION["nom"];?></a>
+                    <a class="nav-link"></a>
                   </li>
-                  <a href="indice.php?logout"><button type="button" 
-                  class="btn btn-default btn-warning">Cerrar sesión</a>
-                </button></a>
+                  
                   </li>
                 </ul>
               </div>
@@ -96,8 +94,11 @@ if(isset($_REQUEST["submit"])){
             <div class="row">
 
           <h1 class="my-4">OwnNetWorK -
-            <small>Conócenos</small>
+            <small><?php echo "Bienvenido ".$_SESSION["nom"];?></small>
             </h1>
+            <a href="indice.php?logout"><button type="button" 
+                  class="btn btn-default btn-warning">Cerrar sesión</a>
+                </button></a>
 
           <!-- Contenido -->
           <div class="container">
