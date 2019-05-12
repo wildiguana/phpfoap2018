@@ -135,6 +135,8 @@
                   </div>
                 </div>
               </div>
+          </div>
+        </div>
 
               <!-- Footer - pie de página con aviso legal -->
               <footer class="py-5 bg-dark">
