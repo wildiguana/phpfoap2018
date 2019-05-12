@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        $nombre = $apellidos = $edad = $email = $comentarios = "";
+        $nombre = $apellido = $edad = $email = $comentarios = "";
         $nombreErr = $edadErr = $emailErr="";
         if (isset($_REQUEST['submit'])){
             if (empty($_REQUEST["nombre"])) {
@@ -16,8 +16,8 @@
             }else{
                 $nombre = test_input($_REQUEST["nombre"]);
             }
-            if (!empty($_REQUEST["apellidos"])) {
-                $apellidos = test_input($_REQUEST["apellidos"]);
+            if (!empty($_REQUEST["apellido"])) {
+                $apellido = test_input($_REQUEST["apellido"]);
             }
             if (empty($_REQUEST["email"])) {
                 $emailErr = "Es obligatorio informar el email.";
@@ -54,7 +54,7 @@
                     <span class="error">* <?=$nombreErr?></span>
                     <br><br>
                 <label>Apellidos:</label> 
-                <input type="text" name="apellidos" value="<?=$apellidos?>">
+                <input type="text" name="apellidos" value="<?=$apellido?>">
                     <br><br>
                 <label>Edad:</label> 
                 <input type="number" name="edad" value="<?=$edad?>">

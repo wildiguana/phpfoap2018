@@ -5,7 +5,7 @@ if(isset($_REQUEST["submit"])){
     print_r($_FILES);
     echo "<br>^<br>";
     if(!is_uploaded_file($_FILES['fichero']['tmp_name'])){
-        echo "otro error";
+        echo "Falta contenido";
     }
     $dir_subida = 'imgs/';
     $fichero_subido = $dir_subida . time()."_".basename($_FILES['fichero']['name']);
@@ -14,9 +14,10 @@ if(isset($_REQUEST["submit"])){
         echo "<a href=\"$fichero_subido\">imagen</a>";
         echo "<img src=\"$fichero_subido\">";
     } else {
-        echo "¡error!\n";
+        echo "Fallo\n";
     }
 }else{
+
 ?>
 
   <!DOCTYPE html>
@@ -117,7 +118,7 @@ if(isset($_REQUEST["submit"])){
                   <div><label><h4>Busca la imágen que quieres subir</h4></label>
                   <input type="file" name="fichero">
                 </div>
-                <input type="submit" id="boton0"class="btn btn-primary" name="submit" value="Enviar"/>
+                <input type="submit" id="boton0"class="btn btn-primary" name="submit" value="Subir"/>
               </form>
             </div>
           </div>
