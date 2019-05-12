@@ -121,9 +121,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            
+          
+        
               
                <!-- Comentarios -->
                <div class="card my-4">
