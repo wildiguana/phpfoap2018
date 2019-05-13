@@ -4,7 +4,7 @@ html {
 }
 
 .bgimg {
-    background-image: url('OWN_logo.jpg');
+    background-image: url('../imgs/OWN_logo.jpg');
     height: 100%;
     background-position: center;
     background-size: cover;
