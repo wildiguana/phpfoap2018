@@ -27,7 +27,7 @@
       }else{
         $error="Usuario o contraseña incorrectos.";
       }
-    }
+    //}
 
 ?>
   <!DOCTYPE html>
