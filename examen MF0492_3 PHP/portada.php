@@ -2,14 +2,14 @@
 
   $error="";
     if(isset($_SESSION["login"])){
-      header('location:muro.php');
+      header('Location:muro.php');
     }
 
     if(isset($_COOKIE["password"])){
       if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
         $_SESSION["nom"]=$_COOKIE["nombre"];
-        header('location:muro.php');
+        header('Location:muro.php');
 
       }else{
         $error="Datos de acceso inválidos";
@@ -23,7 +23,7 @@
           setcookie("password",$_REQUEST["password"],time()+30*24*60*60);
           setcookie("nombre",$_REQUEST["usuario"],time()+30*24*60*60);
         }
-        header('location:muro.php');
+        header('Location:muro.php');
       }else{
         $error="Usuario o contraseña incorrectos.";
       }
