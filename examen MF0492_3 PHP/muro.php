@@ -90,7 +90,8 @@ if(isset($_REQUEST["submit"])){
                 session_destroy(); 
                 setcookie("password",0,1);
                 setcookie("nombre",0,1);
-                header('Location:portada.php'); 
+                header('Location:portada.php');
+              } 
                   if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
               ?>
                 <h1 class="my-4">OwnNetWorK -
