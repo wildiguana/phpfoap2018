@@ -19,9 +19,9 @@
       if($_REQUEST["password"]=="1234"){
         $_SESSION["login"]=true;
         $_SESSION["nom"]=$_REQUEST["usuario"];
-        if(isset($_REQUEST["recordar"]) && $_REQUEST["recordar"]==1){
-          setcookie("password",$_REQUEST["password"],time()+30*24*60*60);
-          setcookie("nombre",$_REQUEST["usuario"],time()+30*24*60*60);
+        //if(isset($_REQUEST["recordar"]) && $_REQUEST["recordar"]==1){
+          //setcookie("password",$_REQUEST["password"],time()+30*24*60*60);
+          //setcookie("nombre",$_REQUEST["usuario"],time()+30*24*60*60);
         }
         header('Location:muro.php');
       }else{
