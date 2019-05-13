@@ -16,7 +16,7 @@ if(isset($_REQUEST["submit"])){
     } else {
         echo "Fallo\n";
     }
-}else{
+/*}else{*/
 ?>
 
   <!DOCTYPE html>
