@@ -19,34 +19,12 @@
 
     <script>
         var i = 0;
-        var txt = 'portada.php';
+        var txt = '1234';
         var speed = 50;
 
         function typeWriter() {
             if (i < txt.length) {
-                document.getElementById("portada").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-        var i = 0;
-        var txt = 'muro.php';
-        var speed = 50;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("muro").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-        var i = 0;
-        var txt = 'registro.php';
-        var speed = 50;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("registro").innerHTML += txt.charAt(i);
+                document.getElementById("acceso").innerHTML += txt.charAt(i);
                 i++;
                 setTimeout(typeWriter, speed);
             }
@@ -60,13 +38,10 @@
         <div class="middle">
             <h1>COMING SOON</h1>
             <hr>
-            <p>Clave de acceso invitado 1234</p>
-            <p><button onclick="typeWriter()">Web pública</button></p>
-            <p id="portada">portada.php</p>
-            <p><button onclick="typeWriter()">Web privada</button></p>
-            <p id="muro">muro.php</p>
-            <p><button onclick="typeWriter()">Web de registro</button></p>
-            <p id="registro">registro.php</p>
+            <p id="acceso"><button onclick="typeWriter()">Clave de acceso invitado</button></p>
+            <p>Web pública: "portada.php"</p>
+            <p>Web privada: "muro.php"</p>
+            <p>Web de registro: "registro.php"</p>
         </div>
         <div class="bottomleft">
             <p>Some text</p>
