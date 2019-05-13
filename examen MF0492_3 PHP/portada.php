@@ -5,11 +5,11 @@
       header('Location:muro.php');
     }
 
-    if(isset($_COOKIE["password"])){
+    /*if(isset($_COOKIE["password"])){
       if($_COOKIE["password"]==1234){
         $_SESSION["login"]=true;
         $_SESSION["nom"]=$_COOKIE["nombre"];
-        header('Location:muro.php');
+        header('Location:muro.php');*/
 
       }else{
         $error="Datos de acceso inválidos";
