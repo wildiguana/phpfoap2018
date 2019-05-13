@@ -364,6 +364,8 @@ if(isset($_REQUEST["logout"])){
 </body>
 
 </html>
+<!--
 <?php
 }
 ?>
+-->
