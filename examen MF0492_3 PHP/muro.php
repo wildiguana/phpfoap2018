@@ -15,6 +15,7 @@ if(isset($_REQUEST["submit"])){
         echo "<img src=\"$fichero_subido\">";
     } else {
         echo "Fallo\n";
+    }
     }else{
 ?>
 
