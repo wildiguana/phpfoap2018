@@ -15,6 +15,7 @@
         $error="Datos de acceso inválidos";
       }
     }
+    
     if(isset($_REQUEST["submit"])){
       if($_REQUEST["password"]=="1234"){
         $_SESSION["login"]=true;
@@ -40,7 +41,7 @@
             <meta name="portada" content="portada">
               <meta name="author" content="jose o.">
 
-        <title>Examen MF0492_3 - PHP - portada</title>
+        <title>Examen MF0492_3 - PHP - portada - Jose Dalcolmo</title>
 
         <!-- Archivo principal CSS para Bootstrap -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -104,7 +105,7 @@
             <!-- Extras -->
             <div class="col-md-4">
 
-              <!-- Buscar usuarios -->
+              <!-- Buscar usuarios -no activo- -->
               <div class="card my-4">
                 <h5 class="card-header">Ver quien está en la red</h5>
                 <div class="card-body">

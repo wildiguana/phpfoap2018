@@ -1,6 +1,5 @@
+<?php session_start();
 
-
-<?php
 if(isset($_REQUEST["submit"])){ 
     print_r($_FILES);
     echo "<br>^<br>";
@@ -29,7 +28,7 @@ if(isset($_REQUEST["submit"])){
             <meta name="muro" content="muro">
               <meta name="author" content="jose o.">
 
-        <title>Examen MF0492_3 - PHP - muro</title>
+        <title>Examen MF0492_3 - PHP - muro - Jose Dalcolmo</title>
 
         <!-- Archivo principal CSS para Bootstrap -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,52 +56,37 @@ if(isset($_REQUEST["submit"])){
                 }
           </script>
       </head>
-
   <body>
 
-                <!-- Aviso javascript -->
-                <noscript>Esta página necesita tener activado JavaScript!</noscript>
+          <!-- Advertencia javascript -->
+          <noscript>Esta página necesita tener activado JavaScript!</noscript>
 
-        <!-- Barra de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="">OwnNetWorK</a><img class="img-fluid rounded" src="imgs/own_logo_cabecera.jpg" alt="logo">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link">Tu propia red
-                      <span class="sr-only">(current)</span>
-                    </a>
-                </ul>
+          <!-- Barra de navegación -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+              <div class="container">
+                <a class="navbar-brand" href="">OwnNetWorK</a><img class="img-fluid rounded" src="imgs/own_logo_cabecera.jpg" alt="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link">Tu propia red
+                        <span class="sr-only">(current)</span>
+                      </a>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
 
           <!-- Cuerpo de la página privada/muro -->
           <div class="container">
 
             <div class="row">
-            <?php
-              if(isset($_REQUEST["logout"])){
-                session_destroy(); 
-                setcookie("password",0,1);
-                setcookie("nombre",0,1);
-                header('Location:portada.php');
-              } 
-                  if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
-              ?>
+            
                 <h1 class="my-4">OwnNetWorK -
-                  <small><?php echo "Bienvenido ".$_SESSION["nom"];?></small></h1>
-                    <a href="muro.php?logout">[logout]</a>
-              <?php
-                }else{
-                  header('Location:portada.php');           
-                }
-              ?>
-          
+                  <small>tu red, te da la bienvenida... </small></h1>
+                  
           <!-- Contenido -->
           <div class="container">
 
@@ -135,7 +119,7 @@ if(isset($_REQUEST["submit"])){
 
           <!-- Autor -->
           <p class="lead">
-            by
+            por
               <a href="https://www.aboutespanol.com/orlando-caceres-ramirez-2879402">Your Self</a>
             </p>
 
@@ -272,7 +256,7 @@ if(isset($_REQUEST["submit"])){
           </div>
 
             <!-- Extras -->
-              <!-- Búsqueda antiguos/nuevos -no activo- -->
+              <!-- Búsqueda antiguos/nuevos posts -no activo- -->
               <ul class="pagination justify-content-center mb-4">
                 <li class="page-item disabled">
                   <a class="page-link" href="#">&larr; Post anteriores</a>
@@ -285,6 +269,30 @@ if(isset($_REQUEST["submit"])){
             </div>
 
             <div class="col-md-4">
+
+             <!-- Ok usuario y logout -->
+             <div class="card my-4">
+             <?php
+              if(isset($_REQUEST["logout"])){
+                session_destroy(); 
+                  setcookie("password",0,1);
+                  setcookie("nombre",0,1);
+                header('Location:portada.php');
+              } 
+                  if(isset($_SESSION["login"]) && $_SESSION["login"]==true){
+              ?>
+                <h5 class="card-header">Hola, <?=$_SESSION["nom"]?></h5>
+                <div class="card-body">
+                  <div class="input-group">
+                  <button class="btn btn-outline-dark"> <a href="muro.php?logout">desconectar</button></a>
+              <?php
+                }else{
+                  header('Location:portada.php');           
+                }
+              ?>
+                  </div>
+                </div>
+              </div>
 
               <!-- Buscar contactos agendados -no activo- -->
               <div class="card my-4">
@@ -346,8 +354,7 @@ if(isset($_REQUEST["submit"])){
                   </div>
               </div>
           </div>
-              
-        </div>
+      </div>
         
         <!-- Footer - pie de página con aviso legal -->
         <footer class="py-5 bg-dark">
