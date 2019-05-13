@@ -15,8 +15,7 @@ if(isset($_REQUEST["submit"])){
         echo "<img src=\"$fichero_subido\">";
     } else {
         echo "Fallo\n";
-    }
-/*}else{*/
+    }else{
 ?>
 
   <!DOCTYPE html>
@@ -86,24 +85,22 @@ if(isset($_REQUEST["submit"])){
 
             <div class="row">
             <?php
-if(isset($_REQUEST["logout"])){
-  session_destroy(); 
-  setcookie("password",0,1);
-  setcookie("nombre",0,1);
-  header('Location:portada.php'); 
-            if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
-?>
-          <h1 class="my-4">OwnNetWorK -
-            <small><?php echo "Bienvenido ".$_SESSION["nom"];?></small>
-            </h1>
-            <a href="muro.php?logout">[logout]</a>
-<?php
-}else{
-    header('Location:portada.php');           
-}
-?>
-?>
-
+              if(isset($_REQUEST["logout"])){
+                session_destroy(); 
+                setcookie("password",0,1);
+                setcookie("nombre",0,1);
+                header('Location:portada.php'); 
+                  if(isset($_SESSION["login"])&&$_SESSION["login"]==true){
+              ?>
+                <h1 class="my-4">OwnNetWorK -
+                  <small><?php echo "Bienvenido ".$_SESSION["nom"];?></small></h1>
+                    <a href="muro.php?logout">[logout]</a>
+              <?php
+                }else{
+                  header('Location:portada.php');           
+                }
+              ?>
+          
           <!-- Contenido -->
           <div class="container">
 
