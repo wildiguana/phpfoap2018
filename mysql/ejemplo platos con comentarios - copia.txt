@@ -1,0 +1,40 @@
+--primero crear la BBDD
+CREATE DATABASE IF NOT EXISTS restaurant1;
+
+--si la tabla ya existe se usa 
+use restaurant;
+
+
+--creo la tabla de platos
+CREATE TABLE IF NOT EXISTS platos2(
+cod_plato CHAR(4),
+nom VARCHAR(30),
+tipo VARCHAR(30)
+);
+
+--nota: no le he puesto clave primaria, la borro y 
+la creo de nuevo:
+
+--para borrar una tabla determinada
+DROP TABLE platos;
+
+CREATE TABLE IF NOT EXISTS platos3(
+cod_plato CHAR(4) PRIMARY KEY,
+nom VARCHAR(30),
+tipo VARCHAR(30)
+);
+
+--creo la tabla de vinos
+CREATE TABLE IF NOT EXISTS vinos2(
+cod_vino CHAR(4) PRIMARY KEY,
+nom VARCHAR(30),
+precio FLOAT(10)
+);
+
+
+--creo la tabla distribuidor - ver el campo teléfono
+CREATE TABLE IF NOT EXISTS distribuidor2(
+cod_dist CHAR(4) PRIMARY KEY,
+nom VARCHAR(30),
+tel VARCHAR(9)
+);
