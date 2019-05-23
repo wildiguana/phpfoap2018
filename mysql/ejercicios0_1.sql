@@ -1,0 +1,1 @@
+SELECT dir FROM oficines;
