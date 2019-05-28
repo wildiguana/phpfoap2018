@@ -70,7 +70,10 @@ group by oficina having count (numemp) >=2;
 select oficina, sum(salari), sum(vendes) from empleats where oficina is not null
 group by oficina having count(numemp) >=2;
 
---13. Mitjana de la quanti tat que sha venut d’aquells productes els quals han sigut
+--13. Mitjana de la quantitat que sha venut d’aquells productes els quals han sigut
 --comprats més cops que la mitjana de compres de tots els producte.
+
+
+
 --14. Trobar les comandes que s’han realitzat abans de la data mitjana de les comandes.
 --15. Empleats que han atès comandes que superen l’impo rt mitja de les comandes.

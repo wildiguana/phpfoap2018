@@ -89,6 +89,9 @@ group by oficina having count(numemp) >=2;
 
 /*12. Mitjana d’empleats de les oficines que estan per sota de la mitjana de vendes de
 les oficines.*/
+
+
+
 /*13. Mitjana de la quanti tat que sha venut d’aquells productes els quals han sigut
 comprats més cops que la mitjana de compres de tots els producte.*/
 /*14. Trobar les comandes que s’han realitzat abans de la data mitjana de les comandes.*/
