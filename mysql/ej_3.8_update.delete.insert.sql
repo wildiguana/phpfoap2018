@@ -38,7 +38,18 @@ SET
 /*4.	Volem posar a zero el limit de crèdit dels clients assignats a empleats de 
 l'oficina 12.*/
 
-
+UPDATE clients c 
+SET 
+    c.limitcredit = 0
+WHERE
+    c.numclie IN (SELECT 
+            c.clie
+        FROM
+            comanda c
+                INNER JOIN
+            empleats e ON e.numemp = c.rep_ven
+        WHERE
+            e.oficina = 12);
 
 /*5.	Esborrar les línies de comandes de les comandes del client Jaime Llorens.*/
 
