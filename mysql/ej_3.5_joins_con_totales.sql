@@ -63,11 +63,11 @@ group by rep_ven having sum(import_total)>30000;
 Només volem els productes que la suma total del que s'ha venut sigui superior al
 valor del 75% de les existències. Ordena per la quantitat total.*/
 
-select descr, preu, existencies, sum (quant) as total_comanda
+select descr, preu, existencies, sum(quant) as total_comanda
 from productes p, linia_comanda lc
 where lc.codfab = p.codfab and lc.codprod = p.codprod
 group by p.codfab, p.codprod
-having sum (quant)>existencies*0.75
+having sum(quant)>existencies*0.75
 order by 4;
 
 /*9. Rang de salaris (min i max) dels empleats de cada oficina.*/
@@ -81,6 +81,7 @@ select rep_ven, count(distinct clie) as "numero clients" from comanda
 group by rep_ven;
 /* si no le pone "distinct" lo que hace es contar aunque se repitan (si un vendedor
 le vende 2 veces a un cliente lo cuenta como uno más)*/
+
 /*11. Per a cada oficina amb dos o més empleats, calcular el salari total i les vendes
 totals de tots els empleats de l'oficina.*/
 
@@ -92,7 +93,13 @@ les oficines.*/
 
 
 
-/*13. Mitjana de la quanti tat que sha venut d’aquells productes els quals han sigut
+/*13. Mitjana de la quantitat que s'ha venut d’aquells productes els quals han sigut
 comprats més cops que la mitjana de compres de tots els producte.*/
+
+
+
 /*14. Trobar les comandes que s’han realitzat abans de la data mitjana de les comandes.*/
-/*15. Empleats que han atès comandes que superen l’impo rt mitja de les comandes.*/
+
+
+
+/*15. Empleats que han atès comandes que superen l’import mitja de les comandes.*/
