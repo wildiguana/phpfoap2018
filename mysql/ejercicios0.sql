@@ -70,7 +70,7 @@ SELECT regio,ciutat,vendes FROM oficines ORDER BY regio ASC;
 -- clasificadas por región y dentro de cada región por el superávit de manera que
 -- las de mayor superávit aparezcan primero.
 
-SELECT ciutat,regio,vendes-objectiu as supera FROM oficines ORDER BY regio supera desc;
+SELECT ciutat,regio,vendes-objectiu as supera FROM oficines ORDER BY regio, supera desc;
 
 --15 Listar los códigos de los directores de oficinas. El director 108 aparece en 6
 -- oficinas, por tanto aparecerá seis veces en el resultado de la consulta.
