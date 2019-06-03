@@ -2,11 +2,11 @@
 $ip = 'localhost';
 $usuario = 'root'; 
 $password = '';
-$db_name = 'test45';
+$db_name = 'own';
 ?>
 
 <?php
-$con = mysql_connect($ip,$usuario,$password,$db_test45);
+$con = mysql_connect($ip,$usuarios,$password,$db_own);
  if (!$con)  {
         echo "Ha fallat la connexió a MySQL: " . mysql_connect_error()
 	echo "Ha fallat la connexió a MySQL: " . mysql_connect_error();
