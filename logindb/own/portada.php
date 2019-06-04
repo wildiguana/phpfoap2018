@@ -1,5 +1,7 @@
 <?php session_start();
 
+include ("funcion.php");
+
   $error="";
     if(isset($_SESSION["login"])){
       header('Location:muro.php');
