@@ -31,7 +31,7 @@
                 <div class="col-md-12">
                     <div class="page-header clearfix">
                         <h2 class="pull-left">Usuarios</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Add New Employee</a>
+                        <a href="create.php" class="btn btn-success pull-right">Agregar nuevo usuario</a>
                     </div>
                     <?php
                     // Include config file
@@ -45,10 +45,10 @@
                                 echo "<thead>";
                                     echo "<tr>";
                                         echo "<th>#</th>";
-                                        echo "<th>Name</th>";
-                                        echo "<th>Address</th>";
-                                        echo "<th>Salary</th>";
-                                        echo "<th>Action</th>";
+                                        echo "<th>Nombre</th>";
+                                        echo "<th>Dirección</th>";
+                                        echo "<th>Salario</th>";
+                                        echo "<th>Ver/Modificar/Eliminar</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -70,10 +70,10 @@
                             // Free result set
                             mysqli_free_result($result);
                         } else{
-                            echo "<p class='lead'><em>No records were found.</em></p>";
+                            echo "<p class='lead'><em>No se encontraron registros.</em></p>";
                         }
                     } else{
-                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                        echo "ERROR: No se puede ejecutar $sql. " . mysqli_error($link);
                     }
  
                     // Close connection
