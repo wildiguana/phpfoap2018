@@ -48,7 +48,7 @@
                                         echo "<th>Nombre</th>";
                                         echo "<th>Dirección</th>";
                                         echo "<th>Salario</th>";
-                                        echo "<th>Ver/Modificar/Eliminar</th>";
+                                        echo "<th>Opciones</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -59,9 +59,9 @@
                                         echo "<td>" . $row['address'] . "</td>";
                                         echo "<td>" . $row['salary'] . "</td>";
                                         echo "<td>";
-                                            echo "<a href='read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
-                                            echo "<a href='update.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
-                                            echo "<a href='delete.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                                            echo "<a href='read.php?id=". $row['id'] ."' title='Ver registro' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
+                                            echo "<a href='update.php?id=". $row['id'] ."' title='Modificar registro' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
+                                            echo "<a href='delete.php?id=". $row['id'] ."' title='Eliminar registro' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
                                         echo "</td>";
                                     echo "</tr>";
                                 }

@@ -14,9 +14,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate name
     $input_name = trim($_POST["name"]);
     if(empty($input_name)){
-        $name_err = "Please enter a name.";
+        $name_err = "Este campo no puede estar vacío.";
     } elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
-        $name_err = "Please enter a valid name.";
+        $name_err = "Introduzca un nombre válido.";
     } else{
         $name = $input_name;
     }
@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate address
     $input_address = trim($_POST["address"]);
     if(empty($input_address)){
-        $address_err = "Please enter an address.";     
+        $address_err = "Este campo no puede estar vacío.";     
     } else{
         $address = $input_address;
     }
@@ -32,9 +32,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate salary
     $input_salary = trim($_POST["salary"]);
     if(empty($input_salary)){
-        $salary_err = "Please enter the salary amount.";     
+        $salary_err = "Este campo no puede estar vacío.";     
     } elseif(!ctype_digit($input_salary)){
-        $salary_err = "Please enter a positive integer value.";
+        $salary_err = "Introduzca un importe válido.";
     } else{
         $salary = $input_salary;
     }
@@ -59,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 header("location: crud_prueba.php");
                 exit();
             } else{
-                echo "Something went wrong. Please try again later.";
+                echo "Algo ha ido mal. Por favor, prueba más tarde.";
             }
         }
          
