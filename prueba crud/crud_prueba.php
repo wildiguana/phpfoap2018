@@ -38,7 +38,7 @@
                     require_once "config.php";
                     
                     // Attempt select query execution
-                    $sql = "SELECT * FROM employees";
+                    $sql = "SELECT * FROM usuarios";
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){
                             echo "<table class='table table-bordered table-striped'>";
@@ -46,8 +46,9 @@
                                     echo "<tr>";
                                         echo "<th>#</th>";
                                         echo "<th>Nombre</th>";
-                                        echo "<th>Dirección</th>";
-                                        echo "<th>Salario</th>";
+                                        echo "<th>Apellidos</th>";
+                                        echo "<th>Email</th>";
+                                        echo "<th>Contraseña</th>";
                                         echo "<th>Opciones</th>";
                                     echo "</tr>";
                                 echo "</thead>";
@@ -55,9 +56,10 @@
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
                                         echo "<td>" . $row['id'] . "</td>";
-                                        echo "<td>" . $row['name'] . "</td>";
-                                        echo "<td>" . $row['address'] . "</td>";
-                                        echo "<td>" . $row['salary'] . "</td>";
+                                        echo "<td>" . $row['nombre'] . "</td>";
+                                        echo "<td>" . $row['apellidos'] . "</td>";
+                                        echo "<td>" . $row['email'] . "</td>";
+                                        echo "<td>" . $row['contrasena'] . "</td>";
                                         echo "<td>";
                                             echo "<a href='read.php?id=". $row['id'] ."' title='Ver registro' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
                                             echo "<a href='update.php?id=". $row['id'] ."' title='Modificar registro' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";

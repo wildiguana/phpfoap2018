@@ -6,8 +6,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
+$nombre = $apellidos = $email = $contrasena = "";
+$nombre_err = $apellidos_err = $email_err = $contrasena_err = "";
  
 // Processing form data when form is submitted
 if(isset($_POST["id"]) && !empty($_POST["id"])){
@@ -15,46 +15,61 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     $id = $_POST["id"];
     
     // Validate name
-    $input_name = trim($_POST["nombre"]);
-    if(empty($input_name)){
-        $name_err = "Introduzca un nombre válido.";
-    } elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
-        $name_err = "Introduzca un nombre válido.";
+    $input_nombre = trim($_POST["nombre"]);
+    if(empty($input_nombre)){
+        $nombre_err = "Introduzca un nombre válido.";
+    } elseif(!filter_var($input_nombre, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
+        $nombre_err = "Introduzca un nombre válido.";
     } else{
-        $name = $input_name;
+        $nombre = $input_nombre;
+    }
+
+    // Validate apellidos
+    $input_apellidos = trim($_POST["apellidos"]);
+    if(empty($input_apellidos)){
+        $apellidos_err = "Por favor ingrese apellido/s válido/s.";     
+    } elseif(!ctype_digit($input_apellidos)){
+        $apellidos_err = "Texto inválido.";
+    } else{
+        $apellidos = $input_apellidos;
     }
     
-    // Validate address address
-    $input_address = trim($_POST["dirección"]);
-    if(empty($input_address)){
-        $address_err = "Introduzca una dirección válida.";     
+
+    //check email and password definition
+
+    // Validate email
+    $input_email = trim($_POST["email"]);
+    if(empty($input_email)){
+        $email_err = "Introduzca un email válido.";     
     } else{
-        $address = $input_address;
+        $email = $input_email;
     }
-    
-    // Validate salary
-    $input_salary = trim($_POST["salario"]);
-    if(empty($input_salary)){
-        $salary_err = "Por favor ingrese un valor.";     
-    } elseif(!ctype_digit($input_salary)){
-        $salary_err = "Ingrese un valor positivo.";
-    } else{
-        $salary = $input_salary;
-    }
-    
+
+     // Validate password
+     $input_contrasena = trim($_POST["contrasena"]);
+     if(empty($input_contrasena)){
+         $contrasena_err = "Introduzca una contraseña válida.";     
+     } else{
+         $contrasena = $input_contrasena;
+     }
+
+     //have been checked email and password?
+
+       
     // Check input errors before inserting in database
-    if(empty($name_err) && empty($address_err) && empty($salary_err)){
+    if(empty($nombre_err) && empty($apellidos_err) && empty($email_err) && empty($contrasena_err)){
         // Prepare an update statement
-        $sql = "UPDATE employees SET name=?, address=?, salary=? WHERE id=?";
+        $sql = "UPDATE usuarios SET nombre=?, apellidos=?, email=?, contrasena=? WHERE id=?";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sssi", $param_name, $param_address, $param_salary, $param_id);
+            mysqli_stmt_bind_param($stmt, "ssssi", $param_nombre, $param_apellidos, $param_email, $param_contrasena, $param_id);
             
             // Set parameters
-            $param_name = $name;
-            $param_address = $address;
-            $param_salary = $salary;
+            $param_nombre = $nombre;
+            $param_apellidos = $apellidos;
+            $param_email = $email;
+            $param_contrasena = $contrasena;
             $param_id = $id;
             
             // Attempt to execute the prepared statement
@@ -80,7 +95,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $id =  trim($_GET["id"]);
         
         // Prepare a select statement
-        $sql = "SELECT * FROM employees WHERE id = ?";
+        $sql = "SELECT * FROM usuarios WHERE id = ?";
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "i", $param_id);
@@ -97,9 +112,10 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     
                     // Retrieve individual field value
-                    $name = $row["name"];
-                    $address = $row["address"];
-                    $salary = $row["salary"];
+                    $nombre = $row["nombre"];
+                    $apellidos = $row["apellidos"];
+                    $email = $row["email"];
+                    $contrasena =$row["contrasena"];
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
                     header("location: error.php");
@@ -147,20 +163,25 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     </div>
                     <p>Para actualizar el registro, por favor modifíquelo y presione aceptar.</p>
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
-                        <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
+                        <div class="form-group <?php echo (!empty($nombre_err)) ? 'hay un error' : ''; ?>">
                             <label>Nombre</label>
-                            <input type="text" name="nombre" class="form-control" value="<?php echo $name; ?>">
-                            <span class="help-block"><?php echo $name_err;?></span>
+                            <input type="text" name="nombre" class="form-control" value="<?php echo $nombre; ?>">
+                            <span class="help-block"><?php echo $nombre_err;?></span>
                         </div>
-                        <div class="form-group <?php echo (!empty($address_err)) ? 'has-error' : ''; ?>">
-                            <label>Address</label>
-                            <textarea name="dirección" class="form-control"><?php echo $address; ?></textarea>
-                            <span class="help-block"><?php echo $address_err;?></span>
+                        <div class="form-group <?php echo (!empty($apellidos_err)) ? 'hay un error' : ''; ?>">
+                            <label>Apellidos</label>
+                            <input type="text" name="apellidos" class="form-control" value="<?php echo $apellidos; ?>">
+                            <span class="help-block"><?php echo $apellidos_err;?></span>
                         </div>
-                        <div class="form-group <?php echo (!empty($salary_err)) ? 'has-error' : ''; ?>">
-                            <label>Salario</label>
-                            <input type="text" name="salario" class="form-control" value="<?php echo $salary; ?>">
-                            <span class="help-block"><?php echo $salary_err;?></span>
+                        <div class="form-group <?php echo (!empty($email_err)) ? 'hay un error' : ''; ?>">
+                            <label>Email</label>
+                            <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
+                            <span class="help-block"><?php echo $email_err;?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($contrasena_err)) ? 'hay un error' : ''; ?>">
+                            <label>Contraseña</label>
+                            <input type="text" name="contraseña" class="form-control" value="<?php echo $contrasena; ?>">
+                            <span class="help-block"><?php echo $contrasena_err;?></span>
                         </div>
                         <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                         <input type="submit" class="btn btn-primary" value="Aceptar">
