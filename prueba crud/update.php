@@ -6,8 +6,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$nombre = $apellidos = $email = $contrasena = "";
-$nombre_err = $apellidos_err = $email_err = $contrasena_err = "";
+$nombre = $apellidos = $email = "";
+$nombre_err = $apellidos_err = $email_err = "";
  
 // Processing form data when form is submitted
 if(isset($_POST["id"]) && !empty($_POST["id"])){
@@ -46,30 +46,29 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     }
 
      // Validate password
-     $input_contrasena = trim($_POST["contrasena"]);
-     if(empty($input_contrasena)){
-         $contrasena_err = "Introduzca una contraseña válida.";     
-     } else{
-         $contrasena = $input_contrasena;
-     }
-
+     //$input_contrasena = trim($_POST["contrasena"]);
+     //if(empty($input_contrasena)){
+     //    $contrasena_err = "Introduzca una contraseña válida.";     
+     //} else{
+     //    $contrasena = $input_contrasena;
+     //}
+     echo "holllll";
      //have been checked email and password?
 
        
     // Check input errors before inserting in database
-    if(empty($nombre_err) && empty($apellidos_err) && empty($email_err) && empty($contrasena_err)){
+    if(empty($nombre_err) && empty($apellidos_err) && empty($email_err)){
         // Prepare an update statement
-        $sql = "UPDATE usuarios SET nombre=?, apellidos=?, email=?, contrasena=? WHERE id=?";
-         
+        $sql = "UPDATE usuarios SET nombre=?, apellidos=?, email=? WHERE id=?";
+        echo "test"; 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssssi", $param_nombre, $param_apellidos, $param_email, $param_contrasena, $param_id);
+            mysqli_stmt_bind_param($stmt, "ssssi", $param_nombre, $param_apellidos, $param_email, $param_id);
             
             // Set parameters
             $param_nombre = $nombre;
             $param_apellidos = $apellidos;
             $param_email = $email;
-            $param_contrasena = $contrasena;
             $param_id = $id;
             
             // Attempt to execute the prepared statement
@@ -115,8 +114,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     $nombre = $row["nombre"];
                     $apellidos = $row["apellidos"];
                     $email = $row["email"];
-                    $contrasena =$row["contrasena"];
-                } else{
+                   } else{
                     // URL doesn't contain valid id. Redirect to error page
                     header("location: error.php");
                     exit();
@@ -178,11 +176,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                             <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
                             <span class="help-block"><?php echo $email_err;?></span>
                         </div>
-                        <div class="form-group <?php echo (!empty($contrasena_err)) ? 'hay un error' : ''; ?>">
+                        <!--<div class="form-group <?php echo (!empty($contrasena_err)) ? 'hay un error' : ''; ?>">
                             <label>Contraseña</label>
-                            <input type="text" name="contraseña" class="form-control" value="<?php echo $contrasena; ?>">
+                            <input type="text" name="contrasena" class="form-control" value="<?php echo $contrasena; ?>">
                             <span class="help-block"><?php echo $contrasena_err;?></span>
-                        </div>
+                        </div>-->
                         <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                         <input type="submit" class="btn btn-primary" value="Aceptar">
                         <a href="crud_prueba.php" class="btn btn-default">Cancelar</a>
