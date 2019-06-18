@@ -49,20 +49,13 @@
                <div id ="contenido">
                 <form action="DB-Empresa.php" method="POST">
                 
-                    <table >
-                        <tr>
-                            <td>Nombre</td>
-                            <td>Número de cliente</td>
-                            <td>Límite de crédito</td>
-                        </tr>
+                   
                         <?php while($u = $resultat->fetch_assoc()){
                                 ?>
-                            <tr>
-                                <td><?php echo utf8_encode($u['nom']); ?></td>
-                                <!--echo "<br>";-->
-                                <td><?php echo $u['numclie']; ?></td>
-                                <td><?php echo $u['limitcredit']; ?></td>
-                            </tr>
+                           
+                                echo "<br>";
+                               
+                            
                         <?php
                             }
                             mysqli_close($con);    
@@ -76,10 +69,7 @@
  
     <footer>  <!-- Pie de pagina -->
         <div class='define'>
-        <span class="input-group-btn">
-                      <button class="btn btn-secondary" type="button">Vista previa pdf</button>
-                    </span>
-        <span class="input-group-btn">
+            <span class="input-group-btn">
                       <button class="btn btn-secondary" type="button">Guardar pdf</button>
                     </span>
         </div>
