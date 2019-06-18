@@ -46,7 +46,7 @@
                     <table >
                         <tr>
                             <td>Nombre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td>Número de liente &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Número de cliente &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td>Límite de crédito &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         </tr>
                         <?php while($u = $resultat->fetch_assoc()){
