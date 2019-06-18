@@ -25,20 +25,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--<link rel="stylesheet" type="text/css" href="../css/estilo.css" />-->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
 </head>
  
 <body>
 <div id="wrapper">
         <header> <!-- Encabezado -->
             <div class='define'>
-            <div style= "width:200px"> <h2> Listado de clientes de empresa </h2></div> 
+            <div style= "width:600px"> <h4> Listado de clientes de empresa </h4></div> 
             </div>
         </header>
 
         <section>  <!-- Contenido de la pagina -->
             <div class='define'>
-                <div style="float:left"> <img src= "../imgs/SpiritSocial-2.jpg" alt="Logo" height="150px" width="960px"></div>
+                <div style="float:left"> <img src= "../img/logo.gif" alt="Logo" height="50px" width="50px"></div>
                  <!--<div id ="logo"> <img src= "../imgs/SpiritSocial.jpg" alt="Logo" height="300px" width="500px"></div> -->
                 <div id ="contenido">
                 <form action="DB-Empresa.php" method="POST">
@@ -69,7 +69,7 @@
  
     <footer>  <!-- Pie de pagina -->
         <div class='define'>
-            
+        <h4> Imprimir, guardar </h4>  
         </div>
     </footer>
 </body>
