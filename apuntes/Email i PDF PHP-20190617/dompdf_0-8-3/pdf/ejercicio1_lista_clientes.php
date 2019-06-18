@@ -25,14 +25,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../css/estilo.css" />-->
 </head>
  
 <body>
 <div id="wrapper">
         <header> <!-- Encabezado -->
             <div class='define'>
-            <div style= "width:200px"> <h2> Spirit Social </h2></div> 
+            <div style= "width:200px"> <h2> Listado de clientes de empresa </h2></div> 
             </div>
         </header>
 
@@ -45,9 +45,9 @@
                 
                     <table >
                         <tr>
-                            <td>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td>Numero Cliente &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td>Limite de Credito &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Nombre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Número de liente &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Límite de crédito &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         </tr>
                         <?php while($u = $resultat->fetch_assoc()){
                                 ?>
@@ -69,7 +69,7 @@
  
     <footer>  <!-- Pie de pagina -->
         <div class='define'>
-            <p>Al hacer clic en Registrar, aceptas nuestras Condiciones. Obtén más información sobre cómo recopilamos, usamos y compartimos tu información en la Política de datos, así como el uso que hacemos de las cookies y tecnologías similares en nuestra Política de cookies.</p>
+            
         </div>
     </footer>
 </body>
