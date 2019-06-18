@@ -1,0 +1,18 @@
+h1 {
+	text color: green;
+}
+p {
+	text-decoration: underline;
+}
+table, th, td {
+	border:1px solid rgb(24, 7, 121);
+}
+.solucion {
+	font-size: 14px;
+	color: red;
+}
+h4 {
+	text color: blue;
+	font-family: 'Segoe UI', sans-serif;
+	text-decoration-line: underline;
+}
