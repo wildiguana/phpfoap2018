@@ -23,25 +23,25 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">Coffee News</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="#">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Registro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Salir</a>
           </li>
         </ul>
       </div>
@@ -49,21 +49,27 @@
   </nav>
 
   <!-- Header - set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-    <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
-  </header>
+  <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=766');">
+  <div style="height: 200px;"></div>
+</header>
 
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+      <h1>Acceso usuarios registrados</h1>
+      <form  method="post">
+          Usuario:<input type="text" name="usuario" id=""><br>
+          Contraseña:<input type="password" name="password" id=""><br>
+          Recordar: <input type="checkbox" name="recordar" value="1"><br>
+          <input type="submit" name="submit" value="Acceder">
+      </form>
     </div>
   </section>
 
+  <h4>¿No estás registrado? Accede más abajo como "invitado" con contraseña 1234, o regístrate</h4>
+
   <!-- Image Section - set the background image for the header in the line below -->
-  <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
+  <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=341');">
     <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
     <div style="height: 200px;"></div>
   </section>
@@ -73,11 +79,10 @@
         <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
-              <h1 class="mt-5">Gestión de noticias</h1>
-                <h4 class="mt-5"><u>RELLENE EL FORMULARIO</u></h4>
-        </div>
+              <h1 class="mt-5">Acceso invitado</h1>
+          </div>
         
-        <form  method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"])?>">
+        <!--<form  method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"])?>">
                     
         <fieldset> 
                         
@@ -104,7 +109,14 @@
                         this.value=’En proceso...’; this.form.submit()" >
                     </fieldset>
          
-        </form>
+        </form>-->
+        
+    <form method="post">
+        <br>Usuario invitado: <input type="text" name="newuser" id="">
+        <br><input type="submit" name="new" value="Acceder">
+
+    
+    </form>
         <?php
                 $nombre = $apellidos = $edad = $email = $comentarios = "";
                 $nombreErr = $edadErr = $emailErr="";
@@ -147,20 +159,15 @@
                 }
             ?>
 
-
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-    </div>
+        </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+ <!-- Footer - pie de página con aviso legal -->
+ <footer class="py-5 bg-dark">
+          <div class="container">
+            <?php include 'footer.php';?>
+          </div>
+        </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
