@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Examen final MF0491</title>
+	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<script type="text/javascript" src="/js/codigo.js"></script>
+	
+	
+	
+
+
+	
+</head>
+<body>
+	<noscript>Necesita JavaScript</noscript>
+	<!--definir cabecera-zona superior- botones de selección y cuerpo principal-->
+	<div id="cuerpo principal">
+		<div id="titulo">
+			<h1><span>El universo</span></h1>
+		</div>
+
+			<div id="botones">
+				
+				<a href="#">Inicio</a>
+				<a href="#">Planetas</a>
+				<a href="#">Galerías</a>
+				<a href="#">Registro</a>
+			</div>
+			
+				
+			
+			</div>
+
+		
+	
+	
+	<div id="sidebar">
+
+		<button>Marte</button><br>
+		<button>Saturno</button><br>
+		<button>Júpiter</button><br>
+	</div>
+		<div id="contenedor">
+
+			<p>hiñññ</p>
+	</div>
+	<form action="registro.html" method="post" enctype="multipart/form-data">
+		
+		<fieldset>
+		<legend>Información personal</legend>
+		<label>Nombre*</label>
+		<input type="text" name="nombre" data-rule="required" data-msg="Campo obligatorio"><span id="error_nombre"></span>
+		<br>
+		<label>Apellido*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_apellido"></span>
+		<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono*</label>
+		<input type="text" name="telefono" data-rule="required" data-msg="Campo obligatorio"><span id="error_telefono"></span>
+		<br>
+		<label>Fecha de nacimiento*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_fnacimiento"></span>
+		<br>
+		<label>Sexo</label><span id="error_sexo"></span><br>
+		<input type="radio" name="sexo" value="1" data-msg="Hombre">Hombre
+		<input type="radio" name="sexo" value="2" data-msg="Mujer">Mujer
+		<span id="error_sexo"></span>
+	</form>
+</fieldset>
+		<br>
+		<fieldset>
+		<legend>Información laboral</legend>
+		<select name="laboral[]"multiple>
+			<label>Profesión</label>
+			<br>
+			<optgroup label="Selecciona tu área de aplicación">
+				
+				<option>Astrónomo</option>
+				<option>Físico</option>
+				<option>Geólogo</option>
+		</select>
+<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono</label>
+		<input type="text" name="telefono" >		
+	</form>
+</fieldset>
+
+<div id="pie">
+	<h2>Protección de datos de carácter personal</h2>
+	<p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, sobre protección de datos de carácter personal, le informamos que sus datos personales recogidos por medio de los formularios de este web serán tratados de forma confidencial y quedarán incorporados a los archivos de la Universidad Politécnica de Cataluña para llevar a cabo una gestión correcta y responder a las consultas o sugerencias que propone en los formularios. De la misma manera, le informamos que puede ejercer los derechos de acceso, rectificación, cancelación y oposición ante el Servicio de Comunicación y Promoción, calle Jordi Girona, 31, Barcelona 08034, o a la dirección electrónica: info@cdsarti.org</p>
+	<br>
+	<input type="checkbox" name="check" checked="checked">Si, acepto las condiciones expuestas
+	
+</div>
+</body>
+</html>

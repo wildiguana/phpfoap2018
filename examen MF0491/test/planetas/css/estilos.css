@@ -1,0 +1,22 @@
+/*.cuerpo_principal { background-color: rgb(51,102,255); }
+		.logo {float: right;}
+		.contenedor { float: right; }
+		.form, .pie{text-align: left; text-decoration: blink; font-family: "roboto", sans-serif;}
+		.sidebar { text-align: center; text-decoration: blink; font-family: "roboto", sans-serif; background-color: rgb(230,172,0); width: 260px; height: 355px; float: left;}
+		h1, .legend {text-align: center; text-decoration: underline; font-family: "roboto", sans-serif;}
+		.button {
+			padding: 8px 20px;
+			border: none;
+			
+			display: inline-block;
+			margin: 4px 2px;	
+			}
+		img {
+			border-radius: 10px;
+		}*/
+		h2, .mercurio, .venus, .tierra, .marte, .jupiter, .saturno, .neptuno { 
+			text-align: center; text-decoration: blink;font-family: "roboto", sans-serif; }
+		.oculto { display: none; }
+		.visible { display: inline;}
+		body { background-color: rgb(166,166,166); }
+		img { border-radius: 10px; }

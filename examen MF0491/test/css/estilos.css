@@ -1,0 +1,84 @@
+
+	/*	.jumbotron{
+			background-color: #aad8ea;
+		}
+		.container.table hover:{
+			background-color: #868268;
+		}
+		.navbar-default .navbar-brand;hover{
+			color: #ffffff;
+		}
+		.navbar-default .navbar-nav>a:hover{
+			color: #fff; background-color: transparent;
+		}
+
+.sidebar{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a{
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a.active{
+  background-color: #4caf50;
+  color: withe;
+}
+.sidebar a:hover:not(.active){
+  background-color: #555;
+  color: white;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media screen and (max-width: 700px){
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a{float: left;}
+  div.content {margin-left: 0;}
+}
+@media screen and (max-width: 400px){
+  .sidebar a{
+    text-align: center;
+    float: none;
+  }
+}
+
+#contenedor {
+	width: 90%;
+	max-width: 900px;
+	width: expression(document.body.clientWidth > 901?) "900px": "auto");
+	margin: 0 auto;
+}*/
+*{margin: auto;padding: 0; text-align: center}
+#cabecera { font: bold 1.3em verdana; background-color: #feffe4; }
+h1 { text-align: center; padding: 0.50em }
+#menu {float: left; width: 25%; background-color: #e3f2ff;}
+#menu img{ width: 35%; margin: 5%; cursor: pointer; }
+#contenedor {float: left; width: 75%;}
+#visor { width: 60%; margin: 10% }
+#visor img {width: 100%}
+#titulo {padding: 1em;}
+#menu { padding: 0.50em; margin-bottom: 0.50em; }
+#canciones, #historias, #inicio, #registro {padding: 0.50em;}
+#pie {padding-bottom: 0.50em; padding-top: 0.50em;}
+#contenido #contenedor {margin-bottom: 1em;}
+#contenido #contenedor {margin: 0.50em;}
+#sidebar {margin-top: 1em;}
+#pie {margin-top: 1em;}*/
+.oculto {display: none;}
+.visible {display: inline;}
+
+

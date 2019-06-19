@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Examen final MF0491</title>
+	<!--<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<script type="text/javascript" src="/js/codigo.js"></script>-->
+	<style type="text/css">
+		/*.cuerpo_principal { background-image: "images/sky.jpg" }*/
+		.cuerpo_principal { background-color: rgb(51,102,255); }
+		.logo {float: right;}
+		.contenedor { float: right; }
+		.form, .pie{text-align: left; text-decoration: blink; font-family: "roboto", sans-serif;}
+		.sidebar { text-align: center; text-decoration: blink; font-family: "roboto", sans-serif; background-color: rgb(230,172,0); width: 260px; height: 355px; float: left;}
+		h1, .legend {text-align: center; text-decoration: underline; font-family: "roboto", sans-serif;}
+		.button {
+			padding: 8px 20px;
+			border: none;
+			
+			display: inline-block;
+			margin: 4px 2px;	
+			}
+		img { border-radius: 10px;}
+
+
+	
+	</style>
+
+	
+	
+		<!--window.onload= function()-->
+
+
+	
+</head>
+<body>
+	<noscript>Necesita JavaScript</noscript>
+	<div>
+	<!--definir cabecera-zona superior- botones de selección y cuerpo principal-->
+	<div class="cuerpo_principal">
+		<a name="inicio"></a>
+		<div class="titulo">
+			<h1>Astronomía</h1>
+
+			</div>
+				<div class="legend"><legend>El universo</legend></div>
+			<div class="logo">
+				<img src="images/hubble.jpg">
+			</div>
+
+			<div class="background"></div>
+			<div class="botones">
+
+				
+				<button><span style="color: black">Inicio</a></span></button>
+				<button><span style="color: black"><a href="#planeta_sel">Planetas</a></span></button>
+				<button><span style="color: black"><a href="#">Galerías</a></span></button>
+				<button><span style="color: black"><a href="#registro">Registro</a></span></button>
+				
+			</div>
+		
+			</div>	
+	</div>
+
+		
+	
+	
+		
+	<div class="sidebar">
+		<a name="planetas_sel"></a>
+
+		
+			<a href="planetas/mercurio.html" target="_blank" class="button">Mercurio</a><br>
+			<a href="planetas/venus.html" target="_blank" class="button">Venus</a><br>
+			<a href="planetas/tierra.html" target="_blank" class="button">Tierra</a><br>
+			<a href="planetas/marte.html" target="_blank" class="button">Marte</a><br>
+			<a href="planetas/jupiter.html" target="_blank"class="button">Júpiter</a><br>
+			<a href="planetas/saturno.html" target="_blank"class="button">Saturno</a><br>
+			<a href="planetas/urano.html" target="_blank"class="button">Urano</a><br>
+			<a href="planetas/neptuno.html" target="_blank"class="button">Neptuno</a><br>
+			
+			
+
+	</div>
+		<div class="contenedor">
+			<iframe src="home.html" width="500" height="350" scrolling="yes" sandbox="allow-same-origin allow-scripts"></iframe>
+		</div>
+	
+	</div>
+	<div class="form">
+		<a name="registro"></a>
+	<form action="registro.html" method="post">
+		
+		<fieldset>
+		<div class="legend"><legend>Información personal</legend></div>
+		<label>Nombre*</label>
+		<input type="text" name="nombre" data-rule="required" data-msg="Campo obligatorio"><span id="error_nombre"></span>
+		<br>
+		<label>Apellido*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_apellido"></span>
+		<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono*</label>
+		<input type="text" name="telefono" data-rule="required" data-msg="Campo obligatorio"><span id="error_telefono"></span>
+		<br>
+		<label>Fecha de nacimiento*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_fnacimiento"></span>
+		<br>
+		<label>Sexo</label><span id="error_sexo"></span><br>
+		<input type="radio" name="sexo" value="1" data-msg="Hombre">Hombre
+		<input type="radio" name="sexo" value="2" data-msg="Mujer">Mujer
+		<span id="error_sexo"></span>
+	
+</fieldset>
+		
+		<fieldset>
+		<div class="legend"><legend>Información laboral</legend></div>
+		<select name="laboral[]"multiple>
+			<label>Profesión</label>
+			<br>
+			<optgroup label="Selecciona tu área de aplicación">
+				
+				<option>Astrónomo</option>
+				<option>Físico</option>
+				<option>Geólogo</option>
+			</optgroup>
+		</select>
+<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono</label>
+		<input type="text" name="telefono" >		
+	</form>
+</fieldset>
+<a href="#inicio">volver a inicio</a>
+</div>
+<div class="pie">
+	<h2><u>Protección de datos de carácter personal</u></h2>
+	<p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, sobre protección de datos de carácter personal, le informamos que sus datos personales recogidos por medio de los formularios de este web serán tratados de forma confidencial y quedarán incorporados a los archivos de la Universidad Politécnica de Cataluña para llevar a cabo una gestión correcta y responder a las consultas o sugerencias que propone en los formularios. De la misma manera, le informamos que puede ejercer los derechos de acceso, rectificación, cancelación y oposición ante el Servicio de Comunicación y Promoción, calle Jordi Girona, 31, Barcelona 08034, o a la dirección electrónica: info@cdsarti.org</p>
+	<br>
+	<input type="checkbox" name="check" checked="checked">Si, acepto las condiciones expuestas
+	
+</div>
+</body>
+</html>

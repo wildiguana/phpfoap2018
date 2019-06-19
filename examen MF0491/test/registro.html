@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>formulario registro</title>
+	</head>
+	<body>
+
+	</div>
+		<div id="contenedor">
+			<iframe src="home.html" width="250" height="250" scrolling="yes" sandbox></iframe>
+			
+		
+	</div>
+
+	<form action="registro.html" method="post" enctype="multipart/form-data">
+		
+		<fieldset>
+		<legend>Información personal</legend>
+		<label>Nombre*</label>
+		<input type="text" name="nombre" data-rule="required" data-msg="Campo obligatorio"><span id="error_nombre"></span>
+		<br>
+		<label>Apellido*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_apellido"></span>
+		<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono*</label>
+		<input type="text" name="telefono" data-rule="required" data-msg="Campo obligatorio"><span id="error_telefono"></span>
+		<br>
+		<label>Fecha de nacimiento*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_fnacimiento"></span>
+		<br>
+		<label>Sexo</label><span id="error_sexo"></span><br>
+		<input type="radio" name="sexo" value="1" data-msg="Hombre">Hombre
+		<input type="radio" name="sexo" value="2" data-msg="Mujer">Mujer
+		<span id="error_sexo"></span>
+	</form>
+</fieldset>
+		<br>
+		<fieldset>
+		<legend>Información laboral</legend>
+		<select name="laboral[]"multiple>
+			<label>Profesión</label>
+			<br>
+			<optgroup label="Selecciona tu área de aplicación">
+				
+				<option>Astrónomo</option>
+				<option>Físico</option>
+				<option>Geólogo</option>
+		</select>
+<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono</label>
+		<input type="text" name="telefono" >		
+	</form>
+</fieldset>
+
+</body>
+	</html>

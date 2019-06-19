@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Expires" content="no-cache">
+	<title>ejercicio 3</title>
+	<style type="text/css">
+		p {
+			font-size: 14px; 
+		}
+	</style>
+	<script type="text/javascript">
+		var contenido =document.createElement("p");
+		var fontSize=1;
+		function zoomIn() {
+			fontSize+=0.1;
+			document.text.style.fontSize=fontSize+"em";
+		}
+		function zoomOut() {
+			fontSize-=0.1;
+			document.body.style.fontSize=fontSize+"em";
+		}
+	</script>
+
+</head>
+<body>
+	<div id="text">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+	</div>
+
+	<div> 
+		<span onclick="zoomIn()">Para agrandar texto pulsa aqui</span></div>
+	<br>
+	<div>
+		<span onclick="zoomOut()">para reducir el texto pulsa aqui</span>
+	</div>
+	<br>  
+	<div>
+		<span onclick= "font size= 1";>para volver al tamaño original pulsa aqui</span>
+		</div>
+
+</body>
+</html>
