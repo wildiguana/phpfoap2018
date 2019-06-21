@@ -15,10 +15,14 @@
 
 <body>
 
+<header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=766');">
+<div style="height: 20px;"></div>
+</header>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><h2><u>Coffe News</u><h2></a>
+      <a class="navbar-brand" href="#"><h2><u>Coffee News</u><h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,7 +30,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
           <li class="nav-item">
-              <a class="nav-link" href=""target="_blank"><button type="button" 
+              <a class="nav-link" href="indice.php"target="_blank"><button type="button" 
                 class="btn btn-default btn-warning">Volver a inicio</a>
           </button></a>
           </li>
@@ -39,41 +43,35 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-      <h1 class="mt-5">Coffe News</h1>
-        <h4 class="mt-5"><u>RELLENE EL FORMULARIO</u></h4>
+      <h1 class="mt-5">Coffee News</h1>
+        <h4 class="mt-5"><u>Todos los campos son obligatorios</u></h4>
 </div>
 
 <form method="post" action="<php echo htmlspecialchars($_SERVER"["PHP_SELF"])">
             
 <fieldset> 
                 
-              <label>Nombre*</label>
+              <label><h5>Nombre</h5></label>
                 <input type="text" name="nombre" id="nombre">
-              <label>Apellidos</label>
+              <label><h5>Apellidos</h5></label>
                 <input type="text" name="apellidos" id="apellidos"> 
             <br>
-              <label>Fecha de nacimiento</label>
-                <input type="number" name="nacimiento"id="nacimiento">   
-            <br>
-              <label>Email*</label>
+              <label><h5>Email</h5></label>
                 <input type="text" name="email" size="30">
-              <label>Contraseña*</label>
+              <label><h5>Contraseña</h5></label>
                 <input type="password" name="password">
-              <label>Repita la contraseña</label>
+              <label><h5>Repita la contraseña</h5></label>
                 <input type="password" name="password1">
               <br>
-              <label>Comentarios</label>
-                <textarea name="comentarios" maxlength="50"></textarea>
-              <br>
-                <input type="submit"name="registro"value="Registrarse" 
+            <input type="submit"name="registro"value="Registrarse" 
                 class="btn btn-outline-dark" onclick="this.disabled=true;
                 this.value=’En proceso...’; this.form.submit()" >
             </fieldset>
  
 </form>
 <?php
-    $nombre=$apellidos=$email=$password=$password1=$cometarios="";
-    $nombreErr=$apellidosErr=$emailErr=$passwordErr=$password1Err=$comentariosErr="";
+    $nombre=$apellidos=$email=$password=$password1="";
+    $nombreErr=$apellidosErr=$emailErr=$passwordErr=$password1Err="";
     if($_SERVER["REQUEST_METHOD"]=="POST"){
     if (empty($_POST["nombre"])){
       $nombreErr="Campo obligatorio";
@@ -83,25 +81,18 @@
 
       $nombre=test_input($_POST["nombre"]);
       $apellido=test_input($_POST["apellido"]);
-      $nacimiento=test_input($_POST["nacimento"]);
       $email=test_input($_POST["email"]);
       $password=test_input($_POST["password"]);
       $password1=test_input($_POST["password1"]);
-      $comentarios=test_input($_POST["comentarios"]);
-    }
-    
-
-
-       
-
- 
-  
-       
-          
-        
-
+      }
 
 
 ?>
+<!-- Footer - pie de página con aviso legal -->
+<footer class="py-5 bg-dark">
+          <div class="container">
+            <?php include 'footer.php';?>
+          </div>
+        </footer>
 </body>
 </html>

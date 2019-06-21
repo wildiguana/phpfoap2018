@@ -16,7 +16,7 @@
 <body>
 
 <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=766');">
-<div style="height: 100px;"></div>
+<div style="height: 20px;"></div>
 </header>
 
   <!-- Navigation -->
@@ -42,7 +42,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-      <h3 class="mt-5">Artículos, noticias, comentarios relacionados con su bebida favorita</h3>
+      <h4 class="mt-5">Artículos, noticias, comentarios relacionados con su bebida favorita</h4>
         <h4 class="mt-5"><u>Acceso usuarios registrados</u></h4>
 </div>
         <ul class="list-unstyled">
@@ -50,11 +50,11 @@
           <form method="post">
 
           <div class="form-group">
-  <label for="usr"><h4>Usuario:</h4></label>
+  <label for="usr"><h5>Usuario:</h5></label>
   <input type="text" class="form-control" id="">
 </div>
 <div class="form-group">
-  <label for="pwd"><h4>Contraseña:</h4></label>
+  <label for="pwd"><h5>Contraseña:</h5></label>
   <input type="password" class="form-control" id="">
   <br>
   <input type="submit" class="btn btn-outline-success" name="submit" value="Enviar">

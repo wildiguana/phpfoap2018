@@ -15,6 +15,10 @@
 
 <body>
 
+<header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=766');">
+<div style="height: 20px;"></div>
+</header>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
@@ -63,12 +67,19 @@
   <script src="jquery/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-       
+     <!-- Footer - pie de página con aviso legal -->
+<footer class="py-5 bg-dark">
+          <div class="container">
+            <?php include 'footer.php';?>
+          </div>
+        </footer>  
           
         
 <?php
 
 
 ?>
+
+
 </body>
 </html>
