@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Examen UF 3 - Jose Dalcolmo - portada</title>
-  	<link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
+	<link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="index ex uf3">
@@ -30,7 +30,8 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
           <li class="nav-item">
-          <a class="nav-link" href="https://cnnespanol.cnn.com/?hpt=header_edition-picker"><button type="button" class="btn btn-default btn-danger" target="_blank">Salir</a>
+            <a class="nav-link" href="https://cnnespanol.cnn.com/?hpt=header_edition-picker"
+            target="_blank">Salir</a>
           </li>
         </ul>
       </div>

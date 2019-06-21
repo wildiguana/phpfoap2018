@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="index ex uf3">
-    <meta name="author" content="jose o.">
+    <meta name="author" content="joseO">
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,9 +49,9 @@
   <!-- Page Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h1 class="mt-5">Coffee news</h1>
-        <p class="lead">Las útimas noticias sobre tu bebida favorita</p>
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Gestión de noticias</h1>
+        <p class="lead">Página</p>
         <ul class="list-unstyled">
           <li>Inicio</li>
           
@@ -62,30 +62,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Ok usuario y logout -->
-  <div class="card my-4">
-             <?php
-              if(isset($_REQUEST["logout"])){
-                session_destroy(); 
-                  setcookie("password",0,1);
-                  setcookie("nombre",0,1);
-                header('Location:indice.php');
-              } 
-                  if(isset($_SESSION["login"]) && $_SESSION["login"]==true){
-              ?>
-                <h5 class="card-header">Hola, <?=$_SESSION["nom"]?></h5>
-                <div class="card-body">
-                  <div class="input-group">
-                  <button class="btn btn-outline-dark"> <a href="indice.php?logout">desconectar</button></a>
-              <?php
-                }else{
-                  header('Location:noticies.php');           
-                }
-              ?>
-                  </div>
-                </div>
-              </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="jquery/jquery.min.js"></script>
