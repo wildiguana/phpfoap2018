@@ -54,9 +54,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <li class="nav-item">
-          <a class="nav-link" href="https://cnnespanol.cnn.com/?hpt=header_edition-picker"><button type="button" class="btn btn-default btn-danger" target="_blank">Salir</a>
-          </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Registro</a>
         </li>
@@ -64,8 +61,8 @@
           <a class="nav-link" href="#">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Salir</a>
-        </li>
+          <a class="nav-link" href="https://cnnespanol.cnn.com/?hpt=header_edition-picker"><button type="button" class="btn btn-default btn-danger" target="_blank">Salir</a>
+          </li>
       </ul>
     </div>
   </div>
