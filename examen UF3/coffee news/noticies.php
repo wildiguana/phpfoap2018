@@ -50,6 +50,7 @@
         </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+<<<<<<< HEAD
           <li class="nav-item active">
             <li class="nav-item">
               <a class="nav-link" href="agregar.php"><button type="button" class="btn btn-default btn-success" target="_blank">Agregar noticia</a>
@@ -62,6 +63,19 @@
           </li>
         </ul>
       </div>
+=======
+        <li class="nav-item active">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://cnnespanol.cnn.com/?hpt=header_edition-picker"><button type="button" class="btn btn-default btn-danger" target="_blank">Salir</a>
+          </li>
+      </ul>
+>>>>>>> 06d38b95fd0562cef833eeca1f98e83729e6ec58
     </div>
   </nav>
 
