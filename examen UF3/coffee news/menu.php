@@ -29,10 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><button type="button" class="btn btn-default btn-primary">Noticias: Consultar</a>
+            <a class="nav-link" href="noticies.php"><button type="button" class="btn btn-default btn-primary">Noticias: Consultar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><button type="button" class="btn btn-default btn-success">Insertar</a>
+            <a class="nav-link" href="agregar.php"><button type="button" class="btn btn-default btn-success">Insertar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><button type="button" class="btn btn-default btn-danger">Borrar</a>
@@ -51,7 +51,7 @@
     <div class="row">
       <div class="col-lg-12">
         <h1 class="mt-5">Coffee news</h1>
-        <p class="lead">Las útimas noticias sobre tu bebida favorita</p>
+        <p class="lead">Las útimas noticias sobre su bebida favorita</p>
         <ul class="list-unstyled">
           <li>Inicio</li>
           

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Examen UF 3 - Jose Dalcolmo - portada</title>
-	<link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="index ex uf3">
-    <meta name="author" content="joseO">
+	<title>Examen UF 3 - Jose Dalcolmo - error noticia</title>
+    <link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="index ex uf3">
+            <meta name="author" content="jose o.">
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,6 @@
   </nav>
 <br>
 <br>
-
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -68,11 +67,11 @@
     <br>
     <br>
     <!-- Footer - pie de página con aviso legal -->
-    <footer class="py-5 bg-dark">
-            <div class="container">
-                <?php include 'footer.php';?>
-            </div>
-    </footer>
+        <footer class="py-5 bg-dark">
+          <div class="container">
+              <?php include 'footer.php';?>
+                </div>
+        </footer>
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

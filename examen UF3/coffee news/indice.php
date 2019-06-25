@@ -3,10 +3,10 @@
 <head>
 	<title>Examen UF 3 - Jose Dalcolmo - portada</title>
   	<link rel="icon" href="imgs/favicon.gif" type="image/gif" sizes="16x16">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="index ex uf3">
-    <meta name="author" content="joseO">
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="index ex uf3">
+            <meta name="author" content="joseO">
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,33 +43,30 @@
       <div class="col-lg-12 text-center">
       <h4 class="mt-5">Artículos, noticias, comentarios relacionados con su bebida favorita</h4>
         <h4 class="mt-5"><u>Acceso usuarios registrados</u></h4>
-</div>
+  </div>
         <ul class="list-unstyled">
         
-          <form method="post">
-
-          <div class="form-group">
-  <label for="usr"><h5>Usuario:</h5></label>
-  <input type="text" class="form-control" id="">
-</div>
-<div class="form-group">
-  <label for="pwd"><h5>Contraseña:</h5></label>
-  <input type="password" class="form-control" id="">
-  <br>
-  <input type="submit" class="btn btn-outline-success" name="submit" value="Enviar">
-</div>
-        <li><h4>No está registrado?</h4></li>
-        <a class="nav-link" href="registro.php" target="_blank"><button type="button" 
-        class="btn btn-outline-dark">Regístrese aquí</button></a>
-
-        </ul>
+      <form method="post">
+       <div class="form-group">
+        <label for="usr"><h5>Usuario:</h5></label>
+          <input type="text" class="form-control" id="">
       </div>
-    
+      <div class="form-group">
+        <label for="pwd"><h5>Contraseña:</h5></label>
+          <input type="password" class="form-control" id="">
+    <br>
+        <input type="submit" class="btn btn-outline-success" name="submit" value="Enviar">
+      </div>
+        <li><h4>No está registrado?</h4></li>
+          <a class="nav-link" href="registro.php" target="_blank"><button type="button" 
+            class="btn btn-outline-dark">Regístrese aquí</button></a>
+      </ul>
+    </div> 
   </div>
 
   <!-- Footer - pie de página con aviso legal -->
-  <footer class="py-5 bg-dark">
-          <div class="container">
+      <footer class="py-5 bg-dark">
+         <div class="container">
             <?php include 'footer.php';?>
           </div>
         </footer>
@@ -77,12 +74,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="jquery/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-
-       
-          
-        
+    
 <?php
-
 
 ?>
 </body>
