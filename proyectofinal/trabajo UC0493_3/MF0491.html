@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>examen MF0491</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="libs/dist/css/bootstrap.min.css">
+	<script src="libs/js/jquery.min.js"></script>
+	<script src="libs/dist/js/bootstrap.min.js"></script>
+</style>
+	<script type="text/javascript">
+		function ver(){
+			document.getElementById('completo').className="visible";
+	</script>
+
+<style>
+		body{
+			background-color: #80808036;
+		}
+		.jumbotron{
+			background-color: #0066FF;
+			color: white; 
+		}
+		.container{
+			color: black;
+		}
+		.breadcrumb li a{
+			background-color: #bdeca4a1;
+			color: black;
+		}
+		.btn{
+    		padding: 8px 8px;
+		}
+		a{
+			color: green;
+		}
+		.spam {
+ 			line-height: 100px;
+  			height: 100px;
+ 			padding: 8px;
+		}
+		img{ 
+			border-top-width: 5px; 
+			border-radius: 15%;
+		}
+		.lista{
+			padding: 20;
+		}
+		hr{
+			color: black; 
+ 		  }
+ 		
+ 		 div .col-md-4col-sm-6 {
+ 		 	position: absolute;
+ 		 	right: 0;
+ 		 	width: 80px;
+ 		 	height: 120px;
+ 		 	border:3px solid blue; 
+ 		 			 }
+
+	</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      			</button>
+      			<a name="inicio"class="navbar-brand">Inicio</a>
+    		</div>
+
+    		<div class="collapse navbar-collapse" id="myNavbar">
+      			<ul class="nav navbar-nav">
+        			<li class="active"></li>
+        			<li><a href="#C1">Planetas</a></li>
+        			<li><a href="#C2">Galería</a></li>
+        			<li><a href="#C3">Registro</a></li>
+      			</ul>
+
+      			<ul class="nav navbar-nav navbar-right">
+               		<a href="#"><span class="glyphicon glyphicon-lock">
+        			</span>Iniciar sesión
+        			</a>
+        		</ul>
+
+        		<form class="navbar-form navbar-right" action="/action_page.php">
+			      	<div class="form-group">
+			        	<input type="text" class="form-control" placeholder="Buscar">
+			      	</div>
+
+			      <button type="button" class="btn btn-default btn-sm">
+			      <span class="glyphicon glyphicon-search"></span>
+			      </button>
+
+			    </form>
+    		</div>
+  		</div>
+	</nav>
+
+			<div class="jumbotron tex-left">
+				<h1>Astronomía</h1>
+			</div>
+
+			<div class="container">
+				<div class="row">
+				<div class="col-md-12 col-sm-6"> 
+				<h3 id="C1">El universo</h3>
+					<a href="https://es.wikipedia.org/wiki/Astronom%C3%ADa" target="_blank">Extraído de Wikipedia</a>
+			<img src="images/sky.jpg" alt="universo" style ="float:right; width: 150px; height: 150px">
+			<p id="universo">La <b>astronomía </b>(del latín <u>astronomĭa</u>, y este del griego <u>ἀστρονομία)</u>1​ es la ciencia que se ocupa del estudio de los cuerpos celestes del universo, incluidos los planetas y sus satélites, los cometas y meteoroides, las estrellas y la materia interestelar, los sistemas de materia oscura, gas y polvo llamados galaxias y los cúmulos de galaxias; por lo que estudia sus movimientos y los fenómenos ligados a ellos. Su registro y la investigación de su origen viene a partir de la información que llega de ellos a través de la radiación electromagnética o de cualquier otro medio.
+			La <b>astronomía</b> ha estado ligada al ser humano desde la antigüedad y todas las civilizaciones han tenido contacto con esta ciencia. <br>Personajes como <i>Aristóteles</i>, <i>Tales de Mileto</i>, <i>Anaxágoras</i>, <i>Aristarco de Samos</i>, <i>Hiparco de Nicea</i>, <i>Claudio Ptolomeo</i>, <i>Hipatia de Alejandría</i>, <i>Nicolás Copérnico</i>, <i>Tycho Brahe</i>, <i>Johannes Kepler</i>, <i>Galileo Galilei</i>, <i>Christiaan Huygens</i> o <i>Edmund Halley</i> han sido algunos de sus cultivadores.<br>
+			Es una de las pocas ciencias en las que los aficionados aún pueden desempeñar un papel activo, especialmente en el descubrimiento y seguimiento de fenómenos como curvas de luz de estrellas variables, descubrimiento de asteroides y cometas, etc.
+			</p>
+			<a href="#inicio">Ir a inicio</a>
+ 
+			<!--	<div class="panel panel-default">
+					<div class="panel-footer">Seleccione:</div>
+						<ul class="breadcrumb">
+							<li><a href="#">Mercurio</a></li>
+							
+							
+							<li><a href="#">Marte</a></li>
+							<li><a href="#">Júpiter</a></li>
+							<li><a href="#">Saturno</a></li>
+							<li><a href="#">Urano</a></li>
+							<li><a href="#">Neptuno</a></li>
+						</ul>
+					
+					
+			</div>
+				</div>-->
+
+				
+				<dir class="lista"></dir>
+				<div class="col-md-4 col-sm-6"> 
+						<ul class="list-group">
+						<h3 id="C1">Seleccione</h3>
+  <li class="list-group-item"><a href="planetas/mercurio.html" target="_blank">Mercurio</a></li>
+  <li class="list-group-item"><a href="#">Venus</a></li> 
+  <li class="list-group-item"><a href="#">Tierra</a></li>
+  <li class="list-group-item"><a href="#">Marte</a></li>
+  <li class="list-group-item"><a href="planetas/jupiter.html" target="_blank">Júpiter</a></li> 
+  <li class="list-group-item"><a href="#">Saturno</a></li>
+  <li class="list-group-item"><a href="#">Urano</a></li> 
+  <li class="list-group-item"><a href="#">Neptuno</a></li>
+</ul>
+				
+<hr>
+
+	
+		
+
+				</div>
+					
+			</div>
+		</div>	
+
+<hr>
+
+
+			<div class="row">
+				<div class="col-md-8 col-sm-6"> 
+					<h3 id="C2">Artículo 2</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit diam posuere est lacinia, imperdiet fringilla erat vestibulum potenti cubilia hendrerit rutrum mauris magnis aliquet, consequat feugiat faucibus metus pharetra ultricies orci sagittis tellus molestie. Libero phasellus molestie fusce lacus at dapibus litora ligula nisi mus vehicula congue sociis euismod erat tellus ultrices, nulla eu tempor convallis nullam tortor cum enim elementum felis massa parturient urna scelerisque ante. Himenaeos augue pharetra rhoncus dis arcu dapibus ullamcorper laoreet blandit vulputate, ultrices phasellus elementum euismod auctor proin lobortis dignissim nec.</p><p>Vel cum habitant facilisis quis lectus iaculis primis elementum, id mus donec habitasse suscipit lacinia aptent, turpis dictumst ultricies praesent tellus nostra luctus. Taciti scelerisque erat ante tempus lacus ridiculus nullam, venenatis hendrerit semper laoreet orci pretium primis libero, class placerat sed mus accumsan nec. Aliquam vitae id sodales cubilia quis faucibus in blandit, augue lacinia eleifend himenaeos ad primis.</p>
+
+					<div class="panel panel-default">
+						<div class="panel-footer">Tags:</div>
+							<ul class="breadcrumb">
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Ipsum</a></li>
+								<li><a href="#">Dolor</a></li>
+								<li><a href="#">Sit</a></li>
+							</ul>
+					</div>
+				</div>
+
+
+<div class="form">
+		<a name="registro"></a>
+	<form action="registro.html" method="post">
+		
+		<fieldset>
+		<div class="legend"><legend>Información personal</legend></div>
+		<label>Nombre*</label>
+		<input type="text" name="nombre" data-rule="required" data-msg="Campo obligatorio"><span id="error_nombre"></span>
+		<br>
+		<label>Apellido*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_apellido"></span>
+		<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono*</label>
+		<input type="text" name="telefono" data-rule="required" data-msg="Campo obligatorio"><span id="error_telefono"></span>
+		<br>
+		<label>Fecha de nacimiento*</label>
+		<input type="text" name="apellido" data-rule="required" data-msg="Campo obligatorio"><span id="error_fnacimiento"></span>
+		<br>
+		<label>Sexo</label><span id="error_sexo"></span><br>
+		<input type="radio" name="sexo" value="1" data-msg="Hombre">Hombre
+		<input type="radio" name="sexo" value="2" data-msg="Mujer">Mujer
+		<span id="error_sexo"></span>
+	
+</fieldset>
+		
+		<fieldset>
+		<div class="legend"><legend>Información laboral</legend></div>
+		<select name="laboral[]"multiple>
+			<label>Profesión</label>
+			<br>
+			<optgroup label="Selecciona tu área de aplicación">
+				
+				<option>Astrónomo</option>
+				<option>Físico</option>
+				<option>Geólogo</option>
+			</optgroup>
+		</select>
+<br>
+		<label>Dirección</label>
+		<input type="text" name="direccion">
+		<br>
+		<label>Teléfono</label>
+		<input type="text" name="telefono" >		
+	</form>
+</fieldset>
+<a href="#inicio">volver a inicio</a>
+
+				<!--<dir class="lista"></dir>
+					<div class="col-md-4 col-sm-6"> 
+
+						<ul class="list-group">
+  							<li class="list-group-item">Nuevas noticias <span class="badge">12</span></li>
+ 							<li class="list-group-item">Temas en el foro <span class="badge">5</span></li> 
+  							<li class="list-group-item">Mensajes <span class="badge">3</span></li> 
+						</ul>
+
+<hr>
+						<div class="spam">
+							<img src="spam.jpg" alt="spam food">
+  						</div>
+					</div>-->
+			</div>
+		</div>	
+
+<hr>
+	<div class="jumbotron-text-center"style="margin-bottom: 0">
+		<p>footer</p>
+	</div>
+
+</body>
+</html>
