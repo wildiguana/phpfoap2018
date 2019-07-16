@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>trabajo final</title>
 	<meta charset="utf-8">
@@ -89,86 +90,151 @@
     @media screen and (max-width: 290px) {
       .weekdays li, .days li {width: 12.2%;}
     }
+
+    .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
     </style>
 
-<!------ Include the above in your HEAD tag ---------->
+<script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
 </head>
+
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#page-top">Bienvenido usuario, comparte en redes sociales</a>
+                <a class="navbar-brand" href="#page-top">Bienvenido usuario, comparte en redes sociales</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Facebook</a>
+                        <li class="page-scroll">
+                            <a href="#portfolio">Spotify</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">Instagram</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Salir</a>
+                        </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#portfolio">Facebook</a>
-                <li class="page-scroll">
-                    <a href="#portfolio">Spotify</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#about">Instagram</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact">Salir</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-<header id="page-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png" alt="">
-                <div class="intro-text">
-                    <span class="name">Inspired by PureCSS.io</span>
-                    <hr class="star-light">
-                    <p class="skills">Landing Page Layout</p>
-                    <p class="skills">Scroll to see the effect</p>
+        <!-- /.container-fluid -->
+    </nav>
+    <header id="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Inspired by PureCSS.io</span>
+                        <hr class="star-light">
+                        <p class="skills">Landing Page Layout</p>
+                        <p class="skills">Scroll to see the effect</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-<div class="content-wrapper">
-    <section class="primary" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Mis libros</h2>
-                    <hr class="star-primary">
-                </div>
-                <div class="panel panel-default">
-                        <div class="panel-footer">Selecciona:</div>
-                            <ul class="categorías">
-                                <li><a href="#">Cómics</a></li>	
-                                <li><a href="#">Suspense</a></li>
-                                <li><a href="#">Acción</a></li>
-                                <li><a href="#">Divulgación</a></li>
-                                <li><a href="#">Aventura</a></li>
-                                <li><a href="#">Novela</a></li>
-                                <li><a href="#">Historia</a></li>
-                                 <li><a href="#">Favoritos</a></li>
-                                <li><a href="#">Deseos</a></li>
-                                <li><a href="#">Prestados</a></li>
-                                <li><a href="#">Agregar categoría</a></li>
-                            </ul>
-                        </div>
+    </header>
+    <div class="content-wrapper">
+        <section class="primary" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Mis libros</h2>
+                        <hr class="star-primary">
                     </div>
+                    <div class="panel panel-default">
+                        <div class="panel-footer">Selecciona:</div>
+                             <div class="dropdown">
+                                 <button onclick="myFunction()" class="dropbtn">Categorías</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="#">Cómics</a>
+                                            <a href="#">Suspense</a>
+                                            <a href="#">Acción</a>
+                                            <a href="#">Divulgación</a>
+                                            <a href="#">Aventura</a>
+                                            <a href="#">Novela</a>
+                                            <a href="#">Historia</a>
+                                            <a href="#">Favoritos</a>
+                                            <a href="#">Deseos</a>
+                                            <a href="#">Prestados</a>
+                                            <a href="#">Agregar categoría</a>
+                                        </div>
+                                 </div>
+                            </div>
+                        </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -177,57 +243,62 @@
                         <hr class="star-primary">
                     </div>
                     <div class="panel panel-default">
-                            <div class="panel-footer">Selecciona:</div>
-                                <ul class="categorías">
-                                    <li><a href="#">Alternativa</a></li>	
-                                    <li><a href="#">Pop</a></li>
-                                    <li><a href="#">R&B</a></li>
-                                    <li><a href="#">Deep</a></li>
-                                    <li><a href="#">House</a></li>
-                                    <li><a href="#">Chill</a></li>
-                                    <li><a href="#">Rock</a></li>
-                                     <li><a href="#">Favoritos</a></li>
-                                    <li><a href="#">Deseos</a></li>
-                                    <li><a href="#">Prestados</a></li>
-                                    <li><a href="#">Agregar categoría</a></li>
-                                </ul>
-                            </div>
+                        <div class="panel-footer">Selecciona:</div>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Categorías</button>
+                                       <div id="myDropdown" class="dropdown-content">
+                                            <a href="#">Alternativa</a>
+                                            <a href="#">Pop</a>
+                                            <a href="#">R&B</a>
+                                            <a href="#">Deep</a>
+                                            <a href="#">House</a>
+                                            <a href="#">Chill</a>
+                                            <a href="#">Rock</a>
+                                            <a href="#">Favoritos</a>
+                                            <a href="#">Deseos</a>
+                                            <a href="#">Prestados</a>
+                                            <a href="#">Agregar categoría</a>
                         </div>
+                    </div>
                 </div>
-                <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>Mis películas</h2>
-                                <hr class="star-primary">
-                            </div>
-                            <div class="panel panel-default">
-                                    <div class="panel-footer">Selecciona:</div>
-                                        <ul class="categorías">
-                                            <li><a href="#">Cómics</a></li>	
-                                            <li><a href="#">Suspense</a></li>
-                                            <li><a href="#">Acción</a></li>
-                                            <li><a href="#">Divulgación</a></li>
-                                            <li><a href="#">Aventura</a></li>
-                                            <li><a href="#">Novela</a></li>
-                                            <li><a href="#">Historia</a></li>
-                                             <li><a href="#">Favoritos</a></li>
-                                            <li><a href="#">Deseos</a></li>
-                                            <li><a href="#">Prestados</a></li>
-                                            <li><a href="#">Agregar categoría</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                        </div>
-                <div class="col-sm-4">
-                    <img src="http://lorempixel.com/360/260/abstract/">    
-                </div>
-                <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2>Mis cosas</h2>
-                            <hr class="star-primary">
-                        </div>
             </div>
-        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Mis películas</h2>
+                        <hr class="star-primary">
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-footer">Selecciona:</div>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Categorías</button>
+                                       <div id="myDropdown" class="dropdown-content">
+                                            <a href="#">Cómics</a>
+                                            <a href="#">Suspense</a>
+                                            <a href="#">Acción</a>
+                                            <a href="#">Divulgación</a>
+                                            <a href="#">Aventura</a>
+                                            <a href="#">Novela</a>
+                                            <a href="#">Historia</a>
+                                            <a href="#">Favoritos</a>
+                                            <a href="#">Deseos</a>
+                                            <a href="#">Prestados</a>
+                                            <a href="#">Agregar categoría</a>
+                                       </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            <div class="col-sm-4">
+                <img src="http://lorempixel.com/360/260/abstract/">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Mis cosas</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+    </div>
     </section>
     <section class="success" id="about">
         <div class="container">
@@ -239,13 +310,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit diam posuere est 
-                        lacinia, imperdiet fringilla erat vestibulum potenti cubilia hendrerit rutrum mauris 
-                        magnis aliquet, consequat feugiat faucibus metus pharetra ultricies orci sagittis 
-                        tellus molestie. Libero phasellus molestie fusce lacus at dapibus litora ligula nisi 
-                        mus vehicula congue sociis euismod erat tellus ultrices, nulla eu tempor convallis 
-                        nullam tortor cum enim elementum felis massa parturient urna scelerisque ante. 
-                        .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit diam posuere est lacinia, imperdiet fringilla erat vestibulum potenti cubilia hendrerit rutrum mauris magnis aliquet, consequat feugiat faucibus metus pharetra ultricies orci sagittis
+                        tellus molestie. Libero phasellus molestie fusce lacus at dapibus litora ligula nisi mus vehicula congue sociis euismod erat tellus ultrices, nulla eu tempor convallis nullam tortor cum enim elementum felis massa parturient urna
+                        scelerisque ante. .
+                    </p>
                 </div>
                 <div class="col-lg-4">
                     <p>Himenaeos augue pharetra rhoncus dis arcu dapibus ullamcorper laoreet blandit 
@@ -259,74 +327,90 @@
                 </div>
             </div>
         </div>
-    </section>
-    <div class="content-wrapper">
-        <section class="primary" id="premium">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>Apuntes</h2>
-                        <hr class="star-primary">
-                    </div>
-                    <div class="panel panel-default">
-                            <div class="panel-footer">Selecciona:</div>
-                                <ul class="categorías">
-                                    <li><a href="#">Cómics</a></li>	
-                                    <li><a href="#">Suspense</a></li>
-                                    <li><a href="#">Acción</a></li>
-                                    <li><a href="#">Divulgación</a></li>
-                                    <li><a href="#">Aventura</a></li>
-                                    <li><a href="#">Novela</a></li>
-                                    <li><a href="#">Historia</a></li>
-                                    <li><a href="#">Favoritos</a></li>
-                                    <li><a href="#">Deseos</a></li>
-                                    <li><a href="#">Prestados</a></li>
-                                    <li><a href="#">Agregar categoría</a></li>
-                                </ul>
+    
+        <div class="content-wrapper">
+                <section class="primary" id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2>Apuntes</h2>
+                                <hr class="star-primary">
                             </div>
-                        </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2>Recetas</h2>
-                            <hr class="star-primary">
-                        </div>
-                        <div class="panel panel-default">
+                            <div class="panel panel-default">
                                 <div class="panel-footer">Selecciona:</div>
-                                    <ul class="categorías">
-                                        <li><a href="#">Alternativa</a></li>	
-                                        <li><a href="#">Pop</a></li>
-                                        <li><a href="#">R&B</a></li>
-                                        <li><a href="#">Deep</a></li>
-                                        <li><a href="#">House</a></li>
-                                        <li><a href="#">Chill</a></li>
-                                        <li><a href="#">Rock</a></li>
-                                        <li><a href="#">Favoritos</a></li>
-                                        <li><a href="#">Deseos</a></li>
-                                        <li><a href="#">Prestados</a></li>
-                                        <li><a href="#">Agregar categoría</a></li>
-                                    </ul>
+                                     <div class="dropdown">
+                                         <button onclick="myFunction()" class="dropbtn">Categorías</button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                    <a href="#">Cómics</a>
+                                                    <a href="#">Suspense</a>
+                                                    <a href="#">Acción</a>
+                                                    <a href="#">Divulgación</a>
+                                                    <a href="#">Aventura</a>
+                                                    <a href="#">Novela</a>
+                                                    <a href="#">Historia</a>
+                                                    <a href="#">Favoritos</a>
+                                                    <a href="#">Deseos</a>
+                                                    <a href="#">Prestados</a>
+                                                    <a href="#">Agregar categoría</a>
+                                                </div>
+                                         </div>
+                                    </div>
                                 </div>
-                            </div>
                     </div>
                     <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <h2>Notas</h2>
-                                    <hr class="star-primary">
-                                </div>
-                                <div class="panel panel-default">
-                                        <div class="panel-footer">Selecciona:</div>
-                                            <ul class="categorías">
-                                                <li><a href="#">Favoritos</a></li>
-                                                <li><a href="#">Deseos</a></li>
-                                                <li><a href="#">Prestados</a></li>
-                                                <li><a href="#">Agregar categoría</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2>Recetas</h2>
+                                <hr class="star-primary">
                             </div>
+                            <div class="panel panel-default">
+                                <div class="panel-footer">Selecciona:</div>
+                                    <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">Categorías</button>
+                                               <div id="myDropdown" class="dropdown-content">
+                                                    <a href="#">Alternativa</a>
+                                                    <a href="#">Pop</a>
+                                                    <a href="#">R&B</a>
+                                                    <a href="#">Deep</a>
+                                                    <a href="#">House</a>
+                                                    <a href="#">Chill</a>
+                                                    <a href="#">Rock</a>
+                                                    <a href="#">Favoritos</a>
+                                                    <a href="#">Deseos</a>
+                                                    <a href="#">Prestados</a>
+                                                    <a href="#">Agregar categoría</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2>Notas</h2>
+                                <hr class="star-primary">
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-footer">Selecciona:</div>
+                                    <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">Categorías</button>
+                                               <div id="myDropdown" class="dropdown-content">
+                                                    <a href="#">Cómics</a>
+                                                    <a href="#">Suspense</a>
+                                                    <a href="#">Acción</a>
+                                                    <a href="#">Divulgación</a>
+                                                    <a href="#">Aventura</a>
+                                                    <a href="#">Novela</a>
+                                                    <a href="#">Historia</a>
+                                                    <a href="#">Favoritos</a>
+                                                    <a href="#">Deseos</a>
+                                                    <a href="#">Prestados</a>
+                                                    <a href="#">Agregar categoría</a>
+                                               </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12 text-center">
@@ -389,9 +473,11 @@
                                             </div>
                                         </div>
                                 </div>
+
     <footer class="container" style="min-height:200px; background-color:#18bc9c;color:#fff;text-align:center;padding-top:50px;">
-        INSPIRED BY PURECSS.IO © 2015 
+        INSPIRED BY PURECSS.IO © 2015
     </footer>
-</div>
+    </div>
 </body>
+
 </html>
