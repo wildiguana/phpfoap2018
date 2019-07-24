@@ -20,7 +20,159 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
-    <![endif]-->
+	<![endif]-->
+	
+	<style>
+			* {box-sizing: border-box;}
+			ul {list-style-type: none;}
+			body {font-family: Verdana, sans-serif;}
+			
+			.month {
+			  padding: 70px 25px;
+			  width: 100%;
+			  background: #1abc9c;
+			  text-align: center;
+			}
+			
+			.month ul {
+			  margin: 0;
+			  padding: 0;
+			}
+			
+			.month ul li {
+			  color: white;
+			  font-size: 20px;
+			  text-transform: uppercase;
+			  letter-spacing: 3px;
+			}
+			
+			.month .prev {
+			  float: left;
+			  padding-top: 10px;
+			}
+			
+			.month .next {
+			  float: right;
+			  padding-top: 10px;
+			}
+			
+			.weekdays {
+			  margin: 0;
+			  padding: 10px 0;
+			  background-color: #ddd;
+			}
+			
+			.weekdays li {
+			  display: inline-block;
+			  width: 13.6%;
+			  color: #666;
+			  text-align: center;
+			}
+			
+			.days {
+			  padding: 10px 0;
+			  background: #eee;
+			  margin: 0;
+			}
+			
+			.days li {
+			  list-style-type: none;
+			  display: inline-block;
+			  width: 13.6%;
+			  text-align: center;
+			  margin-bottom: 5px;
+			  font-size:12px;
+			  color: #777;
+			}
+			
+			.days li .active {
+			  padding: 5px;
+			  background: #1abc9c;
+			  color: white !important
+			}
+			
+			/* Add media queries for smaller screens */
+			@media screen and (max-width:720px) {
+			  .weekdays li, .days li {width: 13.1%;}
+			}
+			
+			@media screen and (max-width: 420px) {
+			  .weekdays li, .days li {width: 12.5%;}
+			  .days li .active {padding: 2px;}
+			}
+			
+			@media screen and (max-width: 290px) {
+			  .weekdays li, .days li {width: 12.2%;}
+			}
+		
+			.dropbtn {
+		  background-color: #3498DB;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
+		}
+		
+		.dropbtn:hover, .dropbtn:focus {
+		  background-color: #2980B9;
+		}
+		
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  overflow: auto;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+		
+		.dropdown a:hover {
+			background-color: #ddd;}
+		
+		.show {
+			display: block;}
+
+		ul.a {
+  			list-style-type: circle;
+		}
+		
+		</style>
+		
+		<script>
+				/* When the user clicks on the button, 
+				toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("myDropdown").classList.toggle("show");
+				}
+				
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(event) {
+				  if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+					  var openDropdown = dropdowns[i];
+					  if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					  }
+					}
+				  }
+				}
+				</script>
     
 	</head>
 	<body>
@@ -36,7 +188,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 						<i class="fa fa-bars"></i>
 					</button>
-					<a class="navbar-brand" href="#brand"><img src="img/logo.png" class="logo" alt=""></a>
+					<a class="navbar-brand" href="#brand"><img src="img/favicon.gif" class="logo" alt=""></a>
 				</div>
 				<!-- End Header Navigation -->
 
@@ -86,30 +238,92 @@
 							<div class="features-caption">
 								<span class="icon icon-layers"></span>
 								<h3>Libros</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-							</div>
+								<div class="panel panel-default">
+										<div class="panel-footer">Selecciona:</div>
+											 <div class="dropdown">
+												 <button onclick="myFunction()" class="dropbtn">Categorías</button>
+														<div id="myDropdown" class="dropdown-content">
+															<a href="#">Cómics</a>
+															<a href="#">Suspense</a>
+															<a href="#">Acción</a>
+															<a href="#">Divulgación</a>
+															<a href="#">Aventura</a>
+															<a href="#">Novela</a>
+															<a href="#">Historia</a>
+															<a href="#">Favoritos</a>
+															<a href="#">Deseos</a>
+															<a href="#">Prestados</a>
+															<a href="#">Añadir</a>
+														</div>
+												 </div>
+											</div>
+										</div>							</div>
 						</div>
 						<div class="col-md-8 col-sm-12 no-padd">
 							<div class="col-md-6 col-sm-6 no-padd">
 								<div class="features-caption">
 									<span class="icon icon-layers"></span>
 									<h3>Música</h3>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-								</div>
+									<div class="panel panel-default">
+											<div class="panel-footer">Selecciona:</div>
+												<div class="dropdown">
+													<button onclick="myFunction()" class="dropbtn">Categorías</button>
+														   <div id="myDropdown" class="dropdown-content">
+																<a href="#">Alternativa</a>
+																<a href="#">Pop</a>
+																<a href="#">R&B</a>
+																<a href="#">Deep</a>
+																<a href="#">House</a>
+																<a href="#">Chill</a>
+																<a href="#">Rock</a>
+																<a href="#">Favoritos</a>
+																<a href="#">Deseos</a>
+																<a href="#">Prestados</a>
+																<a href="#">Añadir</a>
+											</div>
+											</div>
+									</div>
 							</div>
 						<div class="col-md-6 col-sm-6 no-padd">
 							<div class="features-caption">
 								<span class="icon icon-layers"></span>
 								<h3>Películas</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-							</div>
+								<div class="panel panel-default">
+										<div class="panel-footer">Selecciona:</div>
+											<div class="dropdown">
+												<button onclick="myFunction()" class="dropbtn">Categorías</button>
+													   <div id="myDropdown" class="dropdown-content">
+															<a href="#">Cómics</a>
+															<a href="#">Suspense</a>
+															<a href="#">Acción</a>
+															<a href="#">Divulgación</a>
+															<a href="#">Aventura</a>
+															<a href="#">Novela</a>
+															<a href="#">Historia</a>
+															<a href="#">Favoritos</a>
+															<a href="#">Deseos</a>
+															<a href="#">Prestados</a>
+															<a href="#">Agregar categoría</a>
+													   </div>
+											</div>
+										</div>
+								</div>
 						</div>
 						<div class="col-md-6 col-sm-6 no-padd">
 							<div class="features-caption">
 								<span class="icon icon-happy"></span>
 								<h3>Mi red</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-							</div>
+								<div class="panel panel-default">
+										<div class="panel-footer"></div>
+											<div class="lista">
+													<ul class="a">
+															<li><a href="https://www.facebook.com/">Facebook</a></li>
+															<li><a href="https://www.spotify.com/es/signup/">Spotify</a></li>
+															<li><a href="https://www.instagram.com/accounts/login/?hl=es">Instagram</a></li>
+														  </ul>
+											</div>
+										</div>							
+									</div>
 						</div>
 						<div class="col-md-6 col-sm-6 no-padd">
 							<div class="features-caption">
