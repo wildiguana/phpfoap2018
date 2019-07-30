@@ -3,7 +3,7 @@
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'formacio.obsea.es');
 define('DB_USERNAME', 'joseomar');
-define('DB_PASSWORD', 'jdalcolmo');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'prueba_crud');
  
 /* Attempt to connect to MySQL database */
